@@ -14,4 +14,6 @@ League Analyser supports **multiple player profiles**, allowing users to create 
 
 The application also features an **automatic update system** that keeps both the application itself and all game-related resources up to date. This ensures that champion statistics, item data, and ability information are always synchronized with the current game version, so all presented descriptions and in-game statistics accurately reflect the latest balance changes.
 
-*League Analyser is designed for players who want to move beyond basic post-game statistics and gain a deeper, data-driven understanding of their matches.*
+League Analyser is designed for players who want to move beyond basic post-game statistics and gain a deeper, data-driven understanding of their matches.
+
+_Created by: Mvcias (OsKUBAny)_
