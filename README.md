@@ -1,8 +1,17 @@
-# League Analyser - your detailed League match history
+<table border="0">
+  <tr>
+    <td>
+       <img src="https://repository-images.githubusercontent.com/1121300145/5124e3d4-202c-41e2-ac72-80319ceca9a7" alt="Screenshot" width="200">
+    </td>
+    <td>
+      <h1>League Analyser</h1> <br><h2 style="font-weight:bold;"> your detailed League match history</h2>
+    </td>
+  </tr>
+</table>
 
 League Analyser is a desktop application built with **WPF** and **C#** that collects, stores, and analyzes detailed data from individual League of Legends matches.
 
-The application retrieves comprehensive match information, including match date, map, player statistics, items, and in-game events. Beyond raw data collection, League Analyser provides advanced visualizations of match statistics — including metrics that are not directly exposed by Riot Games in the official client.
+The application retrieves comprehensive match information, including match date, map, player statistics, items, and in-game events. Beyond raw data collection, League Analyser provides advanced visualizations of match statistics - including metrics that are not directly exposed by Riot Games in the official client.
 
 A key feature of the application is the **Timeline** mode, which presents a complete chronological breakdown of a selected match. It highlights all critical moments such as champion kills, objective destructions, and monster kills. Each event is enriched with in-depth damage analysis, including damage sources, ability-specific breakdowns, damage types, and percentage contributions. 
 This allows for a precise evaluation of how each encounter unfolded and offers an objective way to determine a player’s actual impact on a kill.
