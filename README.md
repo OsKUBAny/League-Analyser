@@ -1,4 +1,4 @@
-<img src="https://repository-images.githubusercontent.com/1121300145/5124e3d4-202c-41e2-ac72-80319ceca9a7" alt="Screenshot" width="200">
+<img src="https://raw.githubusercontent.com/OsKUBAny/League-Analyser/refs/heads/master/Resources/app_icon.png" alt="Screenshot" width="200">
 
 # League Analyser - your detailed League match history
 
