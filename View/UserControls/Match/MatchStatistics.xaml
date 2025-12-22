@@ -1,0 +1,83 @@
+﻿<UserControl x:Name="matchStatistics" x:Class="League_Analyser.View.UserControls.MatchStatistics"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height="778" Width="980" Background="#7F000000">
+
+    <UserControl.RenderTransform>
+        <TranslateTransform x:Name="moveTransform" />
+    </UserControl.RenderTransform>
+
+    <UserControl.Resources>
+        <Storyboard x:Key="SlideIn">
+            <DoubleAnimation Storyboard.TargetName="matchStatistics" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                             From="-980" To="0" Duration="0:0:0.200"/>
+        </Storyboard>
+        <Storyboard x:Key="SlideOut">
+            <DoubleAnimation Storyboard.TargetName="matchStatistics" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                             From="0" To="-980" Duration="0:0:0.200"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid Name="localGrid">
+        <TextBlock Name="mapName" Foreground="White" FontSize="20" FontWeight="Bold" Text="Summoner's Rift - URF"
+                    HorizontalAlignment="Left" Margin="10,5,0,0"/>
+        <TextBlock Name="date" Foreground="White" FontSize="20" FontWeight="Bold" Text="88.88.8888, 88:88"
+                   HorizontalAlignment="Right" Margin="0,5,10,0"/>
+        <TextBlock Name="gameDuration" Foreground="White" FontSize="18" FontWeight="Normal" Text="Czas trwania: 88:88 min"
+                   HorizontalAlignment="Left" Margin="10,30,0,0"/>
+        <TextBlock Name="result" Foreground="White" FontSize="25" FontWeight="Bold" Text="ZWYCIĘSTWO"
+                   HorizontalAlignment="Center" Margin="-660,60,0,0"/>
+        <StackPanel Name="surrender" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                    Height="50" Width="300" Margin="0,30,0,0" FlowDirection="RightToLeft">
+            <TextBlock  Foreground="White" FontSize="15" FontWeight="Normal" Text="Mecz został poddany" Margin="10,0,0,0"/>
+            <Image Source="/Resources/surrenderIcon.png" Height="20" Width="20" VerticalAlignment="Top" Margin="2,2,0,0" />
+        </StackPanel>
+        <local:MatchSummary x:Name="matchSummary" VerticalAlignment="Top" Margin="0,30,0,0" d:IsHidden="False" Visibility="Collapsed" />
+
+        <Rectangle Name="downloadTimeline" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Margin="0,60,15,0" Fill="MidnightBlue" Stroke="#FF0F4168" RadiusX="3" RadiusY="3" 
+                 MouseLeftButtonUp="SwitchTimelineMode"/>
+        <TextBlock Name="downloadTimelineText" Text="Timeline" FontSize="15" Foreground="White" HorizontalAlignment="Right" 
+                   VerticalAlignment="Top" Margin="0,65,22,0" MouseLeftButtonUp="SwitchTimelineMode"/>
+        <Image Name="downloadTimelineIcon" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,65,90,0" 
+               Source="/Resources/info_icon_info.png" MouseLeftButtonUp="SwitchTimelineMode"/>
+
+        <Rectangle Width="320" Height="665" Fill="#3F000000" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0"/>
+
+        <Rectangle Name="allayTeamSide"  Width="315" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                   Margin="15,100,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush x:Name="allayTeamGradient" EndPoint="1,0" StartPoint="0,0">
+                    <GradientStop Color="#00FF0000"/>
+                    <GradientStop Color="#00FF0000" Offset="0.2"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBlock Text="Twoja drużyna:" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="15,100,30,30"/>
+
+        <StackPanel Name="allayTeam" Width="320" Height="300" Orientation="Vertical" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
+
+        <Rectangle Name="enemyTeamSide"  Width="315" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                   Margin="15,435,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush x:Name="enemyTeamGradient" EndPoint="1,0" StartPoint="0,0">
+                    <GradientStop Color="#000000FF"/>
+                    <GradientStop Color="#000000FF" Offset="0.2"/>
+                    <GradientStop Color="Blue" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock Text="Przeciwna drużyna:" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="15,435,0,0"/>
+        <StackPanel Name="enemyTeam" Width="320" Height="300" Orientation="Vertical" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,465,0,0"/>
+    </Grid>
+</UserControl>

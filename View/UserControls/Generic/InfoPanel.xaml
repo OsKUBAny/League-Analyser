@@ -1,0 +1,86 @@
+﻿<UserControl x:Name="panel_info" 
+             x:Class="League_Analyser.View.UserControls.InfoPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height="60" Width="1325" HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+             MouseEnter="panel_info_MouseEnter" MouseLeave="panel_info_MouseLeave">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="SlideIn">
+            <DoubleAnimation Storyboard.TargetName="InfoPanelGrid" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                             From="60" To="0" Duration="0:0:0.200"/>
+        </Storyboard>
+        
+        <Storyboard x:Key="SlideOut">
+            <DoubleAnimation Storyboard.TargetName="InfoPanelGrid" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                             From="0" To="60" Duration="0:0:0.200" Completed="SlideOutAnimation_Completed"/>
+        </Storyboard>
+        <!--Progress animation created in CodeBehind due to dynamic duration time.-->
+    </UserControl.Resources>
+    
+    <Grid x:Name="InfoPanelGrid">
+
+        <Grid.RenderTransform>
+            <TranslateTransform x:Name="moveTransform" />
+        </Grid.RenderTransform>
+        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0059A2" Offset="0"/>
+                <GradientStop Color="#FF008BFF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Image Name="infoIcon" Width="50" Height="50" Source="/Resources/info_icon_info.png" 
+                   HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <TextBlock x:Name="textBlock_title" Text="Tytuł powiadomienia" Foreground="White" 
+                           Margin="10,5,0,0" FontWeight="Bold" FontSize="18"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="textBlock_message" Text="Wiadomość" Foreground="White" FontSize="15" 
+                           Margin="10,2,0,0" FontWeight="Regular" VerticalAlignment="Top"/>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Image Name="buttonClose" Width="50" Height="50" Margin="0,3,0,0" Source="/Resources/info_closeButton.png" 
+                       MouseDown="ClosePrompt"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Rectangle x:Name="progressBar" Width="50" Height="5" Fill="White"
+                             VerticalAlignment="Top" HorizontalAlignment="Left" Margin="21.5,0,0,0"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

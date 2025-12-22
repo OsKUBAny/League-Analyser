@@ -1,0 +1,35 @@
+﻿<UserControl x:Name="itemPopup" x:Class="League_Analyser.View.UserControls.ItemPopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height="80" Width="250" Background="#E5232D37" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFD1D1D1" BorderThickness="1,1,1,1">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="FadeIn">
+            <DoubleAnimation Storyboard.TargetName="itemPopup" 
+                         Storyboard.TargetProperty="Opacity"
+                         From="0" To="1" Duration="0:0:0.200"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid>
+        <Image Name="image" Width="80" Height="80" Source="/Resources/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Width="80" Height="80" Stroke="White" StrokeThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBlock Name="name" Text="Item's name" Foreground="White" FontSize="12" FontWeight="Bold"
+                   Margin="85,0,0,0"/>
+        <TextBlock Name="description" Text="Description" Foreground="White" FontSize="10" FontWeight="Normal"
+                   Margin="85,15,0,0" Height="55" HorizontalAlignment="Left" VerticalAlignment="Top"
+                   TextWrapping="WrapWithOverflow"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,65,0,0">
+            <TextBlock Name="gold" Text="888,888" HorizontalAlignment="Right" FontSize="10" FontWeight="Normal" Foreground="Gold" 
+                   Margin="0,0,2,0"/>
+            <Image Name="goldIcon"  Source="/Resources/MatchRelated/goldIcon.png" Width="10" Height="10" VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="0,2,3,0"/>
+        </StackPanel>
+
+        <StackPanel Name="stats" Orientation="Vertical" HorizontalAlignment="Left" Margin="5,80,0,0" Width="245"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="League_Analyser.View.UserControls.ComboListBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height ="400" Width="330">
+
+    <Grid Name="localGrid">
+
+        <Border BorderThickness="1" BorderBrush="White" Height="20" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <TextBlock Name="playerListButton" VerticalAlignment="Center" Height="20" Width="200" HorizontalAlignment="Center" 
+                   Foreground="LightGray" TextAlignment="Center"
+                   FontSize="13" Text="Wybrano 0 z 0 graczy" MouseLeftButtonDown="playerListButton_clicked"/>
+        </Border>
+
+        <Border BorderThickness="1" BorderBrush="White" Height="20" Width="110" VerticalAlignment="Bottom" HorizontalAlignment="Left" 
+                Margin="220,0,0,0">
+            <TextBlock Name="eventListButton" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Center" 
+                   Foreground="LightGray" TextAlignment="Center"
+                   FontSize="13" Text="K/D/A" MouseLeftButtonDown="eventListButton_clicked"/>
+        </Border>
+
+        <!--Players list-->
+        <Border x:Name="playerListContainer" Background="LightGray" BorderBrush="White" BorderThickness="1" Padding="5" 
+                Visibility="Visible" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,0,0,20" Width="200">
+            
+            <ItemsControl ItemsSource="{Binding playerList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox IsChecked="{Binding isSelected}" Margin="0,0,5,0"/>
+                                <TextBlock Text="{Binding name}"/>
+                            </StackPanel>
+                            <Border Height="0.5" Background="Gray"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
+        </Border>
+        
+        <!--Event type list-->
+        <Border x:Name="eventListContainer" Background="LightGray" BorderBrush="White" BorderThickness="1" Padding="5" 
+                Visibility="Visible" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="220,0,0,20" Width="110">
+
+            <ItemsControl ItemsSource="{Binding eventList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox IsChecked="{Binding isSelected}" Margin="0,0,5,0"/>
+                                <TextBlock Text="{Binding name}"/>
+                            </StackPanel>
+                            <Border Height="0.5" Background="Gray"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+        </Border>
+
+    </Grid>
+</UserControl>

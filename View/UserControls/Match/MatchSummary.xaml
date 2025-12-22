@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="League_Analyser.View.UserControls.MatchSummary"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height="70" Width="500">
+    <Grid>
+        <!--Kills-->
+        <Image Source="/Resources/MatchRelated/crossedSwordsIcon.png" Height="30" Width="30"
+               VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+        <TextBlock Name="AllayKills" Text="888" Foreground="White" FontSize="28" FontWeight="SemiBold"
+                       VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,-1,268,0"/>
+        <TextBlock Name="EnemyKills" Text="888" Foreground="White" FontSize="28" FontWeight="SemiBold"
+                       VerticalAlignment="Top" HorizontalAlignment="Left" Margin="268,-1,0,0"/>
+
+        <!--Towers-->
+        <Image Source="/Resources/MatchRelated/towerIcon.png" Height="20" Width="20"
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,10,0,0"/>
+        <Image Source="/Resources/MatchRelated/towerIcon.png" Height="20" Width="20"
+               VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,130,0"/>
+        <TextBlock Name="AllayTowers" Text="88" Foreground="White" FontSize="15"
+                       VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,10,0,0"/>
+        <TextBlock Name="EnemyTowers" Text="88" Foreground="White" FontSize="15"
+                       VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,150,0"/>
+
+        <!--Gold-->
+        <Image Source="/Resources/MatchRelated/goldIcon.png" Height="15" Width="15"
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,13,0,0"/>
+        <Image Source="/Resources/MatchRelated/goldIcon.png" Height="15" Width="15"
+               VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,13,50,0"/>
+        <TextBlock Name="AllayGold" Text="888,8k" Foreground="White" FontSize="15"
+                       VerticalAlignment="Top" HorizontalAlignment="Left" Margin="70,10,0,0"/>
+        <TextBlock Name="EnemyGold" Text="8888,8k" Foreground="White" FontSize="15"
+                       VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,70,0"/>
+        
+        <Grid Name="monsters">
+            <!--Dragons-->
+            <Image Source="/Resources/MatchRelated/dragonIcon.png" Height="25" Width="25"
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="323,39,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Resources/MatchRelated/dragonIcon.png" Height="25" Width="25"
+               VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,39,302,0" RenderTransformOrigin="0.5,0.5"/>
+
+            <TextBlock Name="AllayDragons" Text="8" Foreground="White" FontSize="17"
+                       VerticalAlignment="Top" HorizontalAlignment="Left" Margin="285,41,0,0"/>
+            <TextBlock Name="EnemyDragons" Text="8" Foreground="White" FontSize="17"
+                       VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,41,285,0"/>
+
+            <!--Heralds-->
+            <Image Source="/Resources/MatchRelated/heraldIcon.png" Height="25" Width="25"
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="115,40,0,0" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Resources/MatchRelated/heraldIcon.png" Height="25" Width="25"
+               VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,40,115,0"/>
+            <TextBlock Name="AllayHeralds" Text="8" Foreground="White" FontSize="17"
+                       VerticalAlignment="Top" HorizontalAlignment="Left" Margin="145,41,0,0"/>
+            <TextBlock Name="EnemyHeralds" Text="8" Foreground="White" FontSize="17"
+                       VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,41,145,0"/>
+
+            <!--Barons-->
+            <Image Source="/Resources/MatchRelated/baronIcon.png" Height="25" Width="25"
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="46,40,0,0" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Resources/MatchRelated/baronIcon.png" Height="25" Width="25"
+               VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,40,46,0"/>
+            <TextBlock Name="AllayBarons" Text="8" Foreground="White" FontSize="17"
+                       VerticalAlignment="Top" HorizontalAlignment="Left" Margin="75,41,0,0"/>
+            <TextBlock Name="EnemyBarons" Text="8" Foreground="White" FontSize="17"
+                       VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,41,75,0"/>
+        </Grid>
+        
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="League_Analyser.View.UserControls.TimelineSummary"
+             x:Name="control_TimelineSummary"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height="579" Width="640" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+    <UserControl.RenderTransform>
+        <TranslateTransform x:Name="moveTransform" />
+    </UserControl.RenderTransform>
+
+    <UserControl.Resources>
+        <Storyboard x:Key="SlideIn">
+            <DoubleAnimation Storyboard.TargetName="control_TimelineSummary" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                             From="-579" To="0" Duration="0:0:0.200"/>
+        </Storyboard>
+        <Storyboard x:Key="SlideOut">
+            <DoubleAnimation Storyboard.TargetName="control_TimelineSummary" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                             From="0" To="-579" Duration="0:0:0.200"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid Name="localGrid">
+        <TextBlock Name="eventType" Text="Event Type" FontSize="25" Foreground="White" FontWeight="Bold" Margin="60,0,0,0"/>
+        <TextBlock Name="eventTimestamp" Text="88:88" FontSize="15" Foreground="White" FontWeight="Regular" Margin="60,35,0,0"/>
+        <TextBlock Name="eventTeam" Text="Przez twoją drużynę" FontSize="15" Foreground="White" FontWeight="Regular" Margin="120,35,0,0"/>
+        <Image Name="eventIcon" Source="/Resources/empty.png" Width="50" Height="50" 
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,0"/>
+        <Canvas Name="canvasMap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" Height="120" Panel.ZIndex="999"/>
+        <Image Name="eventMap" Source="/Resources/empty.png" Width="120" Height="120"
+                VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <StackPanel Name="participantsList" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical" 
+                    Margin="10,80,0,0" Width="620" Height="450"/>
+    </Grid>
+</UserControl>

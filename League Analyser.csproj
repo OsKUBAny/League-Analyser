@@ -1,0 +1,111 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows7.0</TargetFramework>
+    <RootNamespace>League_Analyser</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\app_icon.ico</ApplicationIcon>
+    <StartupObject>League_Analyser.App</StartupObject>
+    <Authors>OsKUBAny</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\Resources\**" />
+    <EmbeddedResource Remove="Properties\Resources\**" />
+    <None Remove="Properties\Resources\**" />
+    <Page Remove="Properties\Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="data\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="backgroundTheme.png" />
+    <None Remove="filltexture.jpg" />
+    <None Remove="info_backgroungGradient.png" />
+    <None Remove="info_closeButton.png" />
+    <None Remove="info_icon_error.png" />
+    <None Remove="info_icon_info.png" />
+    <None Remove="info_icon_ok.png" />
+    <None Remove="info_icon_process.png" />
+    <None Remove="info_icon_warning.png" />
+    <None Remove="Resources\appLogo.png" />
+    <None Remove="Resources\empty.png" />
+    <None Remove="Resources\filltexture.jpg" />
+    <None Remove="Resources\info_closeButton.png" />
+    <None Remove="Resources\info_icon_error.png" />
+    <None Remove="Resources\info_icon_info.png" />
+    <None Remove="Resources\info_icon_ok.png" />
+    <None Remove="Resources\info_icon_process.png" />
+    <None Remove="Resources\info_icon_warning.png" />
+    <None Remove="Resources\mainTheme.png" />
+    <None Remove="Resources\MatchRelated\baronIcon.png" />
+    <None Remove="Resources\MatchRelated\crossedSwordsIcon.png" />
+    <None Remove="Resources\MatchRelated\dragonIcon.png" />
+    <None Remove="Resources\MatchRelated\goldIcon.png" />
+    <None Remove="Resources\MatchRelated\heraldIcon.png" />
+    <None Remove="Resources\MatchRelated\minionIcon.png" />
+    <None Remove="Resources\MatchRelated\towerIcon.png" />
+    <None Remove="Resources\statInfoPanel.png" />
+    <None Remove="Resources\surrenderIcon.png" />
+    <None Remove="Resources\update_icon_active.png" />
+    <None Remove="Resources\update_icon_inactive.png" />
+    <None Remove="statInfoPanel.png" />
+    <None Remove="update_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\app_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpCompress" Version="0.39.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <Resource Include="Resources\appLogo.png" />
+    <Resource Include="Resources\empty.png" />
+    <Resource Include="Resources\filltexture.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\info_closeButton.png" />
+    <Resource Include="Resources\info_icon_error.png" />
+    <Resource Include="Resources\info_icon_info.png" />
+    <Resource Include="Resources\info_icon_ok.png" />
+    <Resource Include="Resources\info_icon_process.png" />
+    <Resource Include="Resources\info_icon_warning.png" />
+    <Resource Include="Resources\mainTheme.png" />
+    <Resource Include="Resources\MatchRelated\baronIcon.png" />
+    <Resource Include="Resources\MatchRelated\crossedSwordsIcon.png" />
+    <Resource Include="Resources\MatchRelated\dragonIcon.png" />
+    <Resource Include="Resources\MatchRelated\goldIcon.png" />
+    <Resource Include="Resources\MatchRelated\heraldIcon.png" />
+    <Resource Include="Resources\MatchRelated\minionIcon.png" />
+    <Resource Include="Resources\MatchRelated\towerIcon.png" />
+    <Resource Include="Resources\statInfoPanel.png" />
+    <Resource Include="Resources\surrenderIcon.png" />
+    <Resource Include="Resources\update_icon_inactive.png" />
+    <Resource Include="Resources\update_icon_active.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

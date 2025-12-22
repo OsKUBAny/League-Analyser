@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="League_Analyser.View.UserControls.DamageBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             Height="60" Width="140">
+    
+    <Grid Name="localGrid" Margin="0,0,10,0" VerticalAlignment="Bottom">
+        
+
+        <StackPanel Name="damageFill_container" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,15">
+
+            <Rectangle Name="damageFill_physical" Fill="Red" Stroke="Black" StrokeThickness="0" Width="140" Height="10" 
+           HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <Rectangle Name="damageFill_magic" Fill="LightBlue" Stroke="Black" StrokeThickness="0" Width="150" Height="10" 
+           HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <Rectangle Name="damageFill_true" Fill="White" Stroke="Black" StrokeThickness="0" Width="150" Height="10" 
+           HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            
+        </StackPanel>
+        
+        <TextBlock Name="damagePercentText_physical" Text="100%" FontSize="10" Foreground="Red" VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Left" Margin="0,0,0,2"/>
+        <TextBlock Name="damagePercentText_magic" Text="100%" FontSize="10" Foreground="LightBlue" VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Center" Margin="0,0,0,2"/>
+        <TextBlock Name="damagePercentText_true" Text="100%" FontSize="10" Foreground="White" VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Right" Margin="0,0,0,2"/>
+
+        <Grid Background="DarkGoldenrod" Height="10" Width="150" Margin="0,0,0,45">
+            <Rectangle Name="damageTotalPlayer" Fill="Gold" Stroke="Black" StrokeThickness="0" Width="50" Height="10" 
+            HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <Rectangle Name="damageTotalSkill" Fill="DarkOrange" Stroke="Black" StrokeThickness="0" Width="20" Height="10" 
+            HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        </Grid>
+        
+        <TextBlock Text="Udział w walce:" FontSize="10" Foreground="LightGray" VerticalAlignment="Top" 
+        HorizontalAlignment="Left" Margin="0,-15,0,0"/>
+        <TextBlock Name="damagePercentText_skill" Text="obrażeń: 100%" FontSize="10" Foreground="Orange" VerticalAlignment="Bottom" 
+           HorizontalAlignment="Left" Margin="0,0,0,33"/>
+        <TextBlock Name="damagePercentText_player" Text="gracza: 100%" FontSize="10" Foreground="Gold" VerticalAlignment="Bottom" 
+           HorizontalAlignment="Right" Margin="0,0,0,33"/>
+
+    </Grid>
+</UserControl>

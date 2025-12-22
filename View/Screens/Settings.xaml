@@ -1,0 +1,85 @@
+﻿<UserControl x:Name="settingsScreen" x:Class="League_Analyser.View.Screens.Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:League_Analyser.View.Screens"
+             xmlns:controls="clr-namespace:League_Analyser.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1325">
+    <UserControl.Background>
+        <SolidColorBrush Color="Black" Opacity="0.2"/>
+    </UserControl.Background>
+
+    <Grid x:Name="localGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="35*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <TextBlock Text="Ustawienia" Foreground="White" FontSize="40" FontWeight="Bold" VerticalAlignment="Center" Margin="26,0,0,0"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Wybierz profil:" Foreground="White" FontSize="20" VerticalAlignment="Center" Margin="25,0,0,0"/>
+                    <ComboBox Name="comboBox_profiles" Height="35" Width="300" Margin="50,0,0,0" 
+                              FontSize="18" VerticalAlignment="Center"/>
+                    <Button Name="button_loadProfile" Style="{StaticResource ButtonHoverInvertStyle}" 
+                            Content="Wybierz" FontSize="15" HorizontalAlignment="Center" Width="120" Height="35" 
+                            Foreground="#FF746F0E" Background="#FFFFDF51" Margin="20,0,0,0" Click="button_selectProfile_Click"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="2" Name="gridAddProfile">
+
+                <TextBlock Text="Dodaj nowy profil:" Foreground="White" FontSize="20" VerticalAlignment="Top" Margin="25,4,0,0"/>
+                <Button Name="button_addProfile" Style="{StaticResource ButtonHoverInvertStyle}" 
+                            Content="Dodaj profil" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"
+                            Width="120" Height="35" Foreground="#FF0D5D01" Background="#FF00FF46" Margin="203,0,0,0"
+                            Click="button_addProfile_Click"/>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <StackPanel Name="panel_DDupdate" Orientation="Horizontal" Visibility="Hidden">
+                    <TextBlock Text="Dostępna aktualizacja danych zasobów DataDragon" Foreground="White" FontSize="20" 
+                               VerticalAlignment="Center" Margin="25,4,0,0"/>
+                    <Button Name="button_updateDD" Style="{StaticResource ButtonHoverInvertStyle}" 
+                            Content="Aktualizuj" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"
+                            Width="120" Height="35" Foreground="#FF0010AE" Background="#FF00AEFF" Margin="43,0,0,0"
+                            Click="button_updateDD_Click"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="4" Name="panel_AppUpdate" Visibility="Hidden">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Dostępna aktualizacja aplikacji" Foreground="White" FontSize="20" 
+                               VerticalAlignment="Top" Margin="25,4,0,0"/>
+                    <Button Name="button_updateApp" Style="{StaticResource ButtonHoverInvertStyle}" 
+                            Content="Aktualizuj" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"
+                            Width="120" Height="35" Foreground="#FF0010AE" Background="#FF00AEFF" Margin="232,0,0,0"
+                            Click="button_updateApp_Click"/>
+                </StackPanel>
+                <TextBlock Name="AppUpdateVersion" Foreground="White" FontSize="15" Margin="25,50,0,0" FontWeight="Light"/>
+                <TextBlock Name="AppUpdateDate" Foreground="White" FontSize="15" Margin="140,50,0,0" FontWeight="Light"/>
+                <TextBlock Name="AppUpdateTitle" Foreground="White" FontSize="15" FontWeight="Light" Margin="25,70,0,0"/>
+                <TextBox Name="AppUpdateDescription" Width="620" Height="165" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                         Margin="25,100,0,0" Background="#33000000" Foreground="White" FontSize="15" SelectionBrush="#FF9B9B9B"
+                         HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
+                         IsReadOnly="True" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}"/>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</UserControl>
