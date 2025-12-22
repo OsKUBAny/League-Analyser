@@ -1,13 +1,7 @@
-<table border="0">
-  <tr>
-    <td>
-       <img src="https://repository-images.githubusercontent.com/1121300145/5124e3d4-202c-41e2-ac72-80319ceca9a7" alt="Screenshot" width="200">
-    </td>
-    <td>
-      <h1>League Analyser</h1> <br><h2 style="font-weight:bold;"> your detailed League match history</h2>
-    </td>
-  </tr>
-</table>
+<img src="https://repository-images.githubusercontent.com/1121300145/5124e3d4-202c-41e2-ac72-80319ceca9a7" alt="Screenshot" width="200">
+
+# League Analyser - your detailed League match history
+
 
 League Analyser is a desktop application built with **WPF** and **C#** that collects, stores, and analyzes detailed data from individual League of Legends matches.
 
