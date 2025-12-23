@@ -17,7 +17,7 @@
     </UserControl.Resources>
 
     <Grid Name="localGrid">
-        <Image Name="image" Width="60" Height="60" Source="/Resources/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Name="image" Width="60" Height="60" Source="/Resources/Generic/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Rectangle Width="60" Height="60" Stroke="White" StrokeThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         
         <TextBlock Name="skillTypeName" Text="Champion - Q" Foreground="White" FontSize="12" FontWeight="Bold"

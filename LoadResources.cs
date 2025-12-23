@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -46,20 +47,26 @@ namespace League_Analyser
             public static Resource champions = new Resource
                 (
                 resourceType: "dragontail",
-                path: "data/dragontail-{0}/{0}/data/en_US/championFull.json",
+                path: "data/dragontail-{0}/{0}/data/{1}/championFull.json",
                 dataType: typeof(DataType.ChampionDataDto)
                 );
             public static Resource items = new Resource
                 (
                 resourceType: "dragontail",
-                path: "data/dragontail-{0}/{0}/data/en_US/item.json",
+                path: "data/dragontail-{0}/{0}/data/{1}/item.json",
                 dataType: typeof(DataType.ItemClass.Items)
                 );
             public static Resource summonerSpells = new Resource
                 (
                 resourceType: "dragontail",
-                path: "data/dragontail-{0}/{0}/data/en_US/summoner.json",
+                path: "data/dragontail-{0}/{0}/data/{1}/summoner.json",
                 dataType: typeof(DataType.SummonerSpell)
+                );
+            public static Resource resourceLanguages = new Resource
+                (
+                resourceType: "dragontail",
+                path: "data/dragontail-{0}/languages.json",
+                dataType: typeof(List<string>)
                 );
         }
 
@@ -85,14 +92,15 @@ namespace League_Analyser
         }
 
         // Load all assets from files (all static JSONs)
-        public async void LoadAllAssets()
+        public async Task LoadAllAssets()
         {
             var tasks = new List<Task<dynamic>>
             {
                 loadObject(Resources.maps),
                 loadObject(Resources.champions),
                 loadObject(Resources.items),
-                loadObject(Resources.summonerSpells)
+                loadObject(Resources.summonerSpells),
+                loadObject(Resources.resourceLanguages)
             };
             var results = await Task.WhenAll(tasks);
 
@@ -100,6 +108,7 @@ namespace League_Analyser
             data.championDataDto = results[1];
             data.itemsDto = results[2];
             data.summonerDto = results[3];
+            data.resourceLanguages = ConvertLanguagesList(results[4]);
         }
 
         // Return object parsed as <DataType> from selected resources list.
@@ -108,7 +117,7 @@ namespace League_Analyser
             string dataRaw;
             dynamic obj;
 
-            dataRaw = await ReadTextFile(string.Format(resource.Path, data.gameVersion));
+            dataRaw = await ReadTextFile(string.Format(resource.Path, data.gameVersion, Properties.Settings.Default.ResourcesLanguage));
             if (dataRaw == null) return null;
             obj = await Deserialize(dataRaw, resource.DataType);
 
@@ -208,7 +217,7 @@ namespace League_Analyser
             statsList[0] = new List<string>();
             statsList[1] = new List<string>();
 
-            var statRegex = new Regex(@"<attention>(\d+%?)</attention>\s*([a-zA-Z\s]+)");
+            var statRegex = new Regex(@"<attention>(\d+%?)</attention>\s*([\p{L}\d\s\-]+)");
             var statMatches = statRegex.Matches(raw);
             foreach (Match statMatch in statMatches)
             {
@@ -226,10 +235,14 @@ namespace League_Analyser
                 if (passiveMatch.Groups.Count > 1)
                 {
                     string name = passiveMatch.Groups[1].Value.Trim();
-                    statsList[0].Add(Regex.Replace(name, @"<[^>]+>", ""));
+                    name = Regex.Replace(name, @"<[^>]+>", "");
+                    name = name.Replace("&nbsp;", " ");
+                    statsList[0].Add(name);
 
                     string value = passiveMatch.Groups[2].Value.Trim();
-                    statsList[1].Add(Regex.Replace(value, @"<[^>]+>", ""));
+                    value = Regex.Replace(value, @"<[^>]+>", "");
+                    value = value.Replace("&nbsp;", " ");
+                    statsList[1].Add(value);
                 }
             }
 
@@ -240,17 +253,20 @@ namespace League_Analyser
                 if (activeMatch.Groups.Count > 1)
                 {
                     string name = activeMatch.Groups[1].Value.Trim();
-                    statsList[0].Add(Regex.Replace(name, @"<[^>]+>", ""));
+                    name = Regex.Replace(name, @"<[^>]+>", "");
+                    name = name.Replace("&nbsp;", " ");
+                    statsList[0].Add(name);
 
                     string value = activeMatch.Groups[2].Value.Trim();
-                    statsList[1].Add(Regex.Replace(value, @"<[^>]+>", ""));
+                    value = Regex.Replace(value, @"<[^>]+>", "");
+                    value = value.Replace("&nbsp;", " ");
+                    statsList[1].Add(value);
                 }
             }
             return statsList;
         }
 
         // Load image from resources or external files.
-
         public static LoadedImage LoadImage(string fileName, ImagePath_t pathType, bool makePrompt)
         {
             MainWindow mainWindow_ = (MainWindow)App.Current.MainWindow;
@@ -266,7 +282,7 @@ namespace League_Analyser
 
             switch (pathType)
             {
-                case ImagePath_t.resources: path = pathInternal + "Resources/"; break;
+                case ImagePath_t.resources: path = pathInternal + "Resources/Generic/"; break;
                 case ImagePath_t.DD_champion: path = pathDD + "champion/"; break;
                 case ImagePath_t.DD_item: path = pathDD + "item/"; break;
                 case ImagePath_t.DD_spell: path = pathDD + "spell/"; break;
@@ -286,12 +302,32 @@ namespace League_Analyser
             }
             catch (Exception ex)
             {
-                img.image = new BitmapImage(new Uri(string.Format("pack://application:,,,/Resources/empty.png")));
+                img.image = new BitmapImage(new Uri(string.Format("pack://application:,,,/Resources/Generic/empty.png")));
                 img.result = false;
                 if (makePrompt == true) info_.CreateNewPrompt(Info.Messages.error_loadResources_loadImageError, ex.Message);
             }
 
             return img;
+        }
+
+        // Convert languages list to Dictionary type object
+        private Dictionary<string, string> ConvertLanguagesList(List<string> languagesList)
+        {
+            Dictionary<string, string> languagesDictionary = new Dictionary<string, string>();
+
+            foreach (string language in languagesList)
+            {
+                try
+                {
+                    var cultureCode = language.Replace('_', '-'); // Languages file contains codes in format xx_XX but we need xx-XX
+                    var foo_culture = new CultureInfo(cultureCode);
+                    string languageName = foo_culture.NativeName;
+
+                    languagesDictionary.Add(language, languageName);
+                }
+                catch (Exception) { }
+            }
+            return languagesDictionary; ;
         }
     }
 }

@@ -26,7 +26,7 @@
     </UserControl.Resources>
     
     <Grid Name="localGrid">
-        <Image Name="imageProcess" Source="/Resources/info_icon_process.png" Width="200" Height="200" Visibility="Collapsed"/>
+        <Image Name="imageProcess" Source="/Resources/Generic/info_icon_process.png" Width="200" Height="200" Visibility="Collapsed"/>
         <local:TimelineAxis x:Name="axis" VerticalAlignment="Bottom" Margin="0,0,0,5" Panel.ZIndex="999"/>
     </Grid>
 </UserControl>

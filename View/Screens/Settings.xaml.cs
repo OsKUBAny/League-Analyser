@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,6 +17,8 @@ namespace League_Analyser.View.Screens
         {
             InitializeComponent();
             settings = mainWindow.settings;
+
+            LoadLanguageSettings();
 
             comboBox_profiles.ItemsSource = settings.profilesList;
             if (settings.profilesList.Count > 0) comboBox_profiles.SelectedIndex = 0;
@@ -34,6 +38,51 @@ namespace League_Analyser.View.Screens
                 AppUpdateDescription.Text = settings.updateData.description;
                 panel_AppUpdate.Visibility = Visibility.Visible;
             }
+        }
+
+        private void LoadLanguageSettings()
+        {
+            // Application language - this is set one on startup, new language will be presented after reboot
+            List<KeyValuePair<string, string>> languages = League_Analyser.Settings.languagesList.ToList();
+            string lang = mainWindow.language;
+
+            comboBox_language.ItemsSource = languages;
+            comboBox_language.DisplayMemberPath = "Value";
+            comboBox_language.SelectedValuePath = "Key";
+
+            if (languages != null && languages.Count > 0)
+            {
+                if (League_Analyser.Settings.languagesList.ContainsKey(lang)) comboBox_language.SelectedValue = lang;
+                else comboBox_language.SelectedIndex = 0;
+
+                button_saveLanguage.Click += (sender, e) => 
+                {
+                    string selectedResourceLanguage = null;
+
+                    var selectedResourceLanguageObj = comboBox_languageResources.SelectedValue;
+                    if (selectedResourceLanguageObj != null) selectedResourceLanguage = selectedResourceLanguageObj.ToString();
+
+                    settings.SaveSettingsLanguage(
+                    comboBox_language.SelectedValue.ToString(),
+                    selectedResourceLanguage); 
+                };
+            }
+
+            if (lang != Properties.Settings.Default.Language) languageChangedInfo.Visibility = Visibility.Visible;
+
+            // Language for DD resources - this can be changed in runtime
+            if (mainWindow.data.resourceLanguages == null || mainWindow.data.resourceLanguages.Count == 0) return;
+
+            List<KeyValuePair<string, string>> resourceLanguages = mainWindow.data.resourceLanguages.ToList();
+            string resourcesLang = Properties.Settings.Default.ResourcesLanguage;
+
+            comboBox_languageResources.ItemsSource = resourceLanguages;
+            comboBox_languageResources.DisplayMemberPath = "Value";
+            comboBox_languageResources.SelectedValuePath = "Key";
+
+
+            if (mainWindow.data.resourceLanguages.ContainsKey(resourcesLang)) comboBox_languageResources.SelectedValue = resourcesLang;
+            else comboBox_languageResources.SelectedIndex = 0;
         }
 
         private void button_addProfile_Click(object sender, RoutedEventArgs e)

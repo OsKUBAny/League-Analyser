@@ -29,6 +29,7 @@ namespace League_Analyser
         public DataType.ChampionDataDto championDataDto;
         public DataType.ItemClass.Items itemsDto;
         public DataType.SummonerSpell summonerDto;
+        public Dictionary<string, string> resourceLanguages;
 
         public class Player
         {

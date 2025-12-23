@@ -16,7 +16,7 @@
     </UserControl.Resources>
 
     <Grid>
-        <Image Name="image" Width="80" Height="80" Source="/Resources/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Name="image" Width="80" Height="80" Source="/Resources/Generic/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Rectangle Width="80" Height="80" Stroke="White" StrokeThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <TextBlock Name="name" Text="Item's name" Foreground="White" FontSize="12" FontWeight="Bold"
                    Margin="85,0,0,0"/>

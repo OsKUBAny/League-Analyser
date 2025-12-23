@@ -201,6 +201,12 @@ namespace League_Analyser
                 "Zapisano ustawienia",
                 ""
             );
+            public static readonly Message info_settings_LanguageSettingsSaved = new Message
+            (
+                InfoType.info,
+                "Zapisano ustawienia",
+                "Zmiana wyświetlanego języka nastąpi po ponownym uruchomieniu aplikacji"
+            );
             public static readonly Message error_settings_loadSettingsError = new Message
             (
                 InfoType.error,

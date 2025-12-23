@@ -36,7 +36,7 @@
         <StackPanel Name="surrender" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" 
                     Height="50" Width="300" Margin="0,30,0,0" FlowDirection="RightToLeft">
             <TextBlock  Foreground="White" FontSize="15" FontWeight="Normal" Text="Mecz został poddany" Margin="10,0,0,0"/>
-            <Image Source="/Resources/surrenderIcon.png" Height="20" Width="20" VerticalAlignment="Top" Margin="2,2,0,0" />
+            <Image Source="/Resources/Generic/surrenderIcon.png" Height="20" Width="20" VerticalAlignment="Top" Margin="2,2,0,0" />
         </StackPanel>
         <local:MatchSummary x:Name="matchSummary" VerticalAlignment="Top" Margin="0,30,0,0" d:IsHidden="False" Visibility="Collapsed" />
 
@@ -46,7 +46,7 @@
         <TextBlock Name="downloadTimelineText" Text="Timeline" FontSize="15" Foreground="White" HorizontalAlignment="Right" 
                    VerticalAlignment="Top" Margin="0,65,22,0" MouseLeftButtonUp="SwitchTimelineMode"/>
         <Image Name="downloadTimelineIcon" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,65,90,0" 
-               Source="/Resources/info_icon_info.png" MouseLeftButtonUp="SwitchTimelineMode"/>
+               Source="/Resources/Generic/info_icon_info.png" MouseLeftButtonUp="SwitchTimelineMode"/>
 
         <Rectangle Width="320" Height="665" Fill="#3F000000" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0"/>
 

@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows;
 
 namespace League_Analyser
@@ -13,13 +16,19 @@ namespace League_Analyser
         public MatchHistory matchHistory = new MatchHistory();
 
         public bool isProcessOngoing = false;
+        public string language;
 
         public MainWindow()
         {
+            language = Properties.Settings.Default.Language;
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+
+
             InitializeComponent();
+
             this.Closing += MainWindow_Closing;
             if (!Directory.Exists("data/player")) Directory.CreateDirectory("data/player");
-            if (!File.Exists("data/settings.dll")) File.WriteAllText("data/settings.dll", "{\"defaulProfile\": \"\"}");
 
             info.InfoInit();
             apiData.ApiDataInit();

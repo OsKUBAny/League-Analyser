@@ -35,11 +35,6 @@ namespace League_Analyser
         private string gitAccesToken;
         private int downloadMatchQuantity = 50;
 
-        private class ProgramSettings
-        {
-            public string defaulProfile { get; set; }
-        }
-
         public class UpdateData
         {
             public bool isUpdateNeeded { get; set; }
@@ -75,7 +70,7 @@ namespace League_Analyser
             };
         }
 
-        public static List<string> serversList = new List<string>
+        public static readonly List<string> serversList = new List<string>
         {
             "EUN1",
             "EUW1",
@@ -91,6 +86,12 @@ namespace League_Analyser
             "SG2",
             "TW2",
             "VN2"
+        };
+
+        public static readonly Dictionary<string, string> languagesList = new Dictionary<string, string>
+        {
+            { "pl", "Polski"},
+            { "en", "English"}
         };
 
         public void InitializeSettings()
@@ -438,23 +439,8 @@ namespace League_Analyser
 
         public async void LoadSettingsFile()
         {
-            ProgramSettings settingsData = new ProgramSettings();
-            string rawFile = await loadResources.ReadTextFile(settingsPath);
-            if (rawFile == null)
-            {
-                info.CreateNewPrompt(Info.Messages.error_settings_loadSettingsError);
-                mainWindow.menuButtons.button_settings.Visibility = Visibility.Visible;
-                return;
-            }
-            settingsData = await loadResources.Deserialize(rawFile, typeof(ProgramSettings));
-            if (settingsData.defaulProfile == null)
-            {
-                info.CreateNewPrompt(Info.Messages.error_loadResources_deserializeError);
-                mainWindow.menuButtons.button_settings.Visibility = Visibility.Visible;
-                return;
-            }
-            if (settingsData.defaulProfile != "") await LoadProfileData(settingsData.defaulProfile, false);
-
+            string defaultProfile = Properties.Settings.Default.DefaultProfile;
+            if (defaultProfile != "") await LoadProfileData(defaultProfile, false);
 
             string onlineDDversion = (await apiData.ApiGetData(typeof(List<string>), "DD", ApiData.EndPoint.DDgetVersions))[0];
             string localDDversion = "";
@@ -548,23 +534,21 @@ namespace League_Analyser
             mainWindow.menuButtons.button_settings.Visibility = Visibility.Visible;
         }
 
-        public async void SaveSettingsFile()
+        public void SaveSettingsFile()
         {
-            ProgramSettings settingsData = new ProgramSettings
-            {
-                defaulProfile = data.player.account.gameName
-            };
+            Properties.Settings.Default.DefaultProfile = data.player.account.gameName;
+            Properties.Settings.Default.Save();
+            info.CreateNewPrompt(Info.Messages.info_settings_settingsSaved);
+        }
 
-            string rawData = await loadResources.Serialize(settingsData);
-            if (string.IsNullOrEmpty(rawData))
-            {
-                info.CreateNewPrompt(Info.Messages.error_loadResources_serializeError);
-                return;
-            }
+        public async void SaveSettingsLanguage(string lang, string resourcesLang)
+        {
+            Properties.Settings.Default.Language = lang;
+            if(resourcesLang != null) Properties.Settings.Default.ResourcesLanguage = resourcesLang;
+            Properties.Settings.Default.Save();
 
-            if (await loadResources.SaveTextToFile(rawData, settingsPath) == false)
-                info.CreateNewPrompt(Info.Messages.error_settings_saveSettingsError);
-            else info.CreateNewPrompt(Info.Messages.info_settings_settingsSaved);
+            if (resourcesLang != null) await loadResources.LoadAllAssets();
+            info.CreateNewPrompt(Info.Messages.info_settings_LanguageSettingsSaved);
         }
 
         public async Task UpdateDataDragon()

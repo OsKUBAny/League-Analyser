@@ -5,7 +5,7 @@
     <TargetFramework>net10.0-windows7.0</TargetFramework>
     <RootNamespace>League_Analyser</RootNamespace>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Resources\app_icon.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Generic\app_icon.ico</ApplicationIcon>
     <StartupObject>League_Analyser.App</StartupObject>
     <Authors>OsKUBAny</Authors>
   </PropertyGroup>
@@ -59,7 +59,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Resources\app_icon.ico" />
+    <Content Include="Resources\Generic\app_icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -68,18 +68,18 @@
   </ItemGroup>
 
   <ItemGroup>
-      <Resource Include="Resources\appLogo.png" />
-    <Resource Include="Resources\empty.png" />
-    <Resource Include="Resources\filltexture.jpg">
+      <Resource Include="Resources\Generic\appLogo.png" />
+    <Resource Include="Resources\Generic\empty.png" />
+    <Resource Include="Resources\Generic\filltexture.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\info_closeButton.png" />
-    <Resource Include="Resources\info_icon_error.png" />
-    <Resource Include="Resources\info_icon_info.png" />
-    <Resource Include="Resources\info_icon_ok.png" />
-    <Resource Include="Resources\info_icon_process.png" />
-    <Resource Include="Resources\info_icon_warning.png" />
-    <Resource Include="Resources\mainTheme.png" />
+    <Resource Include="Resources\Generic\info_closeButton.png" />
+    <Resource Include="Resources\Generic\info_icon_error.png" />
+    <Resource Include="Resources\Generic\info_icon_info.png" />
+    <Resource Include="Resources\Generic\info_icon_ok.png" />
+    <Resource Include="Resources\Generic\info_icon_process.png" />
+    <Resource Include="Resources\Generic\info_icon_warning.png" />
+    <Resource Include="Resources\Generic\mainTheme.png" />
     <Resource Include="Resources\MatchRelated\baronIcon.png" />
     <Resource Include="Resources\MatchRelated\crossedSwordsIcon.png" />
     <Resource Include="Resources\MatchRelated\dragonIcon.png" />
@@ -87,10 +87,10 @@
     <Resource Include="Resources\MatchRelated\heraldIcon.png" />
     <Resource Include="Resources\MatchRelated\minionIcon.png" />
     <Resource Include="Resources\MatchRelated\towerIcon.png" />
-    <Resource Include="Resources\statInfoPanel.png" />
-    <Resource Include="Resources\surrenderIcon.png" />
-    <Resource Include="Resources\update_icon_inactive.png" />
-    <Resource Include="Resources\update_icon_active.png" />
+    <Resource Include="Resources\Generic\statInfoPanel.png" />
+    <Resource Include="Resources\Generic\surrenderIcon.png" />
+    <Resource Include="Resources\Generic\update_icon_inactive.png" />
+    <Resource Include="Resources\Generic\update_icon_active.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -99,6 +99,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Localization\Messages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -106,6 +116,24 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\Messages.en.resx">
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\Messages.pl.resx">
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
