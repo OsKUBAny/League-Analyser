@@ -117,8 +117,385 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="test" xml:space="preserve">
-    <value>polish</value>
-    <comment>&#x8;</comment>
+  <data name="mainWindow_closing_title" xml:space="preserve">
+    <value>Potwierdzenie zamknięcia</value>
+    <comment>MessageBox's title for closing window warning</comment>
+  </data>
+  <data name="mainWindow_closing_message" xml:space="preserve">
+    <value>Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików.
+\nCzy na pewno chcesz teraz zamknąć aplikację?</value>
+    <comment>MessageBox's message for closing window warning</comment>
+  </data>
+  <data name="mainWindow_appVersion" xml:space="preserve">
+    <value>Wersja aplikacji:</value>
+    <comment>App version text presented in top right corner</comment>
+  </data>
+  <data name="mainWindow_dataVersion" xml:space="preserve">
+    <value>Wersja danych:</value>
+    <comment>Data version text presented in top right corner</comment>
+  </data>
+  <data name="mainWindow_patchVersion" xml:space="preserve">
+    <value>Patch (DataDragon):</value>
+    <comment>Game version text presented in top right corner</comment>
+  </data>
+  <data name="loadResources_unexpectedType" xml:space="preserve">
+    <value>Nieoczekiwany typ: </value>
+    <comment>JsonSerialization exception message</comment>
+  </data>
+  <data name="matchHistory_category_general" xml:space="preserve">
+    <value>Statystyki ogólne</value>
+    <comment>Category name for general statistics</comment>
+  </data>
+  <data name="matchHistory_category_gold" xml:space="preserve">
+    <value>Złoto</value>
+    <comment>Category name for gold</comment>
+  </data>
+  <data name="matchHistory_category_damageDealt" xml:space="preserve">
+    <value>Zadane obrażenia</value>
+    <comment>Category name for damage dealt</comment>
+  </data>
+  <data name="matchHistory_category_damageRecived" xml:space="preserve">
+    <value>Otrzymane obrażenia</value>
+    <comment>Category name for damage recived</comment>
+  </data>
+  <data name="matchHistory_category_gameTime" xml:space="preserve">
+    <value>Czas gry</value>
+    <comment>Category name for game time</comment>
+  </data>
+  <data name="matchHistory_category_achievements" xml:space="preserve">
+    <value>Cele i osiągnięcia</value>
+    <comment>Category name for achievements</comment>
+  </data>
+  <data name="matchHistory_category_playerStats" xml:space="preserve">
+    <value>Statystyki postaci</value>
+    <comment>Category name for player statistics</comment>
+  </data>
+  <data name="matchHistory_category_skills" xml:space="preserve">
+    <value>Użyte umiejętności</value>
+    <comment>Category name for used skills</comment>
+  </data>
+  <data name="matchHistory_statistic_general_kills" xml:space="preserve">
+    <value>Zabójstwa</value>
+    <comment>Statistic name for General/kills</comment>
+  </data>
+  <data name="matchHistory_statistic_general_assists" xml:space="preserve">
+    <value>Asysty</value>
+    <comment>Statistic name for General/assists</comment>
+  </data>
+  <data name="matchHistory_statistic_general_deaths" xml:space="preserve">
+    <value>Zgony</value>
+    <comment>Statistic name for General/deaths</comment>
+  </data>
+  <data name="matchHistory_statistic_general_minions" xml:space="preserve">
+    <value>Zabite miniony</value>
+    <comment>Statistic name for General/minions</comment>
+  </data>
+  <data name="matchHistory_statistic_gold_gained" xml:space="preserve">
+    <value>Zdobyte złoto</value>
+    <comment>Statistic name for Gold/earned</comment>
+  </data>
+  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
+    <value>Stosunek złota (wydane/zdobyte)</value>
+    <comment>Statistic name for Gold/earned-spend ratio</comment>
+  </data>
+  <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
+    <value>Wydane złoto</value>
+    <comment>Statistic name for Gold/spend</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_physical" xml:space="preserve">
+    <value>Fizyczne</value>
+    <comment>Statistic name for Damage/physical</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_magic" xml:space="preserve">
+    <value>Magiczne</value>
+    <comment>Statistic name for Damage/magic</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_true" xml:space="preserve">
+    <value>True damage</value>
+    <comment>Statistic name for Damage/true damage</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_total" xml:space="preserve">
+    <value>Całkowite</value>
+    <comment>Statistic name for Damage/total damage</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_objectives" xml:space="preserve">
+    <value>Obiektom</value>
+    <comment>Statistic name for Damage/to objectives</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_physicalPercent" xml:space="preserve">
+    <value>% fizycznych</value>
+    <comment>Statistic name for Damage/physical (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_magicPercent" xml:space="preserve">
+    <value>% magicznych</value>
+    <comment>Statistic name for Damage/magic (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_truePercent" xml:space="preserve">
+    <value>% true damage</value>
+    <comment>Statistic name for Damage/true damage (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_damage_teamPercent" xml:space="preserve">
+    <value>% całej drużyny</value>
+    <comment>Statistic name for Damage/team damage (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_time_alive" xml:space="preserve">
+    <value>% czasu będąc żywym</value>
+    <comment>Statistic name for Time/time spend alive (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_time_aliveMax" xml:space="preserve">
+    <value>Najdłuższy czas bycia żywym</value>
+    <comment>Statistic name for Time/max time spend alive</comment>
+  </data>
+  <data name="matchHistory_statistic_time_cc" xml:space="preserve">
+    <value>Czas zadanych efektów CC</value>
+    <comment>Statistic name for Time/ cc dealt time</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_double" xml:space="preserve">
+    <value>Double kills</value>
+    <comment>Statistic name for Achivements/double kills</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_tripple" xml:space="preserve">
+    <value>Tripple kills</value>
+    <comment>Statistic name for Achivements/tripple kills</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_quadra" xml:space="preserve">
+    <value>Quadra kills</value>
+    <comment>Statistic name for Achivements/quadra kills</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_penta" xml:space="preserve">
+    <value>Penta kills</value>
+    <comment>Statistic name for Achivements/penta kills</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_seriesMax" xml:space="preserve">
+    <value>Największa seria zabójstw</value>
+    <comment>Statistic name for Achivements/longest kill series</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_turretParticipant" xml:space="preserve">
+    <value>Udział w zniszczeniu wież</value>
+    <comment>Statistic name for Achivements/participation in turret destructions</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_inhibitorParticipant" xml:space="preserve">
+    <value>Udział w zniszczeniu inhibitorów</value>
+    <comment>Statistic name for Achivements/participation in inhibitor destructions</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_firstBlood" xml:space="preserve">
+    <value>Pierwsza krew</value>
+    <comment>Statistic name for Achivements/first blood</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_firstTurret" xml:space="preserve">
+    <value>Pierwsza wieża</value>
+    <comment>Statistic name for Achivements/first turret</comment>
+  </data>
+  <data name="matchHistory_statistic_achivements_steals" xml:space="preserve">
+    <value>Ukradzione cele</value>
+    <comment>Statistic name for Achivements/objective steals</comment>
+  </data>
+  <data name="matchHistory_statistic_player_critMax" xml:space="preserve">
+    <value>Największe trafienie krytyczne</value>
+    <comment>Statistic name for Player/maximal crit damage</comment>
+  </data>
+  <data name="matchHistory_statistic_player_healthRestored" xml:space="preserve">
+    <value>Przywrócone zdrowie</value>
+    <comment>Statistic name for Player/health restored</comment>
+  </data>
+  <data name="matchHistory_statistic_player_damageMitigated" xml:space="preserve">
+    <value>Obrażenia zmniejszone przez pancerz/odporność</value>
+    <comment>Statistic name for Player/damage migitated</comment>
+  </data>
+  <data name="matchHistory_statistic_player_teammatesHealed" xml:space="preserve">
+    <value>Uleczenie sojuszników</value>
+    <comment>Statistic name for Player/health restored to teammates</comment>
+  </data>
+  <data name="matchHistory_statistic_player_damageShielded" xml:space="preserve">
+    <value>Obrażenia zablokowane przez rzucone tarcze</value>
+    <comment>Statistic name for Player/damage shielded</comment>
+  </data>
+  <data name="matchHistory_statistic_player_visionScore" xml:space="preserve">
+    <value>Punkty wizji</value>
+    <comment>Statistic name for Player/vision score</comment>
+  </data>
+  <data name="matchHistory_statistic_player_wardsPlaced" xml:space="preserve">
+    <value>Postawione totemy</value>
+    <comment>Statistic name for Player/wards placed</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_q" xml:space="preserve">
+    <value>Użycia Q</value>
+    <comment>Statistic name for Skills/used Q</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_w" xml:space="preserve">
+    <value>Użycia W</value>
+    <comment>Statistic name for Skills/used W</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_e" xml:space="preserve">
+    <value>Użycia E</value>
+    <comment>Statistic name for Skills/used E</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_r" xml:space="preserve">
+    <value>Użycia R</value>
+    <comment>Statistic name for Skills/used R</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_qwerTotal" xml:space="preserve">
+    <value>Łącznie [Q, W, E, R]</value>
+    <comment>Statistic name for Skills/total used Q,W,E and R</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_qPercent" xml:space="preserve">
+    <value>% użycia Q</value>
+    <comment>Statistic name for Skills/used Q (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_wPercent" xml:space="preserve">
+    <value>% użycia W</value>
+    <comment>Statistic name for Skills/used W (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_ePercent" xml:space="preserve">
+    <value>% użycia E</value>
+    <comment>Statistic name for Skills/used E (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_rPercent" xml:space="preserve">
+    <value>% użycia R</value>
+    <comment>Statistic name for Skills/used R (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_d" xml:space="preserve">
+    <value>Użycia D</value>
+    <comment>Statistic name for Skills/used D</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_f" xml:space="preserve">
+    <value>Użycia F</value>
+    <comment>Statistic name for Skills/used F</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_dfRatio" xml:space="preserve">
+    <value>% użycia D / % użycia F</value>
+    <comment>Statistic name for Skills/used D-F ratio (%)</comment>
+  </data>
+  <data name="matchHistory_statistic_skills_fForFlash" xml:space="preserve">
+    <value>"F for Flash" czyli gracz jest ułomny</value>
+    <comment>Statistic name for Skills/having Flash skill on F</comment>
+  </data>
+  <data name="settings_profileUnknown" xml:space="preserve">
+    <value>(nieznana)</value>
+    <comment>Unknown profile's data version</comment>
+  </data>
+  <data name="settings_deleteProfile_message" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć ten profil?</value>
+    <comment>Message in MessageBox for deleting profile warning</comment>
+  </data>
+  <data name="settings_deleteProfile_title" xml:space="preserve">
+    <value>Usuwanie profiu</value>
+    <comment>Title for Messagebox for deleting profile warning</comment>
+  </data>
+  <data name="settings_noDDreference" xml:space="preserve">
+    <value>Nie odnaleziono referencji do folderu DataDragon</value>
+    <comment>Exception message for no DataDragon folder reference</comment>
+  </data>
+  <data name="settings_noUpdateLink" xml:space="preserve">
+    <value>Nie udało się pobrać odnośnika do pobrania nowej wersji</value>
+    <comment>Exception message for failing to download update link</comment>
+  </data>
+  <data name="settings_updateBat_preparing" xml:space="preserve">
+    <value>Przygotowywanie do instalacji...</value>
+    <comment>App installer's batch file prompt for swapping files</comment>
+  </data>
+  <data name="settings_updateBat_closing" xml:space="preserve">
+    <value>Zamykanie aplikacji...</value>
+    <comment>App installer's batch file prompt for preparing installation</comment>
+  </data>
+  <data name="settings_updateBat_swapping" xml:space="preserve">
+    <value>Podmienianie plików...</value>
+    <comment>App installer's batch file prompt for rebooting application</comment>
+  </data>
+  <data name="settings_updateBat_deleting" xml:space="preserve">
+    <value>Usuwanie plików aktualizacji...</value>
+    <comment>App installer's batch file prompt for closing application</comment>
+  </data>
+  <data name="settings_updateBat_starting" xml:space="preserve">
+    <value>Uruchamianie nowej wersji aplikacji...</value>
+    <comment>App installer's batch file prompt for deleting update files</comment>
+  </data>
+  <data name="timeline_eventName_turretDestroyed" xml:space="preserve">
+    <value>Zniszczona wieża</value>
+    <comment>Timeline event name for destroying turret</comment>
+  </data>
+  <data name="timeline_eventName_inhibitorDestroyed" xml:space="preserve">
+    <value>Zniszczony inhibitor</value>
+    <comment>Timeline event name for destroying inhibitor</comment>
+  </data>
+  <data name="timeline_eventName_dragonCloudKilled" xml:space="preserve">
+    <value>Zabicie Smoka Powietrznego</value>
+    <comment>Timeline event name for Cloud Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_dragonMountainKilled" xml:space="preserve">
+    <value>Zabicie Smoka Górskiego</value>
+    <comment>Timeline event name for Mountain Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_dragonInfernalKilled" xml:space="preserve">
+    <value>Zabicie Smoka Piekielnego</value>
+    <comment>Timeline event name for Infernal Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_dragonOceanKilled" xml:space="preserve">
+    <value>Zabicie Smoka Oceanicznego</value>
+    <comment>Timeline event name for Ocean Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_dragonHextechKilled" xml:space="preserve">
+    <value>Zabicie Smoka Hextechowego</value>
+    <comment>Timeline event name for Hextech Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_dragonChemtechKilled" xml:space="preserve">
+    <value>Zabicie Smoka Chemtechowego</value>
+    <comment>Timeline event name for Chemtech Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_dragonElderKilled" xml:space="preserve">
+    <value>Zabicie Starszego Smoka</value>
+    <comment>Timeline event name for Elder Dragon kill</comment>
+  </data>
+  <data name="timeline_eventName_heraldKilled" xml:space="preserve">
+    <value>Zabicie Heralda</value>
+    <comment>Timeline event name for Herald kill</comment>
+  </data>
+  <data name="timeline_eventName_baronKilled" xml:space="preserve">
+    <value>Zabicie Barona Nashora</value>
+    <comment>Timeline event name for Baron kill</comment>
+  </data>
+  <data name="timeline_eventName_voidgrubKilled" xml:space="preserve">
+    <value>Zabicie Voidgrubs'a</value>
+    <comment>Timeline event name for Voidgrub kill</comment>
+  </data>
+  <data name="timeline_eventName_atakhanKilled" xml:space="preserve">
+    <value>Zabicie Atakhan'a</value>
+    <comment>Timeline event name for Atakhan kill</comment>
+  </data>
+  <data name="timeline_eventName_enemyKill" xml:space="preserve">
+    <value>Zabicie Przeciwnika</value>
+    <comment>Timeline event name for killed enemy champion</comment>
+  </data>
+  <data name="timeline_eventName_allayKill" xml:space="preserve">
+    <value>Zabicie Sojusznika</value>
+    <comment>Timeline event name for killed allay champion</comment>
+  </data>
+  <data name="timeline_eventName_suicideKill" xml:space="preserve">
+    <value>Samobójstwo Gracza</value>
+    <comment>Timeline event name for killed champion by himself</comment>
+  </data>
+  <data name="timeline_eventName_playerKill" xml:space="preserve">
+    <value>Zabójstwo Gracza</value>
+    <comment>Timeline event name for killed player (unknown team)</comment>
+  </data>
+  <data name="timeline_attack_other" xml:space="preserve">
+    <value>Inne</value>
+    <comment>Timeline spell name for others</comment>
+  </data>
+  <data name="timeline_attack_autoattack" xml:space="preserve">
+    <value>Atak</value>
+    <comment>Timeline spell name for autoattack</comment>
+  </data>
+  <data name="timeline_attack_minion" xml:space="preserve">
+    <value>Miniony</value>
+    <comment>Timeline spell name for minion</comment>
+  </data>
+  <data name="timeline_attack_turret" xml:space="preserve">
+    <value>Wieża</value>
+    <comment>Timeline spell name for turret</comment>
+  </data>
+  <data name="timeline_attack_monster" xml:space="preserve">
+    <value>Potwory</value>
+    <comment>Timeline spell name for monster</comment>
   </data>
 </root>

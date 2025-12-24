@@ -22,7 +22,7 @@ namespace League_Analyser {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    public class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace League_Analyser {
         /// Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("League_Analyser.Resources.Localization.Messages", typeof(Messages).Assembly);
@@ -51,7 +51,7 @@ namespace League_Analyser {
         ///   przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,11 +61,858 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu polish.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nieoczekiwany typ: .
         /// </summary>
-        internal static string test {
+        public static string loadResources_unexpectedType {
             get {
-                return ResourceManager.GetString("test", resourceCulture);
+                return ResourceManager.GetString("loadResources_unexpectedType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wersja aplikacji:.
+        /// </summary>
+        public static string mainWindow_appVersion {
+            get {
+                return ResourceManager.GetString("mainWindow_appVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików.
+        ///\nCzy na pewno chcesz teraz zamknąć aplikację?.
+        /// </summary>
+        public static string mainWindow_closing_message {
+            get {
+                return ResourceManager.GetString("mainWindow_closing_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Potwierdzenie zamknięcia.
+        /// </summary>
+        public static string mainWindow_closing_title {
+            get {
+                return ResourceManager.GetString("mainWindow_closing_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wersja danych:.
+        /// </summary>
+        public static string mainWindow_dataVersion {
+            get {
+                return ResourceManager.GetString("mainWindow_dataVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Patch (DataDragon):.
+        /// </summary>
+        public static string mainWindow_patchVersion {
+            get {
+                return ResourceManager.GetString("mainWindow_patchVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cele i osiągnięcia.
+        /// </summary>
+        public static string matchHistory_category_achievements {
+            get {
+                return ResourceManager.GetString("matchHistory_category_achievements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zadane obrażenia.
+        /// </summary>
+        public static string matchHistory_category_damageDealt {
+            get {
+                return ResourceManager.GetString("matchHistory_category_damageDealt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Otrzymane obrażenia.
+        /// </summary>
+        public static string matchHistory_category_damageRecived {
+            get {
+                return ResourceManager.GetString("matchHistory_category_damageRecived", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas gry.
+        /// </summary>
+        public static string matchHistory_category_gameTime {
+            get {
+                return ResourceManager.GetString("matchHistory_category_gameTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statystyki ogólne.
+        /// </summary>
+        public static string matchHistory_category_general {
+            get {
+                return ResourceManager.GetString("matchHistory_category_general", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Złoto.
+        /// </summary>
+        public static string matchHistory_category_gold {
+            get {
+                return ResourceManager.GetString("matchHistory_category_gold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statystyki postaci.
+        /// </summary>
+        public static string matchHistory_category_playerStats {
+            get {
+                return ResourceManager.GetString("matchHistory_category_playerStats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użyte umiejętności.
+        /// </summary>
+        public static string matchHistory_category_skills {
+            get {
+                return ResourceManager.GetString("matchHistory_category_skills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Double kills.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_double {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_double", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pierwsza krew.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_firstBlood {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_firstBlood", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pierwsza wieża.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_firstTurret {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_firstTurret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział w zniszczeniu inhibitorów.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_inhibitorParticipant {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_inhibitorParticipant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Penta kills.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_penta {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_penta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Quadra kills.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_quadra {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_quadra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Największa seria zabójstw.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_seriesMax {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_seriesMax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ukradzione cele.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_steals {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_steals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Tripple kills.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_tripple {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_tripple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział w zniszczeniu wież.
+        /// </summary>
+        public static string matchHistory_statistic_achivements_turretParticipant {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_achivements_turretParticipant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Magiczne.
+        /// </summary>
+        public static string matchHistory_statistic_damage_magic {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_magic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % magicznych.
+        /// </summary>
+        public static string matchHistory_statistic_damage_magicPercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_magicPercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obiektom.
+        /// </summary>
+        public static string matchHistory_statistic_damage_objectives {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_objectives", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Fizyczne.
+        /// </summary>
+        public static string matchHistory_statistic_damage_physical {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_physical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % fizycznych.
+        /// </summary>
+        public static string matchHistory_statistic_damage_physicalPercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_physicalPercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % całej drużyny.
+        /// </summary>
+        public static string matchHistory_statistic_damage_teamPercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_teamPercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Całkowite.
+        /// </summary>
+        public static string matchHistory_statistic_damage_total {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu True damage.
+        /// </summary>
+        public static string matchHistory_statistic_damage_true {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_true", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % true damage.
+        /// </summary>
+        public static string matchHistory_statistic_damage_truePercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_damage_truePercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Asysty.
+        /// </summary>
+        public static string matchHistory_statistic_general_assists {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_general_assists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zgony.
+        /// </summary>
+        public static string matchHistory_statistic_general_deaths {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_general_deaths", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabójstwa.
+        /// </summary>
+        public static string matchHistory_statistic_general_kills {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_general_kills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabite miniony.
+        /// </summary>
+        public static string matchHistory_statistic_general_minions {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_general_minions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zdobyte złoto.
+        /// </summary>
+        public static string matchHistory_statistic_gold_gained {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_gold_gained", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wydane złoto.
+        /// </summary>
+        public static string matchHistory_statistic_gold_ratio {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_gold_ratio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Stosunek złota (wydane/zdobyte).
+        /// </summary>
+        public static string matchHistory_statistic_gold_spend {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_gold_spend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Największe trafienie krytyczne.
+        /// </summary>
+        public static string matchHistory_statistic_player_critMax {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_critMax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obrażenia zmniejszone przez pancerz/odporność.
+        /// </summary>
+        public static string matchHistory_statistic_player_damageMitigated {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_damageMitigated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obrażenia zablokowane przez rzucone tarcze.
+        /// </summary>
+        public static string matchHistory_statistic_player_damageShielded {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_damageShielded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przywrócone zdrowie.
+        /// </summary>
+        public static string matchHistory_statistic_player_healthRestored {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_healthRestored", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Uleczenie sojuszników.
+        /// </summary>
+        public static string matchHistory_statistic_player_teammatesHealed {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_teammatesHealed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Punkty wizji.
+        /// </summary>
+        public static string matchHistory_statistic_player_visionScore {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_visionScore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Postawione totemy.
+        /// </summary>
+        public static string matchHistory_statistic_player_wardsPlaced {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_player_wardsPlaced", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia D.
+        /// </summary>
+        public static string matchHistory_statistic_skills_d {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_d", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia D / % użycia F.
+        /// </summary>
+        public static string matchHistory_statistic_skills_dfRatio {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_dfRatio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia E.
+        /// </summary>
+        public static string matchHistory_statistic_skills_e {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_e", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia E.
+        /// </summary>
+        public static string matchHistory_statistic_skills_ePercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_ePercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia F.
+        /// </summary>
+        public static string matchHistory_statistic_skills_f {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_f", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &quot;F for Flash&quot; czyli gracz jest ułomny.
+        /// </summary>
+        public static string matchHistory_statistic_skills_fForFlash {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_fForFlash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia Q.
+        /// </summary>
+        public static string matchHistory_statistic_skills_q {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_q", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia Q.
+        /// </summary>
+        public static string matchHistory_statistic_skills_qPercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_qPercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Łącznie [Q, W, E, R].
+        /// </summary>
+        public static string matchHistory_statistic_skills_qwerTotal {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_qwerTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia R.
+        /// </summary>
+        public static string matchHistory_statistic_skills_r {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_r", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia R.
+        /// </summary>
+        public static string matchHistory_statistic_skills_rPercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_rPercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia W.
+        /// </summary>
+        public static string matchHistory_statistic_skills_w {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_w", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia W.
+        /// </summary>
+        public static string matchHistory_statistic_skills_wPercent {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_skills_wPercent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % czasu będąc żywym.
+        /// </summary>
+        public static string matchHistory_statistic_time_alive {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_time_alive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Najdłuższy czas bycia żywym.
+        /// </summary>
+        public static string matchHistory_statistic_time_aliveMax {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_time_aliveMax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas zadanych efektów CC.
+        /// </summary>
+        public static string matchHistory_statistic_time_cc {
+            get {
+                return ResourceManager.GetString("matchHistory_statistic_time_cc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czy na pewno chcesz usunąć ten profil?.
+        /// </summary>
+        public static string settings_deleteProfile_message {
+            get {
+                return ResourceManager.GetString("settings_deleteProfile_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usuwanie profiu.
+        /// </summary>
+        public static string settings_deleteProfile_title {
+            get {
+                return ResourceManager.GetString("settings_deleteProfile_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie odnaleziono referencji do folderu DataDragon.
+        /// </summary>
+        public static string settings_noDDreference {
+            get {
+                return ResourceManager.GetString("settings_noDDreference", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać odnośnika do pobrania nowej wersji.
+        /// </summary>
+        public static string settings_noUpdateLink {
+            get {
+                return ResourceManager.GetString("settings_noUpdateLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana).
+        /// </summary>
+        public static string settings_profileUnknown {
+            get {
+                return ResourceManager.GetString("settings_profileUnknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zamykanie aplikacji....
+        /// </summary>
+        public static string settings_updateBat_closing {
+            get {
+                return ResourceManager.GetString("settings_updateBat_closing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usuwanie plików aktualizacji....
+        /// </summary>
+        public static string settings_updateBat_deleting {
+            get {
+                return ResourceManager.GetString("settings_updateBat_deleting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przygotowywanie do instalacji....
+        /// </summary>
+        public static string settings_updateBat_preparing {
+            get {
+                return ResourceManager.GetString("settings_updateBat_preparing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Uruchamianie nowej wersji aplikacji....
+        /// </summary>
+        public static string settings_updateBat_starting {
+            get {
+                return ResourceManager.GetString("settings_updateBat_starting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Podmienianie plików....
+        /// </summary>
+        public static string settings_updateBat_swapping {
+            get {
+                return ResourceManager.GetString("settings_updateBat_swapping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Atak.
+        /// </summary>
+        public static string timeline_attack_autoattack {
+            get {
+                return ResourceManager.GetString("timeline_attack_autoattack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Miniony.
+        /// </summary>
+        public static string timeline_attack_minion {
+            get {
+                return ResourceManager.GetString("timeline_attack_minion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Potwory.
+        /// </summary>
+        public static string timeline_attack_monster {
+            get {
+                return ResourceManager.GetString("timeline_attack_monster", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inne.
+        /// </summary>
+        public static string timeline_attack_other {
+            get {
+                return ResourceManager.GetString("timeline_attack_other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wieża.
+        /// </summary>
+        public static string timeline_attack_turret {
+            get {
+                return ResourceManager.GetString("timeline_attack_turret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Sojusznika.
+        /// </summary>
+        public static string timeline_eventName_allayKill {
+            get {
+                return ResourceManager.GetString("timeline_eventName_allayKill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Atakhan&apos;a.
+        /// </summary>
+        public static string timeline_eventName_atakhanKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_atakhanKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Barona Nashora.
+        /// </summary>
+        public static string timeline_eventName_baronKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_baronKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Chemtechowego.
+        /// </summary>
+        public static string timeline_eventName_dragonChemtechKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonChemtechKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Powietrznego.
+        /// </summary>
+        public static string timeline_eventName_dragonCloudKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonCloudKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Starszego Smoka.
+        /// </summary>
+        public static string timeline_eventName_dragonElderKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonElderKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Hextechowego.
+        /// </summary>
+        public static string timeline_eventName_dragonHextechKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonHextechKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Piekielnego.
+        /// </summary>
+        public static string timeline_eventName_dragonInfernalKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonInfernalKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Górskiego.
+        /// </summary>
+        public static string timeline_eventName_dragonMountainKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonMountainKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Oceanicznego.
+        /// </summary>
+        public static string timeline_eventName_dragonOceanKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_dragonOceanKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Przeciwnika.
+        /// </summary>
+        public static string timeline_eventName_enemyKill {
+            get {
+                return ResourceManager.GetString("timeline_eventName_enemyKill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Heralda.
+        /// </summary>
+        public static string timeline_eventName_heraldKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_heraldKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zniszczony inhibitor.
+        /// </summary>
+        public static string timeline_eventName_inhibitorDestroyed {
+            get {
+                return ResourceManager.GetString("timeline_eventName_inhibitorDestroyed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabójstwo Gracza.
+        /// </summary>
+        public static string timeline_eventName_playerKill {
+            get {
+                return ResourceManager.GetString("timeline_eventName_playerKill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Samobójstwo Gracza.
+        /// </summary>
+        public static string timeline_eventName_suicideKill {
+            get {
+                return ResourceManager.GetString("timeline_eventName_suicideKill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zniszczona wieża.
+        /// </summary>
+        public static string timeline_eventName_turretDestroyed {
+            get {
+                return ResourceManager.GetString("timeline_eventName_turretDestroyed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Voidgrubs&apos;a.
+        /// </summary>
+        public static string timeline_eventName_voidgrubKilled {
+            get {
+                return ResourceManager.GetString("timeline_eventName_voidgrubKilled", resourceCulture);
             }
         }
     }

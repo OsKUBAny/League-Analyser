@@ -51,10 +51,16 @@
             </Grid>
 
             <Grid Grid.Column="2">
+
+                <TextBlock Text="{x:Static local:Messages.mainWindow_appVersion}" Foreground="Gray"/>
+                <TextBlock Text="{x:Static local:Messages.mainWindow_dataVersion}" Foreground="Gray" Margin="0,15,0,0"/>
+                <TextBlock Text="{x:Static local:Messages.mainWindow_patchVersion}" Foreground="Gray" Margin="0,32,0,0"/>
+
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Name="appVersion" Text="Wersja aplikacji:        -" Foreground="Gray"/>
-                    <TextBlock Name="dataVersion" Text="Wersja danych:         -" Foreground="Gray"/>
-                    <TextBlock Name="patchVersion" Text="Patch (DataDragon): -" Foreground="Gray"/>
+
+                    <TextBlock Name="appVersion" Text="-" Foreground="Gray" HorizontalAlignment="Right" Margin="0,0,5,0"/>
+                    <TextBlock Name="dataVersion" Text="-" Foreground="Gray" HorizontalAlignment="Right" Margin="0,0,5,0"/>
+                    <TextBlock Name="patchVersion" Text="-" Foreground="Gray" HorizontalAlignment="Right" Margin="0,0,5,0"/>
                     <TextBlock Text="©Mvcias 2025" Foreground="Gray" Margin="0,15,0,0" HorizontalAlignment="Left" FontWeight="SemiBold"/>
                 </StackPanel>
             </Grid>

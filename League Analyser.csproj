@@ -123,7 +123,7 @@
       <CustomToolNamespace>League_Analyser</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Localization\Messages.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
       <CustomToolNamespace>League_Analyser</CustomToolNamespace>
     </EmbeddedResource>

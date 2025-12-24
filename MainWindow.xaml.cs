@@ -1,6 +1,5 @@
 ﻿using System.Globalization;
 using System.IO;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows;
 
@@ -47,11 +46,10 @@ namespace League_Analyser
             {
                 var result = MessageBox.Show
                 (
-                    "Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików." +
-                    "\nCzy na pewno chcesz teraz zamknąć aplikację?",
-                      "Potwierdzenie zamknięcia",
-                      MessageBoxButton.YesNo,
-                      MessageBoxImage.Warning
+                    Messages.mainWindow_closing_message,
+                    Messages.mainWindow_closing_title,
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning
                 );
 
                 if (result == MessageBoxResult.No)

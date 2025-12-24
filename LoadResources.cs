@@ -177,7 +177,7 @@ namespace League_Analyser
                     try { return Convert.ToInt32(reader.Value); }
                     catch (OverflowException) { return Int32.MaxValue; }
                 }
-                throw new JsonSerializationException($"Nieoczekiwany typ: {reader.TokenType}");
+                throw new JsonSerializationException(string.Format("{0}{1}", Messages.loadResources_unexpectedType, reader.TokenType.ToString()));
             }
 
             public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
@@ -327,7 +327,7 @@ namespace League_Analyser
                 }
                 catch (Exception) { }
             }
-            return languagesDictionary; ;
+            return languagesDictionary;
         }
     }
 }
