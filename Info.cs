@@ -30,188 +30,188 @@ namespace League_Analyser
 
         public static class Messages
         {
-            public static readonly Message error_updatePrompt_listEmpty = new Message
+            public static readonly Message error_prompt_listEmpty = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd poczas próby akualizacji powiadomienia",
-                "Lista powiadomień jest pusta"
+                Prompts.prompt_listEmpty_title,
+                Prompts.prompt_listEmpty_msg
             );
             public static readonly Message error_prompt_argsInvalid = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd poczas tworzenia powiadomienia",
-                "Przekazane argumenty nie pasują do formatu komunikatu \"{0}\""
+                Prompts.prompt_argsInvalid_title,
+                Prompts.prompt_argsInvalid_msg
             );
 
             public static readonly Message error_api_timeout = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd połączenia z API",
-                "Czas połączenia przekroczył żądany limit"
+                Prompts.api_timeout_title,
+                Prompts.api_timeout_msg
             );
             public static readonly Message warning_api_tooManyRequests = new Message
             (
                 InfoType.warning,
-                "Nastąpiło przeciążenie serwera z powodu zbyt dużej liczby zapytań",
-                "Program oczekuje na ponowną możliwość połączenia"
+                Prompts.api_tooManyRequests_title,
+                Prompts.api_tooManyRequests_msg
             );
             public static readonly Message process_api_awaiting = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Oczekiwanie na ponowne połączenie"
+                Prompts.api_waiting_title,
+                Prompts.api_waiting_msg
             );
             public static readonly Message process_api_reconnecting = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Próba ponownego połączenia"
+                Prompts.api_reconnecting_title,
+                Prompts.api_reconnecting_msg
             );
             public static readonly Message error_api_euneOnFire = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd połączenia z API",
-                "Trwa wspólne posiedzenie przy ognisku w serwerowni, kiełbaski zapewnione przez Riot Games"
+                Prompts.api_euneOnFire_title,
+                Prompts.api_euneOnFire_msg
             );
             public static readonly Message error_api_apiError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd połączenia z API",
+                Prompts.api_error,
                 "{0}"
             );
             public static readonly Message error_api_unexpectedError = new Message
             (
                 InfoType.error,
-                "Wystąpił nieoczekiwany błąd przy próbie łączenia z serwerem",
+                Prompts.api_unexpectedError,
                 "{0}"
             );
 
             public static readonly Message error_loadResources_deserializeError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd deserializacji danych",
+                Prompts.loadResources_deserialyze,
                 "{0}"
             );
             public static readonly Message error_loadResources_serializeError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas serializacji danych",
+                Prompts.loadResources_serialyze,
                 "{0}"
             );
             public static readonly Message error_loadResources_loadFileError = new Message
             (
                 InfoType.error,
-                "Nie udało się załadować danych obiektu",
+                Prompts.loadResources_loadFile,
                 "{0}"
             );
             public static readonly Message error_loadResources_saveFileError = new Message
             (
                 InfoType.error,
-                "Nie udało się zapisać danych do pliku",
+                Prompts.loadResources_saveFile,
                 "{0}"
             );
             public static readonly Message error_loadResources_loadImageError = new Message
             (
                 InfoType.error,
-                "Nie udało się odczytać grafiki",
+                Prompts.loadResources_loadImage,
                 "{0}"
             );
 
             public static readonly Message process_settings_loading = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 ""
             );
             public static readonly Message warning_settings_profileNotAdded = new Message
             (
                 InfoType.warning,
-                "Nie udało się dodać nowego profilu",
+                Prompts.settings_profileNotAdded,
                 ""
             );
             public static readonly Message ok_settings_profileAdded = new Message
             (
                 InfoType.ok,
-                "Pomyślnie dodano nowy profil",
+                Prompts.settings_profileAdded,
                 ""
             );
             public static readonly Message error_settings_noReferenceToProfile = new Message
             (
                 InfoType.error,
-                "Nie udało się zapisać danych do pliku",
-                "Brak danych odnośnie nazwy użytkownika"
+                Prompts.loadResources_saveFile,
+                Prompts.settings_profileNoReference
             );
             public static readonly Message error_settings_loadProfileListError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania listy profili",
+                Prompts.settings_profilesListError,
                 "{0}"
             );
             public static readonly Message error_settings_loadProfileDetailsError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd odczytu pliku profilu",
+                Prompts.settings_readProfileError,
                 "{0}"
             );
             public static readonly Message error_settings_deleteProfilePathError = new Message
             (
                 InfoType.error,
-                "Nie udało się usunąć profilu",
-                "Ścieżka {0} nie istnieje"
+                Prompts.settings_profileDeleteError,
+                Prompts.settings_profilePathNotExist
             );
             public static readonly Message error_settings_deleteProfileError = new Message
             (
                 InfoType.error,
-                "Nie udało się usunąć profilu",
+                Prompts.settings_profileDeleteError,
                 "{0}"
             );
             public static readonly Message ok_settings_profileDeleted = new Message
             (
                 InfoType.ok,
-                "Pomyślnie usunięto profil",
+                Prompts.settings_profileDeleted,
                 ""
             );
             public static readonly Message process_settings_loadProfile = new Message
             (
                 InfoType.process,
-                "Trwa odczytywanie danych...",
+                Prompts.settings_reading,
                 ""
             );
             public static readonly Message error_settings_loadProfileError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas odczytywannia danych",
-                "Nie udało się odczytać danych gracza"
+                Prompts.settings_profileNotLoaded_title,
+                Prompts.settings_profileNotLoaded_msg
             );
             public static readonly Message ok_settings_profileLoaded = new Message
             (
                 InfoType.ok,
-                "Pomyślnie załadowano profil gracza",
-                "Witaj, {0}!"
+                Prompts.settings_profileLoadedSucessfully_title,
+                Prompts.settings_profileLoadedSucessfully_msg
             );
             public static readonly Message error_settings_saveSettingsError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby zapisania ustawiń",
-                "Nie udało się zapisać pliku"
+                Prompts.settings_saveError_title,
+                Prompts.settings_saveError_msg
             );
             public static readonly Message info_settings_settingsSaved = new Message
             (
                 InfoType.info,
-                "Zapisano ustawienia",
+                Prompts.settings_saved,
                 ""
             );
             public static readonly Message info_settings_LanguageSettingsSaved = new Message
             (
                 InfoType.info,
-                "Zapisano ustawienia",
-                "Zmiana wyświetlanego języka nastąpi po ponownym uruchomieniu aplikacji"
+                Prompts.settings_saved,
+                Prompts.settings_languageSaved
             );
             public static readonly Message error_settings_loadSettingsError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby załadowania ustawień",
-                "Nie udało się odczytać pliku"
+                Prompts.settings_loadFailed_title,
+                Prompts.settings_loadFailed_msg
             );
             public static readonly Message error_settings_noDDreference = new Message
             (
@@ -360,7 +360,7 @@ namespace League_Analyser
             public static readonly Message process_settings_downloadLoadProfileData = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 "Ładowanie danych z profilu gracza..."
             );
             public static readonly Message error_settings_downloadLoadProfileDataError = new Message
@@ -372,7 +372,7 @@ namespace League_Analyser
             public static readonly Message process_settings_downloadProfileApiReference = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 "Pobieranie danych gracza..."
             );
             public static readonly Message error_settings_downloadProfileApiReferenceError = new Message
@@ -384,13 +384,13 @@ namespace League_Analyser
             public static readonly Message process_settings_downloadMatchList = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 "Pobieranie listy rozgrywek..."
             );
             public static readonly Message process_settings_downloadMatches = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 "Pobieranie meczu {0} z {1}..."
             );
             public static readonly Message error_settings_downloadMatchListError = new Message
@@ -420,7 +420,7 @@ namespace League_Analyser
             public static readonly Message process_settings_downloadSavingProfile = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 "Zapisywanie profilu..."
             );
             public static readonly Message warning_settings_downloadMatchesNotAll = new Message
@@ -709,7 +709,7 @@ namespace League_Analyser
                     catch (Exception) { CreateNewPrompt(Messages.error_prompt_argsInvalid, promptData.title); return; }
                 }
             }
-            else CreateNewPrompt(Messages.error_updatePrompt_listEmpty);
+            else CreateNewPrompt(Messages.error_prompt_listEmpty);
         }
     }
 }

@@ -104,7 +104,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Localization\Messages.Designer.cs">
+    <Compile Update="Resources\Localization\Prompts\Prompts.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Prompts.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Localization\Messages\Messages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Messages.resx</DependentUpon>
@@ -117,13 +122,24 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Localization\Messages.en.resx">
+    <EmbeddedResource Update="Resources\Localization\Prompts\Prompts.en.resx">
       <CustomToolNamespace>League_Analyser</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Localization\Messages.pl.resx">
+    <EmbeddedResource Update="Resources\Localization\Prompts\Prompts.pl.resx">
       <CustomToolNamespace>League_Analyser</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Localization\Messages.resx">
+    <EmbeddedResource Update="Resources\Localization\Prompts\Prompts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Prompts.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\Messages\Messages.en.resx">
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\Messages\Messages.pl.resx">
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\Messages\Messages.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
       <CustomToolNamespace>League_Analyser</CustomToolNamespace>
