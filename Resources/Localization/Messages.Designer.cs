@@ -116,6 +116,123 @@ namespace League_Analyser {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Twoja drużyna:.
+        /// </summary>
+        public static string match_allayTeam {
+            get {
+                return ResourceManager.GetString("match_allayTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Porażka.
+        /// </summary>
+        public static string match_defeat {
+            get {
+                return ResourceManager.GetString("match_defeat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zwrócono pusty obiekt championDataDto.
+        /// </summary>
+        public static string match_emptyChampionData {
+            get {
+                return ResourceManager.GetString("match_emptyChampionData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przeciwna drużyna:.
+        /// </summary>
+        public static string match_enemyTeam {
+            get {
+                return ResourceManager.GetString("match_enemyTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas trwania.
+        /// </summary>
+        public static string match_gameDuration {
+            get {
+                return ResourceManager.GetString("match_gameDuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Mecz został poddany.
+        /// </summary>
+        public static string match_gameSurrendered {
+            get {
+                return ResourceManager.GetString("match_gameSurrendered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu seconds.
+        /// </summary>
+        public static string match_popupSeconds {
+            get {
+                return ResourceManager.GetString("match_popupSeconds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zdobywca.
+        /// </summary>
+        public static string match_statisticBar_achiver {
+            get {
+                return ResourceManager.GetString("match_statisticBar_achiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Asysta.
+        /// </summary>
+        public static string match_statisticBar_assist {
+            get {
+                return ResourceManager.GetString("match_statisticBar_assist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się załadować grafiki.
+        /// </summary>
+        public static string match_unableToLoadImg {
+            get {
+                return ResourceManager.GetString("match_unableToLoadImg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana postać).
+        /// </summary>
+        public static string match_unknownChampion {
+            get {
+                return ResourceManager.GetString("match_unknownChampion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana mapa).
+        /// </summary>
+        public static string match_unknownMap {
+            get {
+                return ResourceManager.GetString("match_unknownMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zwycięstwo.
+        /// </summary>
+        public static string match_victory {
+            get {
+                return ResourceManager.GetString("match_victory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cele i osiągnięcia.
         /// </summary>
         public static string matchHistory_category_achievements {
@@ -184,6 +301,15 @@ namespace League_Analyser {
         public static string matchHistory_category_skills {
             get {
                 return ResourceManager.GetString("matchHistory_category_skills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu z.
+        /// </summary>
+        public static string matchHistory_scroll_rangeText {
+            get {
+                return ResourceManager.GetString("matchHistory_scroll_rangeText", resourceCulture);
             }
         }
         
@@ -629,6 +755,87 @@ namespace League_Analyser {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Historia meczy.
+        /// </summary>
+        public static string menu_matchHistory {
+            get {
+                return ResourceManager.GetString("menu_matchHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ustawienia.
+        /// </summary>
+        public static string menu_settings {
+            get {
+                return ResourceManager.GetString("menu_settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statystyki.
+        /// </summary>
+        public static string menu_statistics {
+            get {
+                return ResourceManager.GetString("menu_statistics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dodaj nowy profil.
+        /// </summary>
+        public static string settings_addNewProfile {
+            get {
+                return ResourceManager.GetString("settings_addNewProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Język.
+        /// </summary>
+        public static string settings_appLanguage {
+            get {
+                return ResourceManager.GetString("settings_appLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dodaj profil.
+        /// </summary>
+        public static string settings_buttonAddNewProfile {
+            get {
+                return ResourceManager.GetString("settings_buttonAddNewProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisz.
+        /// </summary>
+        public static string settings_buttonLanguageSave {
+            get {
+                return ResourceManager.GetString("settings_buttonLanguageSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wybierz.
+        /// </summary>
+        public static string settings_buttonProfileSelect {
+            get {
+                return ResourceManager.GetString("settings_buttonProfileSelect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Aktualizuj.
+        /// </summary>
+        public static string settings_buttonUpdate {
+            get {
+                return ResourceManager.GetString("settings_buttonUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czy na pewno chcesz usunąć ten profil?.
         /// </summary>
         public static string settings_deleteProfile_message {
@@ -643,6 +850,60 @@ namespace League_Analyser {
         public static string settings_deleteProfile_title {
             get {
                 return ResourceManager.GetString("settings_deleteProfile_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zmiana języka nastąpi po ponownym uruchomieniu aplikacji.
+        /// </summary>
+        public static string settings_languageRebootInfo {
+            get {
+                return ResourceManager.GetString("settings_languageRebootInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dodaj.
+        /// </summary>
+        public static string settings_newPlayer_button_add {
+            get {
+                return ResourceManager.GetString("settings_newPlayer_button_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Anuluj.
+        /// </summary>
+        public static string settings_newPlayer_button_cancel {
+            get {
+                return ResourceManager.GetString("settings_newPlayer_button_cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nazwa użytkownika.
+        /// </summary>
+        public static string settings_newPlayer_name {
+            get {
+                return ResourceManager.GetString("settings_newPlayer_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Serwer.
+        /// </summary>
+        public static string settings_newPlayer_server {
+            get {
+                return ResourceManager.GetString("settings_newPlayer_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Tag.
+        /// </summary>
+        public static string settings_newPlayer_tag {
+            get {
+                return ResourceManager.GetString("settings_newPlayer_tag", resourceCulture);
             }
         }
         
@@ -665,11 +926,74 @@ namespace League_Analyser {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wersja pliku danych.
+        /// </summary>
+        public static string settings_profileDetails_dataVersion {
+            get {
+                return ResourceManager.GetString("settings_profileDetails_dataVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ostatnia rozgrywka.
+        /// </summary>
+        public static string settings_profileDetails_lastGame {
+            get {
+                return ResourceManager.GetString("settings_profileDetails_lastGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Liczba zapisanych rozgrywek.
+        /// </summary>
+        public static string settings_profileDetails_numberOfGames {
+            get {
+                return ResourceManager.GetString("settings_profileDetails_numberOfGames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana).
         /// </summary>
         public static string settings_profileUnknown {
             get {
                 return ResourceManager.GetString("settings_profileUnknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zasoby.
+        /// </summary>
+        public static string settings_resourcesLanguage {
+            get {
+                return ResourceManager.GetString("settings_resourcesLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wybierz profil.
+        /// </summary>
+        public static string settings_selectProfile {
+            get {
+                return ResourceManager.GetString("settings_selectProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ustawienia.
+        /// </summary>
+        public static string settings_settingsText {
+            get {
+                return ResourceManager.GetString("settings_settingsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna aktualizacja aplikacji.
+        /// </summary>
+        public static string settings_updateApp {
+            get {
+                return ResourceManager.GetString("settings_updateApp", resourceCulture);
             }
         }
         
@@ -719,6 +1043,24 @@ namespace League_Analyser {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna aktualizacja plików zasobów (DataDragon).
+        /// </summary>
+        public static string settings_updateDD {
+            get {
+                return ResourceManager.GetString("settings_updateDD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu wersja.
+        /// </summary>
+        public static string settings_versionApp {
+            get {
+                return ResourceManager.GetString("settings_versionApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Atak.
         /// </summary>
         public static string timeline_attack_autoattack {
@@ -760,6 +1102,105 @@ namespace League_Analyser {
         public static string timeline_attack_turret {
             get {
                 return ResourceManager.GetString("timeline_attack_turret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu asysty.
+        /// </summary>
+        public static string timeline_axis_assists {
+            get {
+                return ResourceManager.GetString("timeline_axis_assists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu śmierci.
+        /// </summary>
+        public static string timeline_axis_deaths {
+            get {
+                return ResourceManager.GetString("timeline_axis_deaths", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu zabójstwa.
+        /// </summary>
+        public static string timeline_axis_kills {
+            get {
+                return ResourceManager.GetString("timeline_axis_kills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak.
+        /// </summary>
+        public static string timeline_axis_none {
+            get {
+                return ResourceManager.GetString("timeline_axis_none", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wybrano {0} z {1} graczy.
+        /// </summary>
+        public static string timeline_axis_selectedPlayers {
+            get {
+                return ResourceManager.GetString("timeline_axis_selectedPlayers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przez twoją drużynę.
+        /// </summary>
+        public static string timeline_byAllayTeam {
+            get {
+                return ResourceManager.GetString("timeline_byAllayTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przez przeciwną drużynę.
+        /// </summary>
+        public static string timeline_byEnemyTeam {
+            get {
+                return ResourceManager.GetString("timeline_byEnemyTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział w walce.
+        /// </summary>
+        public static string timeline_damageBar_participationInFight {
+            get {
+                return ResourceManager.GetString("timeline_damageBar_participationInFight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu gracza.
+        /// </summary>
+        public static string timeline_damagebar_participationPlayer {
+            get {
+                return ResourceManager.GetString("timeline_damagebar_participationPlayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu obrażeń.
+        /// </summary>
+        public static string timeline_damagebar_participationSkill {
+            get {
+                return ResourceManager.GetString("timeline_damagebar_participationSkill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział obrażeń gracza.
+        /// </summary>
+        public static string timeline_damageSummary_playerParticipation {
+            get {
+                return ResourceManager.GetString("timeline_damageSummary_playerParticipation", resourceCulture);
             }
         }
         
@@ -913,6 +1354,96 @@ namespace League_Analyser {
         public static string timeline_eventName_voidgrubKilled {
             get {
                 return ResourceManager.GetString("timeline_eventName_voidgrubKilled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu W twojej drużynie.
+        /// </summary>
+        public static string timeline_inAllayTeam {
+            get {
+                return ResourceManager.GetString("timeline_inAllayTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu W przeciwnej drużynie.
+        /// </summary>
+        public static string timeline_inEnemyTeam {
+            get {
+                return ResourceManager.GetString("timeline_inEnemyTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak informacji odnośnie wydarzenia.
+        /// </summary>
+        public static string timeline_noEventTypeData {
+            get {
+                return ResourceManager.GetString("timeline_noEventTypeData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inne źródła.
+        /// </summary>
+        public static string timeline_other {
+            get {
+                return ResourceManager.GetString("timeline_other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obrażenia.
+        /// </summary>
+        public static string timeline_popup_damage {
+            get {
+                return ResourceManager.GetString("timeline_popup_damage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Magiczne.
+        /// </summary>
+        public static string timeline_popup_damageMagic {
+            get {
+                return ResourceManager.GetString("timeline_popup_damageMagic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Fizyczne.
+        /// </summary>
+        public static string timeline_popup_damagePhysical {
+            get {
+                return ResourceManager.GetString("timeline_popup_damagePhysical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Całkowite.
+        /// </summary>
+        public static string timeline_popup_damageTotal {
+            get {
+                return ResourceManager.GetString("timeline_popup_damageTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu True:.
+        /// </summary>
+        public static string timeline_popup_damageTrue {
+            get {
+                return ResourceManager.GetString("timeline_popup_damageTrue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nieznany gracz.
+        /// </summary>
+        public static string timeline_unknownPlayer {
+            get {
+                return ResourceManager.GetString("timeline_unknownPlayer", resourceCulture);
             }
         }
     }

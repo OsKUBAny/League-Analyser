@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             xmlns:global="clr-namespace:League_Analyser"
              mc:Ignorable="d" 
              Height="60" Width="140">
     
@@ -34,12 +35,15 @@
             <Rectangle Name="damageTotalSkill" Fill="DarkOrange" Stroke="Black" StrokeThickness="0" Width="20" Height="10" 
             HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
         </Grid>
-        
-        <TextBlock Text="Udział w walce:" FontSize="10" Foreground="LightGray" VerticalAlignment="Top" 
-        HorizontalAlignment="Left" Margin="0,-15,0,0"/>
-        <TextBlock Name="damagePercentText_skill" Text="obrażeń: 100%" FontSize="10" Foreground="Orange" VerticalAlignment="Bottom" 
+
+        <TextBlock FontSize="10" Foreground="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,-15,0,0">
+        <Run Text="{x:Static global:Messages.timeline_damageBar_participationInFight}"/>
+        <Run Text=":"/>
+        </TextBlock>
+
+        <TextBlock Name="damagePercentText_skill" Text="damage: 100%" FontSize="10" Foreground="Orange" VerticalAlignment="Bottom" 
            HorizontalAlignment="Left" Margin="0,0,0,33"/>
-        <TextBlock Name="damagePercentText_player" Text="gracza: 100%" FontSize="10" Foreground="Gold" VerticalAlignment="Bottom" 
+        <TextBlock Name="damagePercentText_player" Text="player: 100%" FontSize="10" Foreground="Gold" VerticalAlignment="Bottom" 
            HorizontalAlignment="Right" Margin="0,0,0,33"/>
 
     </Grid>

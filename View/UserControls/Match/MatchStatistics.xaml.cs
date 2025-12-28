@@ -49,20 +49,20 @@ namespace League_Analyser.View.UserControls
 
             string foo_mapName;
             try { foo_mapName = data.mapsDto.Find(p => p.mapId == match.preview.mapId).mapName; }
-            catch (Exception) { foo_mapName = "(nieznana mapa)"; }
+            catch (Exception) { foo_mapName = Messages.match_unknownMap; }
             mapName.Text = string.Format("{0} - {1}", foo_mapName, match.preview.mode);
 
             date.Text = match.preview.timestamp;
-            gameDuration.Text = string.Format("Czas trwania: {0} min", match.gameInfo.gameDuration);
+            gameDuration.Text = string.Format("{0}: {1} min",Messages.match_gameDuration, match.gameInfo.gameDuration);
 
             if (match.preview.result == true)
             {
-                result.Text = "ZWYCIĘSTWO";
+                result.Text = Messages.match_victory.ToUpper();
                 result.Foreground = new SolidColorBrush(Color.FromRgb(0, 255, 0));
             }
             else
             {
-                result.Text = "PORAŻKA";
+                result.Text = Messages.match_defeat.ToUpper();
                 result.Foreground = new SolidColorBrush(Color.FromRgb(255, 0, 0));
             }
 

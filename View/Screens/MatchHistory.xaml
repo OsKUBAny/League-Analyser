@@ -16,7 +16,7 @@
         <Grid Grid.Column="0">
             <Rectangle Fill="#7F000000" HorizontalAlignment="Left" VerticalAlignment="Top" Width="330" Height="778" 
                        Margin="0,0,0,0" Panel.ZIndex="-1"/>
-            <TextBlock Name="visibleMatchesCount" Foreground="White" Text="(888 - 888) z 888" FontSize="18" 
+            <TextBlock Name="visibleMatchesCount" Foreground="White" Text="(888 - 888) - 888" FontSize="18" 
                        Margin="0,4,22,0" HorizontalAlignment="Right"/>
 
             <ScrollViewer Background="#00000000" Width="320" Height="740"

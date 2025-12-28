@@ -28,7 +28,7 @@
     <Grid Name="localGrid">
         <TextBlock Name="eventType" Text="Event Type" FontSize="25" Foreground="White" FontWeight="Bold" Margin="60,0,0,0"/>
         <TextBlock Name="eventTimestamp" Text="88:88" FontSize="15" Foreground="White" FontWeight="Regular" Margin="60,35,0,0"/>
-        <TextBlock Name="eventTeam" Text="Przez twoją drużynę" FontSize="15" Foreground="White" FontWeight="Regular" Margin="120,35,0,0"/>
+        <TextBlock Name="eventTeam" Text="Team" FontSize="15" Foreground="White" FontWeight="Regular" Margin="120,35,0,0"/>
         <Image Name="eventIcon" Source="/Resources/Generic/empty.png" Width="50" Height="50" 
                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,0"/>
         <Canvas Name="canvasMap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" Height="120" Panel.ZIndex="999"/>

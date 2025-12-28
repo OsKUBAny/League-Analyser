@@ -238,9 +238,6 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
   <data name="matchHistory_statistic_achivements_inhibitorParticipant" xml:space="preserve">
     <value>Udział w zniszczeniu inhibitorów</value>
   </data>
-  <data name="matchHistory_statistic_achivements_firstBlood" xml:space="preserve">
-    <value>Pierwsza krew</value>
-  </data>
   <data name="matchHistory_statistic_achivements_firstTurret" xml:space="preserve">
     <value>Pierwsza wieża</value>
   </data>
@@ -402,5 +399,185 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
   </data>
   <data name="timeline_attack_monster" xml:space="preserve">
     <value>Potwory</value>
+  </data>
+  <data name="matchHistory_scroll_rangeText" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="settings_appLanguage" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="settings_resourcesLanguage" xml:space="preserve">
+    <value>Zasoby</value>
+  </data>
+  <data name="settings_selectProfile" xml:space="preserve">
+    <value>Wybierz profil</value>
+  </data>
+  <data name="settings_addNewProfile" xml:space="preserve">
+    <value>Dodaj nowy profil</value>
+  </data>
+  <data name="settings_buttonLanguageSave" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="settings_buttonProfileSelect" xml:space="preserve">
+    <value>Wybierz</value>
+  </data>
+  <data name="settings_buttonAddNewProfile" xml:space="preserve">
+    <value>Dodaj profil</value>
+  </data>
+  <data name="settings_languageRebootInfo" xml:space="preserve">
+    <value>Zmiana języka nastąpi po ponownym uruchomieniu aplikacji</value>
+  </data>
+  <data name="settings_settingsText" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_firstBlood" xml:space="preserve">
+    <value>Pierwsza krew</value>
+  </data>
+  <data name="settings_updateApp" xml:space="preserve">
+    <value>Dostępna aktualizacja aplikacji</value>
+  </data>
+  <data name="settings_updateDD" xml:space="preserve">
+    <value>Dostępna aktualizacja plików zasobów (DataDragon)</value>
+  </data>
+  <data name="settings_buttonUpdate" xml:space="preserve">
+    <value>Aktualizuj</value>
+  </data>
+  <data name="settings_versionApp" xml:space="preserve">
+    <value>wersja</value>
+  </data>
+  <data name="menu_statistics" xml:space="preserve">
+    <value>Statystyki</value>
+  </data>
+  <data name="menu_matchHistory" xml:space="preserve">
+    <value>Historia meczy</value>
+  </data>
+  <data name="menu_settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="match_popupSeconds" xml:space="preserve">
+    <value>sekund</value>
+  </data>
+  <data name="match_unknownChampion" xml:space="preserve">
+    <value>(nieznana postać)</value>
+  </data>
+  <data name="match_emptyChampionData" xml:space="preserve">
+    <value>Zwrócono pusty obiekt championDataDto</value>
+  </data>
+  <data name="match_unableToLoadImg" xml:space="preserve">
+    <value>Nie udało się załadować grafiki</value>
+  </data>
+  <data name="match_unknownMap" xml:space="preserve">
+    <value>(nieznana mapa)</value>
+  </data>
+  <data name="match_gameDuration" xml:space="preserve">
+    <value>Czas trwania</value>
+  </data>
+  <data name="match_victory" xml:space="preserve">
+    <value>Zwycięstwo</value>
+  </data>
+  <data name="match_defeat" xml:space="preserve">
+    <value>Porażka</value>
+  </data>
+  <data name="match_allayTeam" xml:space="preserve">
+    <value>Twoja drużyna:</value>
+  </data>
+  <data name="match_enemyTeam" xml:space="preserve">
+    <value>Przeciwna drużyna:</value>
+  </data>
+  <data name="match_gameSurrendered" xml:space="preserve">
+    <value>Mecz został poddany</value>
+  </data>
+  <data name="match_statisticBar_achiver" xml:space="preserve">
+    <value>Zdobywca</value>
+  </data>
+  <data name="match_statisticBar_assist" xml:space="preserve">
+    <value>Asysta</value>
+  </data>
+  <data name="settings_newPlayer_name" xml:space="preserve">
+    <value>Nazwa użytkownika</value>
+  </data>
+  <data name="settings_newPlayer_tag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="settings_newPlayer_server" xml:space="preserve">
+    <value>Serwer</value>
+  </data>
+  <data name="settings_newPlayer_button_cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="settings_newPlayer_button_add" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="settings_profileDetails_dataVersion" xml:space="preserve">
+    <value>Wersja pliku danych</value>
+  </data>
+  <data name="settings_profileDetails_numberOfGames" xml:space="preserve">
+    <value>Liczba zapisanych rozgrywek</value>
+  </data>
+  <data name="settings_profileDetails_lastGame" xml:space="preserve">
+    <value>Ostatnia rozgrywka</value>
+  </data>
+  <data name="timeline_axis_none" xml:space="preserve">
+    <value>Brak</value>
+  </data>
+  <data name="timeline_axis_selectedPlayers" xml:space="preserve">
+    <value>Wybrano {0} z {1} graczy</value>
+  </data>
+  <data name="timeline_axis_kills" xml:space="preserve">
+    <value>zabójstwa</value>
+  </data>
+  <data name="timeline_axis_assists" xml:space="preserve">
+    <value>asysty</value>
+  </data>
+  <data name="timeline_axis_deaths" xml:space="preserve">
+    <value>śmierci</value>
+  </data>
+  <data name="timeline_damageBar_participationInFight" xml:space="preserve">
+    <value>Udział w walce</value>
+  </data>
+  <data name="timeline_damagebar_participationSkill" xml:space="preserve">
+    <value>obrażeń</value>
+  </data>
+  <data name="timeline_damagebar_participationPlayer" xml:space="preserve">
+    <value>gracza</value>
+  </data>
+  <data name="timeline_damageSummary_playerParticipation" xml:space="preserve">
+    <value>Udział obrażeń gracza</value>
+  </data>
+  <data name="timeline_popup_damage" xml:space="preserve">
+    <value>Obrażenia</value>
+  </data>
+  <data name="timeline_popup_damageTotal" xml:space="preserve">
+    <value>Całkowite</value>
+  </data>
+  <data name="timeline_popup_damagePhysical" xml:space="preserve">
+    <value>Fizyczne</value>
+  </data>
+  <data name="timeline_popup_damageMagic" xml:space="preserve">
+    <value>Magiczne</value>
+  </data>
+  <data name="timeline_popup_damageTrue" xml:space="preserve">
+    <value>True:</value>
+  </data>
+  <data name="timeline_unknownPlayer" xml:space="preserve">
+    <value>Nieznany gracz</value>
+  </data>
+  <data name="timeline_other" xml:space="preserve">
+    <value>Inne źródła</value>
+  </data>
+  <data name="timeline_noEventTypeData" xml:space="preserve">
+    <value>Brak informacji odnośnie wydarzenia</value>
+  </data>
+  <data name="timeline_byAllayTeam" xml:space="preserve">
+    <value>Przez twoją drużynę</value>
+  </data>
+  <data name="timeline_byEnemyTeam" xml:space="preserve">
+    <value>Przez przeciwną drużynę</value>
+  </data>
+  <data name="timeline_inAllayTeam" xml:space="preserve">
+    <value>W twojej drużynie</value>
+  </data>
+  <data name="timeline_inEnemyTeam" xml:space="preserve">
+    <value>W przeciwnej drużynie</value>
   </data>
 </root>

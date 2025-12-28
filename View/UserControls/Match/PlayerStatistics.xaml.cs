@@ -179,7 +179,7 @@ namespace League_Analyser.View.UserControls
                 statusText.Visibility = Visibility.Visible;
                 statusIndicator.Visibility = Visibility.Visible;
 
-                statusText.Text = "ZDOBYWCA";
+                statusText.Text = Messages.match_statisticBar_achiver.ToUpper();
                 statusText.Foreground = claimerColor;
                 statusIndicator.Fill = statusClaimerGrad;
             }
@@ -188,7 +188,7 @@ namespace League_Analyser.View.UserControls
                 statusText.Visibility = Visibility.Visible;
                 statusIndicator.Visibility = Visibility.Visible;
 
-                statusText.Text = "ASYSTA";
+                statusText.Text = Messages.match_statisticBar_assist.ToUpper();
                 statusText.Foreground = assistColor;
                 statusIndicator.Fill = statusAssistGrad;
             }

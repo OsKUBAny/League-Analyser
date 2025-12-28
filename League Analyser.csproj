@@ -108,6 +108,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Messages.resx</DependentUpon>
+      <CustomToolNamespace>League_Analyser</CustomToolNamespace>
     </Compile>
   </ItemGroup>
 

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:League_Analyser.View.Screens"
+             xmlns:global="clr-namespace:League_Analyser"
              xmlns:controls="clr-namespace:League_Analyser.View.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="1325">
@@ -29,59 +30,73 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <TextBlock Text="Ustawienia" Foreground="White" FontSize="40" FontWeight="Bold" VerticalAlignment="Center" Margin="26,0,0,0"/>
+                <TextBlock Text="{x:Static global:Messages.settings_settingsText}" 
+                           Foreground="White" FontSize="40" FontWeight="Bold" VerticalAlignment="Center" Margin="26,0,0,0"/>
             </Grid>
 
             <Grid Grid.Row="1" VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Język (Language):" Foreground="White" FontSize="20" VerticalAlignment="Center" 
-                               Margin="25,0,0,0" Width="250"/>
+                    <TextBlock Name="languageAppTextblock" Foreground="White" FontSize="20" VerticalAlignment="Center" Margin="25,0,0,0" Width="250">
+                        <Run Text="{x:Static global:Messages.settings_appLanguage}"/>
+                        <Run Text=":"/>
+                    </TextBlock> 
+                               
                     <ComboBox Name="comboBox_language" Height="35" Width="200" Margin="28,0,0,0" 
                     FontSize="18" VerticalAlignment="Center"/>
-                    <TextBlock Name="languageChangedInfo" Text="Zmiana języka nastąpi po ponownym uruchomienu" Margin="10,0,0,0"
+                    <TextBlock Name="languageChangedInfo" Margin="10,0,0,0"
                                FontSize="13" Foreground="LightGray" HorizontalAlignment="Left" VerticalAlignment="Center" 
-                               Visibility="Collapsed" Width="250" Height="35" TextWrapping="WrapWithOverflow"/>
+                               Visibility="Collapsed" Width="250" Height="35" TextWrapping="WrapWithOverflow"
+                               Text="{x:Static global:Messages.settings_languageRebootInfo}">
+
+                    </TextBlock>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="2" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Zasoby (Resources):" Foreground="White" FontSize="20" VerticalAlignment="Center" 
-                               Margin="25,0,0,0" Width="250"/>
+                    
+                    <TextBlock  Name="languageDDTextblock" Foreground="White" FontSize="20" VerticalAlignment="Center" Margin="25,0,0,0" Width="250">
+                        <Run Text="{x:Static global:Messages.settings_resourcesLanguage}"/>
+                        <Run Text=":"/>
+                    </TextBlock>
+                    
                     <ComboBox Name="comboBox_languageResources" Height="35" Width="200" Margin="28,0,0,0" 
                     FontSize="18" VerticalAlignment="Center"/>
                     <Button Name="button_saveLanguage" Style="{StaticResource ButtonHoverInvertStyle}" 
-                    Content="Zapisz (Save)" FontSize="15" HorizontalAlignment="Center" Width="120" Height="35" 
+                    Content="{x:Static global:Messages.settings_buttonLanguageSave}" FontSize="15" HorizontalAlignment="Center" Width="120" Height="35" 
                     Foreground="#FF746F0E" Background="#FFFFDF51" Margin="20,0,0,0"/>
                 </StackPanel>
             </Grid>
 
             <Grid Grid.Row="3">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Wybierz profil:" Foreground="White" FontSize="20" VerticalAlignment="Center" 
-                               Margin="25,0,0,0" Width="180"/>
+                    <TextBlock Foreground="White" FontSize="20" VerticalAlignment="Center" Margin="25,0,0,0" Width="180">
+                        <Run Text="{x:Static global:Messages.settings_selectProfile}"/>
+                        <Run Text=":"/>
+                    </TextBlock>
+                    
                     <ComboBox Name="comboBox_profiles" Height="35" Width="298" Margin="0,0,0,0" 
                               FontSize="18" VerticalAlignment="Center"/>
                     <Button Name="button_loadProfile" Style="{StaticResource ButtonHoverInvertStyle}" 
-                            Content="Wybierz" FontSize="15" HorizontalAlignment="Center" Width="120" Height="35" 
+                            Content="{x:Static global:Messages.settings_buttonProfileSelect}" FontSize="15" HorizontalAlignment="Center" Width="120" Height="35" 
                             Foreground="#FF746F0E" Background="#FFFFDF51" Margin="20,0,0,0" Click="button_selectProfile_Click"/>
                 </StackPanel>
             </Grid>
 
             <Grid Grid.Row="4" Name="gridAddProfile">
 
-                <TextBlock Text="Dodaj nowy profil:" Foreground="White" FontSize="20" VerticalAlignment="Top" Margin="25,4,0,0"/>
+                <TextBlock Text="{x:Static global:Messages.settings_addNewProfile}" Foreground="White" FontSize="20" VerticalAlignment="Top" Margin="25,4,0,0"/>
                 <Button Name="button_addProfile" Style="{StaticResource ButtonHoverInvertStyle}" 
-                            Content="Dodaj profil" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"
+                            Content="{x:Static global:Messages.settings_buttonAddNewProfile}" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"
                             Width="120" Height="35" Foreground="#FF0D5D01" Background="#FF00FF46" Margin="203,0,0,0"
                             Click="button_addProfile_Click"/>
             </Grid>
 
             <Grid Grid.Row="5">
                 <StackPanel Name="panel_DDupdate" Orientation="Horizontal" Visibility="Hidden">
-                    <TextBlock Text="Dostępna aktualizacja danych zasobów DataDragon" Foreground="White" FontSize="20" 
+                    <TextBlock Text="{x:Static global:Messages.settings_updateDD}" Foreground="White" FontSize="20" 
                                VerticalAlignment="Center" Margin="25,4,0,0"/>
                     <Button Name="button_updateDD" Style="{StaticResource ButtonHoverInvertStyle}" 
-                            Content="Aktualizuj" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"
+                            Content="{x:Static global:Messages.settings_buttonUpdate}" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"
                             Width="120" Height="35" Foreground="#FF0010AE" Background="#FF00AEFF" Margin="43,0,0,0"
                             Click="button_updateDD_Click"/>
                 </StackPanel>
@@ -89,10 +104,10 @@
 
             <Grid Grid.Row="6" Name="panel_AppUpdate" Visibility="Hidden">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Dostępna aktualizacja aplikacji" Foreground="White" FontSize="20" 
+                    <TextBlock Text="{x:Static global:Messages.settings_updateApp}" Foreground="White" FontSize="20" 
                                VerticalAlignment="Top" Margin="25,4,0,0"/>
                     <Button Name="button_updateApp" Style="{StaticResource ButtonHoverInvertStyle}" 
-                            Content="Aktualizuj" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"
+                            Content="{x:Static global:Messages.settings_buttonUpdate}" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"
                             Width="120" Height="35" Foreground="#FF0010AE" Background="#FF00AEFF" Margin="232,0,0,0"
                             Click="button_updateApp_Click"/>
                 </StackPanel>

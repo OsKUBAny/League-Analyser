@@ -19,6 +19,7 @@ namespace League_Analyser.View.Screens
             settings = mainWindow.settings;
 
             LoadLanguageSettings();
+            LoadMultiLanguageTexts();
 
             comboBox_profiles.ItemsSource = settings.profilesList;
             if (settings.profilesList.Count > 0) comboBox_profiles.SelectedIndex = 0;
@@ -32,12 +33,26 @@ namespace League_Analyser.View.Screens
             if (settings.updateDDneeded == true) panel_DDupdate.Visibility = Visibility.Visible;
             if (settings.updateData.isUpdateNeeded == true)
             {
-                AppUpdateVersion.Text = string.Format("wersja {0}", settings.updateData.version);
+                AppUpdateVersion.Text = string.Format("{0} {1}", Messages.settings_versionApp, settings.updateData.version);
                 AppUpdateDate.Text = settings.updateData.date;
                 AppUpdateTitle.Text = settings.updateData.name;
                 AppUpdateDescription.Text = settings.updateData.description;
                 panel_AppUpdate.Visibility = Visibility.Visible;
             }
+        }
+
+        private void LoadMultiLanguageTexts()
+        {
+            if (mainWindow.language == "en") return;
+
+            languageAppTextblock.Text = string.Format("{0} ({1}):", 
+                Messages.settings_appLanguage, Messages.ResourceManager.GetString("settings_appLanguage", new CultureInfo("en")));
+
+            languageDDTextblock.Text = string.Format("{0} ({1}):",
+                Messages.settings_resourcesLanguage, Messages.ResourceManager.GetString("settings_resourcesLanguage", new CultureInfo("en")));
+
+            button_saveLanguage.Content = string.Format("{0} ({1})",
+                Messages.settings_buttonLanguageSave, Messages.ResourceManager.GetString("settings_buttonLanguageSave", new CultureInfo("en")));
         }
 
         private void LoadLanguageSettings()
@@ -52,8 +67,16 @@ namespace League_Analyser.View.Screens
 
             if (languages != null && languages.Count > 0)
             {
-                if (League_Analyser.Settings.languagesList.ContainsKey(lang)) comboBox_language.SelectedValue = lang;
-                else comboBox_language.SelectedIndex = 0;
+                if(lang != Properties.Settings.Default.Language && 
+                    League_Analyser.Settings.languagesList.ContainsKey(Properties.Settings.Default.Language))
+                {
+                    comboBox_language.SelectedValue = Properties.Settings.Default.Language;
+                }
+                else
+                {
+                    if (League_Analyser.Settings.languagesList.ContainsKey(lang)) comboBox_language.SelectedValue = lang;
+                    else comboBox_language.SelectedIndex = 0;
+                }
 
                 button_saveLanguage.Click += (sender, e) => 
                 {
@@ -68,7 +91,12 @@ namespace League_Analyser.View.Screens
                 };
             }
 
-            if (lang != Properties.Settings.Default.Language) languageChangedInfo.Visibility = Visibility.Visible;
+            if (lang != Properties.Settings.Default.Language)
+            {
+                languageChangedInfo.Text = Messages.ResourceManager.GetString("settings_languageRebootInfo", 
+                    new CultureInfo(Properties.Settings.Default.Language));
+                languageChangedInfo.Visibility = Visibility.Visible;
+            }
 
             // Language for DD resources - this can be changed in runtime
             if (mainWindow.data.resourceLanguages == null || mainWindow.data.resourceLanguages.Count == 0) return;

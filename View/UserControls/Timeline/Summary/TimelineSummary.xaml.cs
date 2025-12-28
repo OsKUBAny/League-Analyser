@@ -48,8 +48,8 @@ namespace League_Analyser.View.UserControls
                 string playerPuuid = timeline.timelineDto.info.participants.Find(p => p.participantId == eventData.killerId).puuid;
                 int playerTeamId = timeline.match.participants.Find(p => p.accountDto.puuid == playerPuuid).teamId;
 
-                if (playerTeamId == timeline.match.gameInfo.myTeamId) eventTeam.Text = "Przez twoją drużynę";
-                else eventTeam.Text = "Przez przeciwną drużynę";
+                if (playerTeamId == timeline.match.gameInfo.myTeamId) eventTeam.Text = Messages.timeline_byAllayTeam;
+                else eventTeam.Text = Messages.timeline_byEnemyTeam;
             }
             catch (Exception)
             {
@@ -58,8 +58,8 @@ namespace League_Analyser.View.UserControls
                     string playerPuuid = timeline.timelineDto.info.participants.Find(p => p.participantId == eventData.victimId).puuid;
                     int playerTeamId = timeline.match.participants.Find(p => p.accountDto.puuid == playerPuuid).teamId;
 
-                    if (playerTeamId != timeline.match.gameInfo.myTeamId) eventTeam.Text = "W przeciwnej drużynie";
-                    else eventTeam.Text = "W twojej drużynie";
+                    if (playerTeamId != timeline.match.gameInfo.myTeamId) eventTeam.Text = Messages.timeline_inEnemyTeam;
+                    else eventTeam.Text = Messages.timeline_inAllayTeam;
                 }
                 else eventTeam.Text = "";
             }
@@ -93,7 +93,7 @@ namespace League_Analyser.View.UserControls
             eventType.Text = timeline.GetImageNameForEvent(eventData, true);
             LoadResources.ImagePath_t resourcesType = timeline.GetImagePathForEvent(eventData.type);
 
-            if (eventType.Text == null) eventType.Text = "Brak informacji odnośnie wydarzenia";
+            if (eventType.Text == null) eventType.Text = Messages.timeline_noEventTypeData;
 
             eventIcon.Source = LoadResources.LoadImage(resourcesName, resourcesType, true).image;
 
@@ -142,7 +142,7 @@ namespace League_Analyser.View.UserControls
             if (type == 3) // Other sources (minions, towers, monsters etc.
             {
                 player.Source = LoadResources.LoadImage("other.png", LoadResources.ImagePath_t.gC_timeline_misc, true).image;
-                playerName.Text = "Inne źródła";
+                playerName.Text = Messages.timeline_other;
             }
             else
             {
@@ -161,7 +161,7 @@ namespace League_Analyser.View.UserControls
                 catch (Exception)
                 {
                     info.CreateNewPrompt(Info.Messages.error_timeline_imageNotFound);
-                    playerName.Text = "Nieznany gracz";
+                    playerName.Text = Messages.timeline_unknownPlayer;
                 }
 
                 player.Source = LoadResources.LoadImage(championPath, LoadResources.ImagePath_t.DD_champion, true).image;

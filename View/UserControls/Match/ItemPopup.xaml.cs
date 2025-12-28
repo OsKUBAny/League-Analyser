@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
@@ -112,7 +113,12 @@ namespace League_Analyser.View.UserControls
             name.Text = spell.name;
             description.Text = spell.description;
 
-            gold.Text = string.Format("{0} seconds", spell.cooldownBurn);
+            // 'Seconds' text is related to resources language
+            System.Globalization.CultureInfo resLang;
+            try { resLang = new System.Globalization.CultureInfo(Properties.Settings.Default.ResourcesLanguage); }
+            catch (Exception) {  resLang = new System.Globalization.CultureInfo("en-US"); }
+
+            gold.Text = string.Format("{0} {1}", spell.cooldownBurn, Messages.ResourceManager.GetString("match_popupSeconds", resLang));
             goldIcon.Visibility = Visibility.Collapsed;
         }
     }

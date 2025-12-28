@@ -24,7 +24,7 @@
 
         <Rectangle Name="barRight" Fill="LightGray" Grid.Column="1" Margin="0,15,0,15" HorizontalAlignment="Right" Width="100"/>
 
-        <TextBlock Name="statusText" Text="ZDOBYWCA" Foreground="#FF67E200" FontSize="15" Grid.Column="1"
+        <TextBlock Name="statusText" Text="ACHIEVER" Foreground="#FF67E200" FontSize="15" Grid.Column="1"
                    VerticalAlignment="Center" HorizontalAlignment="Left" Margin="00,0,0,0" FontWeight="Bold"/>
 
         <Rectangle Name="statusIndicator" Grid.ColumnSpan="2" Margin="0,0,0,0" HorizontalAlignment="Left"

@@ -54,11 +54,13 @@ namespace League_Analyser.View.UserControls
                 damageTotalPlayer.Visibility = Visibility.Collapsed;
             }
 
-            damagePercentText_skill.Text = string.Format("obrażeń: {0}%",
+            damagePercentText_skill.Text = string.Format("{0}: {1}%",
+                Messages.timeline_damagebar_participationSkill,
                 Math.Round(damagePercent_skill * 100, 0, MidpointRounding.AwayFromZero));
             damageTotalSkill.Width = Width * damagePercent_skill;
 
-            damagePercentText_player.Text = string.Format("gracza: {0}%",
+            damagePercentText_player.Text = string.Format("{0}: {1}%",
+                Messages.timeline_damagebar_participationPlayer,
                 Math.Round(damagePercent_player * 100, 0, MidpointRounding.AwayFromZero));
             damageTotalPlayer.Width = Width * damagePercent_player;
         }
