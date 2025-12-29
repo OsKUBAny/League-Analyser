@@ -31,7 +31,7 @@ namespace League_Analyser.View.Screens
             };
 
             if (settings.updateDDneeded == true) panel_DDupdate.Visibility = Visibility.Visible;
-            if (settings.updateData.isUpdateNeeded == true)
+            if (settings.updateData != null && settings.updateData.isUpdateNeeded == true)
             {
                 AppUpdateVersion.Text = string.Format("{0} {1}", Messages.settings_versionApp, settings.updateData.version);
                 AppUpdateDate.Text = settings.updateData.date;
