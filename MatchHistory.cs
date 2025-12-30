@@ -113,7 +113,7 @@ namespace League_Analyser
                 new Statistics(Messages.matchHistory_statistic_skills_rPercent, CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastR, DisplayType_t.twoValuesAndBar),
                 new Statistics(Messages.matchHistory_statistic_skills_d, CategoryType_t.abilities, p => p.spellCastD, DisplayType_t.valueAndBar),
                 new Statistics(Messages.matchHistory_statistic_skills_f, CategoryType_t.abilities, p => p.spellCastF, DisplayType_t.valueAndBar),
-                new Statistics(Messages.matchHistory_statistic_skills_dfRatio, CategoryType_t.abilities, p => p.spellCastD, p => p.spellCastF, DisplayType_t.twoValuesAndBar), // Warning: sick variable, handled manually
+                new Statistics(Messages.matchHistory_statistic_skills_dfRatio, CategoryType_t.abilities, (p => p.spellCastD + p.spellCastF), p => p.spellCastD, DisplayType_t.twoValuesAndBar), // Warning: sick variable, handled manually
                 new Statistics(Messages.matchHistory_statistic_skills_fForFlash, CategoryType_t.abilities, p => p.hasFlashOnF, DisplayType_t.boolOnly)
             };
         }
