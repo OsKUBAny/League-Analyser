@@ -232,7 +232,7 @@ namespace League_Analyser.View.UserControls
             var taskResult = new TaskCompletionSource<bool>();
             animation_slideOut.Completed += (sender, e) =>
             {
-                taskResult.SetResult(true);
+                taskResult.TrySetResult(true);
 
                 if (this.Parent is Panel parentPanel)
                 {
