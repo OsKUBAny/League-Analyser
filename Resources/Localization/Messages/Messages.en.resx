@@ -118,104 +118,104 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="mainWindow_closing_title" xml:space="preserve">
-    <value>Potwierdzenie zamknięcia</value>
+    <value>Confirm closing</value>
   </data>
   <data name="mainWindow_closing_message" xml:space="preserve">
-    <value>Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików.
-Czy na pewno chcesz teraz zamknąć aplikację?</value>
+    <value>Currently downloading process is running, closing app may cause files corruption.
+Do you really want to close app now?</value>
   </data>
   <data name="mainWindow_appVersion" xml:space="preserve">
-    <value>Wersja aplikacji:</value>
+    <value>Application version:</value>
   </data>
   <data name="mainWindow_dataVersion" xml:space="preserve">
-    <value>Wersja danych:</value>
+    <value>Data version:</value>
   </data>
   <data name="mainWindow_patchVersion" xml:space="preserve">
     <value>Patch (DataDragon):</value>
   </data>
   <data name="loadResources_unexpectedType" xml:space="preserve">
-    <value>Nieoczekiwany typ: </value>
+    <value>Unexpected type:</value>
   </data>
   <data name="matchHistory_category_general" xml:space="preserve">
-    <value>Statystyki ogólne</value>
+    <value>General statistics</value>
   </data>
   <data name="matchHistory_category_gold" xml:space="preserve">
-    <value>Złoto</value>
+    <value>Gold</value>
   </data>
   <data name="matchHistory_category_damageDealt" xml:space="preserve">
-    <value>Zadane obrażenia</value>
+    <value>Damage dealt</value>
   </data>
   <data name="matchHistory_category_damageRecived" xml:space="preserve">
-    <value>Otrzymane obrażenia</value>
+    <value>Damage received</value>
   </data>
   <data name="matchHistory_category_gameTime" xml:space="preserve">
-    <value>Czas gry</value>
+    <value>Game time</value>
   </data>
   <data name="matchHistory_category_achievements" xml:space="preserve">
-    <value>Cele i osiągnięcia</value>
+    <value>Targets and achievements</value>
   </data>
   <data name="matchHistory_category_playerStats" xml:space="preserve">
-    <value>Statystyki postaci</value>
+    <value>Champion statistics</value>
   </data>
   <data name="matchHistory_category_skills" xml:space="preserve">
-    <value>Użyte umiejętności</value>
+    <value>Used skills</value>
   </data>
   <data name="matchHistory_statistic_general_kills" xml:space="preserve">
-    <value>Zabójstwa</value>
+    <value>Kills</value>
   </data>
   <data name="matchHistory_statistic_general_assists" xml:space="preserve">
-    <value>Asysty</value>
+    <value>Assists</value>
   </data>
   <data name="matchHistory_statistic_general_deaths" xml:space="preserve">
-    <value>Zgony</value>
+    <value>Deaths</value>
   </data>
   <data name="matchHistory_statistic_general_minions" xml:space="preserve">
-    <value>Zabite miniony</value>
+    <value>Minions killed</value>
   </data>
   <data name="matchHistory_statistic_gold_gained" xml:space="preserve">
-    <value>Zdobyte złoto</value>
-  </data>
-  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
-    <value>Stosunek złota (wydane/zdobyte)</value>
+    <value>Gold gained</value>
   </data>
   <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
-    <value>Wydane złoto</value>
+    <value>Gold ratio (spent/gained)</value>
+  </data>
+  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
+    <value>Gold spent</value>
   </data>
   <data name="matchHistory_statistic_damage_physical" xml:space="preserve">
-    <value>Fizyczne</value>
+    <value>Physical</value>
   </data>
   <data name="matchHistory_statistic_damage_magic" xml:space="preserve">
-    <value>Magiczne</value>
+    <value>Magic</value>
   </data>
   <data name="matchHistory_statistic_damage_true" xml:space="preserve">
     <value>True damage</value>
   </data>
   <data name="matchHistory_statistic_damage_total" xml:space="preserve">
-    <value>Całkowite</value>
+    <value>Total</value>
   </data>
   <data name="matchHistory_statistic_damage_objectives" xml:space="preserve">
-    <value>Obiektom</value>
+    <value>To objectives</value>
   </data>
   <data name="matchHistory_statistic_damage_physicalPercent" xml:space="preserve">
-    <value>% fizycznych</value>
+    <value>% physical</value>
   </data>
   <data name="matchHistory_statistic_damage_magicPercent" xml:space="preserve">
-    <value>% magicznych</value>
+    <value>% magic</value>
   </data>
   <data name="matchHistory_statistic_damage_truePercent" xml:space="preserve">
     <value>% true damage</value>
   </data>
   <data name="matchHistory_statistic_damage_teamPercent" xml:space="preserve">
-    <value>% całej drużyny</value>
+    <value>% team</value>
   </data>
   <data name="matchHistory_statistic_time_alive" xml:space="preserve">
-    <value>% czasu będąc żywym</value>
+    <value>% time being alive</value>
   </data>
   <data name="matchHistory_statistic_time_aliveMax" xml:space="preserve">
-    <value>Najdłuższy czas bycia żywym</value>
+    <value>Longest time being alive</value>
   </data>
   <data name="matchHistory_statistic_time_cc" xml:space="preserve">
-    <value>Czas zadanych efektów CC</value>
+    <value>Total time of dealt CC effects</value>
   </data>
   <data name="matchHistory_statistic_achivements_double" xml:space="preserve">
     <value>Double kills</value>
@@ -230,178 +230,178 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
     <value>Penta kills</value>
   </data>
   <data name="matchHistory_statistic_achivements_seriesMax" xml:space="preserve">
-    <value>Największa seria zabójstw</value>
+    <value>Largest killing spree</value>
   </data>
   <data name="matchHistory_statistic_achivements_turretParticipant" xml:space="preserve">
-    <value>Udział w zniszczeniu wież</value>
+    <value>Participation in destroying turrers</value>
   </data>
   <data name="matchHistory_statistic_achivements_inhibitorParticipant" xml:space="preserve">
-    <value>Udział w zniszczeniu inhibitorów</value>
+    <value>Participation in destroying inhibitors</value>
   </data>
   <data name="matchHistory_statistic_achivements_firstTurret" xml:space="preserve">
-    <value>Pierwsza wieża</value>
+    <value>First turret</value>
   </data>
   <data name="matchHistory_statistic_achivements_steals" xml:space="preserve">
-    <value>Ukradzione cele</value>
+    <value>Targets stolen</value>
   </data>
   <data name="matchHistory_statistic_player_critMax" xml:space="preserve">
-    <value>Największe trafienie krytyczne</value>
+    <value>Largest critical strike</value>
   </data>
   <data name="matchHistory_statistic_player_healthRestored" xml:space="preserve">
-    <value>Przywrócone zdrowie</value>
+    <value>Health restored</value>
   </data>
   <data name="matchHistory_statistic_player_damageMitigated" xml:space="preserve">
-    <value>Obrażenia zmniejszone przez pancerz/odporność</value>
+    <value>Damage decreased by armor/magic resist</value>
   </data>
   <data name="matchHistory_statistic_player_teammatesHealed" xml:space="preserve">
-    <value>Uleczenie sojuszników</value>
+    <value>Allays healed</value>
   </data>
   <data name="matchHistory_statistic_player_damageShielded" xml:space="preserve">
-    <value>Obrażenia zablokowane przez rzucone tarcze</value>
+    <value>Damage decreased by shields</value>
   </data>
   <data name="matchHistory_statistic_player_visionScore" xml:space="preserve">
-    <value>Punkty wizji</value>
+    <value>Vision score</value>
   </data>
   <data name="matchHistory_statistic_player_wardsPlaced" xml:space="preserve">
-    <value>Postawione totemy</value>
+    <value>Wards placed</value>
   </data>
   <data name="matchHistory_statistic_skills_q" xml:space="preserve">
-    <value>Użycia Q</value>
+    <value>Usage of Q</value>
   </data>
   <data name="matchHistory_statistic_skills_w" xml:space="preserve">
-    <value>Użycia W</value>
+    <value>Usage of W</value>
   </data>
   <data name="matchHistory_statistic_skills_e" xml:space="preserve">
-    <value>Użycia E</value>
+    <value>Usage of E</value>
   </data>
   <data name="matchHistory_statistic_skills_r" xml:space="preserve">
-    <value>Użycia R</value>
+    <value>Usage of R</value>
   </data>
   <data name="matchHistory_statistic_skills_qwerTotal" xml:space="preserve">
-    <value>Łącznie [Q, W, E, R]</value>
+    <value>Total [Q, W, E, R]</value>
   </data>
   <data name="matchHistory_statistic_skills_qPercent" xml:space="preserve">
-    <value>% użycia Q</value>
+    <value>% usage of Q</value>
   </data>
   <data name="matchHistory_statistic_skills_wPercent" xml:space="preserve">
-    <value>% użycia W</value>
+    <value>% usage of W</value>
   </data>
   <data name="matchHistory_statistic_skills_ePercent" xml:space="preserve">
-    <value>% użycia E</value>
+    <value>% usage of E</value>
   </data>
   <data name="matchHistory_statistic_skills_rPercent" xml:space="preserve">
-    <value>% użycia R</value>
+    <value>% usage of R</value>
   </data>
   <data name="matchHistory_statistic_skills_d" xml:space="preserve">
-    <value>Użycia D</value>
+    <value>Usage of D</value>
   </data>
   <data name="matchHistory_statistic_skills_f" xml:space="preserve">
-    <value>Użycia F</value>
+    <value>Usage of F</value>
   </data>
   <data name="matchHistory_statistic_skills_dfRatio" xml:space="preserve">
-    <value>% użycia D / % użycia F</value>
+    <value>% usage of D / % usage of F</value>
   </data>
   <data name="matchHistory_statistic_skills_fForFlash" xml:space="preserve">
-    <value>"F for Flash" czyli gracz jest ułomny</value>
+    <value>"F for Flash" - player is retarded</value>
   </data>
   <data name="settings_profileUnknown" xml:space="preserve">
-    <value>(nieznana)</value>
+    <value>(unknown)</value>
   </data>
   <data name="settings_deleteProfile_message" xml:space="preserve">
-    <value>Czy na pewno chcesz usunąć ten profil?</value>
+    <value>Are you sure you want to delete this profile?</value>
   </data>
   <data name="settings_deleteProfile_title" xml:space="preserve">
-    <value>Usuwanie profiu</value>
+    <value>Delete profile</value>
   </data>
   <data name="settings_noDDreference" xml:space="preserve">
-    <value>Nie odnaleziono referencji do folderu DataDragon</value>
+    <value>Unable to get DataDragon folder reference</value>
   </data>
   <data name="settings_noUpdateLink" xml:space="preserve">
-    <value>Nie udało się pobrać odnośnika do pobrania nowej wersji</value>
+    <value>Failed to get new version tag value</value>
   </data>
   <data name="settings_updateBat_preparing" xml:space="preserve">
-    <value>Przygotowywanie do instalacji...</value>
+    <value>Preparing for installation...</value>
   </data>
   <data name="settings_updateBat_closing" xml:space="preserve">
-    <value>Zamykanie aplikacji...</value>
+    <value>Closing application...</value>
   </data>
   <data name="settings_updateBat_swapping" xml:space="preserve">
-    <value>Podmienianie plików...</value>
+    <value>Copying files...</value>
   </data>
   <data name="settings_updateBat_deleting" xml:space="preserve">
-    <value>Usuwanie plików aktualizacji...</value>
+    <value>Deleting update files...</value>
   </data>
   <data name="settings_updateBat_starting" xml:space="preserve">
-    <value>Uruchamianie nowej wersji aplikacji...</value>
+    <value>Starting new application's version...</value>
   </data>
   <data name="timeline_eventName_turretDestroyed" xml:space="preserve">
-    <value>Zniszczona wieża</value>
+    <value>Turret Destroyed</value>
   </data>
   <data name="timeline_eventName_inhibitorDestroyed" xml:space="preserve">
-    <value>Zniszczony inhibitor</value>
+    <value>Inhibitor Destroyed</value>
   </data>
   <data name="timeline_eventName_dragonCloudKilled" xml:space="preserve">
-    <value>Zabicie Smoka Powietrznego</value>
+    <value>Cloud Dragon Kill</value>
   </data>
   <data name="timeline_eventName_dragonMountainKilled" xml:space="preserve">
-    <value>Zabicie Smoka Górskiego</value>
+    <value>Mountain Dragon Kill</value>
   </data>
   <data name="timeline_eventName_dragonInfernalKilled" xml:space="preserve">
-    <value>Zabicie Smoka Piekielnego</value>
+    <value>Infernal Dragon Kill</value>
   </data>
   <data name="timeline_eventName_dragonOceanKilled" xml:space="preserve">
-    <value>Zabicie Smoka Oceanicznego</value>
+    <value>Ocean Dragon Kill</value>
   </data>
   <data name="timeline_eventName_dragonHextechKilled" xml:space="preserve">
-    <value>Zabicie Smoka Hextechowego</value>
+    <value>Hextech Dragon Kill</value>
   </data>
   <data name="timeline_eventName_dragonChemtechKilled" xml:space="preserve">
-    <value>Zabicie Smoka Chemtechowego</value>
+    <value>Chemtech Dragon Kill</value>
   </data>
   <data name="timeline_eventName_dragonElderKilled" xml:space="preserve">
-    <value>Zabicie Starszego Smoka</value>
+    <value>Elder Dragon Kill</value>
   </data>
   <data name="timeline_eventName_heraldKilled" xml:space="preserve">
-    <value>Zabicie Heralda</value>
+    <value>Herald Kill</value>
   </data>
   <data name="timeline_eventName_baronKilled" xml:space="preserve">
-    <value>Zabicie Barona Nashora</value>
+    <value>Baron Nashor Kill</value>
   </data>
   <data name="timeline_eventName_voidgrubKilled" xml:space="preserve">
-    <value>Zabicie Voidgrubs'a</value>
+    <value>Voidgrub Kill</value>
   </data>
   <data name="timeline_eventName_atakhanKilled" xml:space="preserve">
-    <value>Zabicie Atakhan'a</value>
+    <value>Atakhan Kill</value>
   </data>
   <data name="timeline_eventName_enemyKill" xml:space="preserve">
-    <value>Zabicie Przeciwnika</value>
+    <value>Enemy Kill</value>
   </data>
   <data name="timeline_eventName_allayKill" xml:space="preserve">
-    <value>Zabicie Sojusznika</value>
+    <value>Allay Kill</value>
   </data>
   <data name="timeline_eventName_suicideKill" xml:space="preserve">
-    <value>Samobójstwo Gracza</value>
+    <value>Player Suicide</value>
   </data>
   <data name="timeline_eventName_playerKill" xml:space="preserve">
-    <value>Zabójstwo Gracza</value>
+    <value>Player Kill</value>
   </data>
   <data name="timeline_attack_other" xml:space="preserve">
-    <value>Inne</value>
+    <value>Other</value>
   </data>
   <data name="timeline_attack_autoattack" xml:space="preserve">
-    <value>Atak</value>
+    <value>Atack</value>
   </data>
   <data name="timeline_attack_minion" xml:space="preserve">
-    <value>Miniony</value>
+    <value>Minions</value>
   </data>
   <data name="timeline_attack_turret" xml:space="preserve">
-    <value>Wieża</value>
+    <value>Turret</value>
   </data>
   <data name="timeline_attack_monster" xml:space="preserve">
-    <value>Potwory</value>
+    <value>Monsters</value>
   </data>
   <data name="matchHistory_scroll_rangeText" xml:space="preserve">
-    <value>z</value>
+    <value>of</value>
   </data>
   <data name="settings_appLanguage" xml:space="preserve">
     <value>Language</value>
@@ -410,174 +410,183 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
     <value>Resources</value>
   </data>
   <data name="settings_selectProfile" xml:space="preserve">
-    <value>Wybierz profil</value>
+    <value>Select profile</value>
   </data>
   <data name="settings_addNewProfile" xml:space="preserve">
-    <value>Dodaj nowy profil</value>
+    <value>Add new profile</value>
   </data>
   <data name="settings_buttonLanguageSave" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="settings_buttonProfileSelect" xml:space="preserve">
-    <value>Wybierz</value>
+    <value>Select</value>
   </data>
   <data name="settings_buttonAddNewProfile" xml:space="preserve">
-    <value>Dodaj profil</value>
+    <value>Add profile</value>
   </data>
   <data name="settings_languageRebootInfo" xml:space="preserve">
     <value>Language will change after application reboot</value>
   </data>
   <data name="settings_settingsText" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Settings</value>
   </data>
   <data name="matchHistory_statistic_achivements_firstBlood" xml:space="preserve">
-    <value>Pierwsza krew</value>
+    <value>First blood</value>
   </data>
   <data name="settings_updateApp" xml:space="preserve">
-    <value>Dostępna aktualizacja aplikacji</value>
+    <value>New application version is avaiable</value>
   </data>
   <data name="settings_updateDD" xml:space="preserve">
-    <value>Dostępna aktualizacja plików zasobów (DataDragon)</value>
+    <value>New resource files (DataDragon) are avaiable</value>
   </data>
   <data name="settings_buttonUpdate" xml:space="preserve">
-    <value>Aktualizuj</value>
+    <value>Update</value>
   </data>
   <data name="settings_versionApp" xml:space="preserve">
-    <value>wersja</value>
+    <value>version</value>
   </data>
   <data name="menu_statistics" xml:space="preserve">
-    <value>Statystyki</value>
+    <value>Statistics</value>
   </data>
   <data name="menu_matchHistory" xml:space="preserve">
-    <value>Historia meczy</value>
+    <value>Match history</value>
   </data>
   <data name="menu_settings" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Settings</value>
   </data>
   <data name="match_popupSeconds" xml:space="preserve">
     <value>seconds</value>
   </data>
   <data name="match_unknownChampion" xml:space="preserve">
-    <value>(nieznana postać)</value>
+    <value>(unknown champion)</value>
   </data>
   <data name="match_emptyChampionData" xml:space="preserve">
-    <value>Zwrócono pusty obiekt championDataDto</value>
+    <value>Returned empty championDataDto object</value>
   </data>
   <data name="match_unableToLoadImg" xml:space="preserve">
-    <value>Nie udało się załadować grafiki</value>
+    <value>Failed to load graphic</value>
   </data>
   <data name="match_unknownMap" xml:space="preserve">
-    <value>(nieznana mapa)</value>
+    <value>(unknown map)</value>
   </data>
   <data name="match_gameDuration" xml:space="preserve">
-    <value>Czas trwania</value>
+    <value>Duration time</value>
   </data>
   <data name="match_victory" xml:space="preserve">
-    <value>Zwycięstwo</value>
+    <value>Victory</value>
   </data>
   <data name="match_defeat" xml:space="preserve">
-    <value>Porażka</value>
+    <value>Defeat</value>
   </data>
   <data name="match_allayTeam" xml:space="preserve">
-    <value>Twoja drużyna:</value>
+    <value>Your team:</value>
   </data>
   <data name="match_enemyTeam" xml:space="preserve">
-    <value>Przeciwna drużyna:</value>
+    <value>Enemy team:</value>
   </data>
   <data name="match_gameSurrendered" xml:space="preserve">
-    <value>Mecz został poddany</value>
+    <value>Match has been surrendered</value>
   </data>
-  <data name="match_statisticBar_achiver" xml:space="preserve">
-    <value>Zdobywca</value>
+  <data name="match_statisticBar_achiever" xml:space="preserve">
+    <value>Achiever</value>
   </data>
   <data name="match_statisticBar_assist" xml:space="preserve">
-    <value>Asysta</value>
+    <value>Assist</value>
   </data>
   <data name="settings_newPlayer_name" xml:space="preserve">
-    <value>Nazwa użytkownika</value>
+    <value>Username</value>
   </data>
   <data name="settings_newPlayer_tag" xml:space="preserve">
     <value>Tag</value>
   </data>
   <data name="settings_newPlayer_server" xml:space="preserve">
-    <value>Serwer</value>
+    <value>Server</value>
   </data>
   <data name="settings_newPlayer_button_cancel" xml:space="preserve">
-    <value>Anuluj</value>
+    <value>Cancel</value>
   </data>
   <data name="settings_newPlayer_button_add" xml:space="preserve">
-    <value>Dodaj</value>
+    <value>Add</value>
   </data>
   <data name="settings_profileDetails_dataVersion" xml:space="preserve">
-    <value>Wersja pliku danych</value>
+    <value>Data file version</value>
   </data>
   <data name="settings_profileDetails_numberOfGames" xml:space="preserve">
-    <value>Liczba zapisanych rozgrywek</value>
+    <value>Number of saved games</value>
   </data>
   <data name="settings_profileDetails_lastGame" xml:space="preserve">
-    <value>Ostatnia rozgrywka</value>
+    <value>Last game</value>
   </data>
   <data name="timeline_axis_none" xml:space="preserve">
-    <value>Brak</value>
+    <value>none</value>
   </data>
   <data name="timeline_axis_selectedPlayers" xml:space="preserve">
-    <value>Wybrano {0} z {1} graczy</value>
+    <value>Selected {0} of {1} players</value>
   </data>
   <data name="timeline_axis_kills" xml:space="preserve">
-    <value>zabójstwa</value>
+    <value>kills</value>
   </data>
   <data name="timeline_axis_assists" xml:space="preserve">
-    <value>asysty</value>
+    <value>assists</value>
   </data>
   <data name="timeline_axis_deaths" xml:space="preserve">
-    <value>śmierci</value>
+    <value>deaths</value>
   </data>
   <data name="timeline_damageBar_participationInFight" xml:space="preserve">
-    <value>Udział w walce</value>
+    <value>Participation in fight</value>
   </data>
   <data name="timeline_damagebar_participationSkill" xml:space="preserve">
-    <value>obrażeń</value>
+    <value>damage</value>
   </data>
   <data name="timeline_damagebar_participationPlayer" xml:space="preserve">
-    <value>gracza</value>
+    <value>player</value>
   </data>
   <data name="timeline_damageSummary_playerParticipation" xml:space="preserve">
-    <value>Udział obrażeń gracza</value>
+    <value>Player's participation</value>
   </data>
   <data name="timeline_popup_damage" xml:space="preserve">
-    <value>Obrażenia</value>
+    <value>Damage</value>
   </data>
   <data name="timeline_popup_damageTotal" xml:space="preserve">
-    <value>Całkowite</value>
+    <value>Total</value>
   </data>
   <data name="timeline_popup_damagePhysical" xml:space="preserve">
-    <value>Fizyczne</value>
+    <value>Physical</value>
   </data>
   <data name="timeline_popup_damageMagic" xml:space="preserve">
-    <value>Magiczne</value>
+    <value>Magic</value>
   </data>
   <data name="timeline_popup_damageTrue" xml:space="preserve">
-    <value>True:</value>
+    <value>True</value>
   </data>
   <data name="timeline_unknownPlayer" xml:space="preserve">
-    <value>Nieznany gracz</value>
+    <value>Unknown player</value>
   </data>
   <data name="timeline_other" xml:space="preserve">
-    <value>Inne źródła</value>
+    <value>Other sources</value>
   </data>
   <data name="timeline_noEventTypeData" xml:space="preserve">
-    <value>Brak informacji odnośnie wydarzenia</value>
+    <value>No information about event</value>
   </data>
   <data name="timeline_byAllayTeam" xml:space="preserve">
-    <value>Przez twoją drużynę</value>
+    <value>By your team</value>
   </data>
   <data name="timeline_byEnemyTeam" xml:space="preserve">
-    <value>Przez przeciwną drużynę</value>
+    <value>By enemy team</value>
   </data>
   <data name="timeline_inAllayTeam" xml:space="preserve">
-    <value>W twojej drużynie</value>
+    <value>In your team</value>
   </data>
   <data name="timeline_inEnemyTeam" xml:space="preserve">
-    <value>W przeciwnej drużynie</value>
+    <value>In enemy Team</value>
+  </data>
+  <data name="settings_delete" xml:space="preserve">
+    <value>Delete profile</value>
+  </data>
+  <data name="settings_setActive" xml:space="preserve">
+    <value>Set as active</value>
+  </data>
+  <data name="settings_downloadFromZero" xml:space="preserve">
+    <value>Download from zero</value>
   </data>
 </root>

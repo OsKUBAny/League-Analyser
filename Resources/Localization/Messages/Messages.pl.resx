@@ -175,10 +175,10 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
   <data name="matchHistory_statistic_gold_gained" xml:space="preserve">
     <value>Zdobyte złoto</value>
   </data>
-  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
+  <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
     <value>Stosunek złota (wydane/zdobyte)</value>
   </data>
-  <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
+  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
     <value>Wydane złoto</value>
   </data>
   <data name="matchHistory_statistic_damage_physical" xml:space="preserve">
@@ -487,7 +487,7 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
   <data name="match_gameSurrendered" xml:space="preserve">
     <value>Mecz został poddany</value>
   </data>
-  <data name="match_statisticBar_achiver" xml:space="preserve">
+  <data name="match_statisticBar_achiever" xml:space="preserve">
     <value>Zdobywca</value>
   </data>
   <data name="match_statisticBar_assist" xml:space="preserve">
@@ -557,7 +557,7 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
     <value>Magiczne</value>
   </data>
   <data name="timeline_popup_damageTrue" xml:space="preserve">
-    <value>True:</value>
+    <value>True</value>
   </data>
   <data name="timeline_unknownPlayer" xml:space="preserve">
     <value>Nieznany gracz</value>
@@ -579,5 +579,14 @@ Czy na pewno chcesz teraz zamknąć aplikację?</value>
   </data>
   <data name="timeline_inEnemyTeam" xml:space="preserve">
     <value>W przeciwnej drużynie</value>
+  </data>
+  <data name="settings_delete" xml:space="preserve">
+    <value>Usuń profil</value>
+  </data>
+  <data name="settings_setActive" xml:space="preserve">
+    <value>Ustaw jako aktywny</value>
+  </data>
+  <data name="settings_downloadFromZero" xml:space="preserve">
+    <value>Pobierz od zera</value>
   </data>
 </root>

@@ -179,7 +179,7 @@ namespace League_Analyser.View.UserControls
                 statusText.Visibility = Visibility.Visible;
                 statusIndicator.Visibility = Visibility.Visible;
 
-                statusText.Text = Messages.match_statisticBar_achiver.ToUpper();
+                statusText.Text = Messages.match_statisticBar_achiever.ToUpper();
                 statusText.Foreground = claimerColor;
                 statusIndicator.Fill = statusClaimerGrad;
             }

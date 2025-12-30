@@ -123,7 +123,7 @@
   </data>
   <data name="mainWindow_closing_message" xml:space="preserve">
     <value>Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików.
-\nCzy na pewno chcesz teraz zamknąć aplikację?</value>
+Czy na pewno chcesz teraz zamknąć aplikację?</value>
     <comment>MessageBox's message for closing window warning</comment>
   </data>
   <data name="mainWindow_appVersion" xml:space="preserve">
@@ -156,7 +156,7 @@
   </data>
   <data name="matchHistory_category_damageRecived" xml:space="preserve">
     <value>Otrzymane obrażenia</value>
-    <comment>Category name for damage recived</comment>
+    <comment>Category name for damage received</comment>
   </data>
   <data name="matchHistory_category_gameTime" xml:space="preserve">
     <value>Czas gry</value>
@@ -194,11 +194,11 @@
     <value>Zdobyte złoto</value>
     <comment>Statistic name for Gold/earned</comment>
   </data>
-  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
+  <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
     <value>Stosunek złota (wydane/zdobyte)</value>
     <comment>Statistic name for Gold/earned-spend ratio</comment>
   </data>
-  <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
+  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
     <value>Wydane złoto</value>
     <comment>Statistic name for Gold/spend</comment>
   </data>
@@ -610,9 +610,9 @@
     <value>Mecz został poddany</value>
     <comment>Text for surrender message</comment>
   </data>
-  <data name="match_statisticBar_achiver" xml:space="preserve">
+  <data name="match_statisticBar_achiever" xml:space="preserve">
     <value>Zdobywca</value>
-    <comment>Text for 'achiver' in statistics bar for match</comment>
+    <comment>Text for 'achiever' in statistics bar for match</comment>
   </data>
   <data name="match_statisticBar_assist" xml:space="preserve">
     <value>Asysta</value>
@@ -703,7 +703,7 @@
     <comment>Text for timeline spell popup's magic damage</comment>
   </data>
   <data name="timeline_popup_damageTrue" xml:space="preserve">
-    <value>True:</value>
+    <value>True</value>
     <comment>Text for timeline spell popup's true damage</comment>
   </data>
   <data name="timeline_unknownPlayer" xml:space="preserve">
@@ -733,5 +733,17 @@
   <data name="timeline_inEnemyTeam" xml:space="preserve">
     <value>W przeciwnej drużynie</value>
     <comment>Comment for event done in enemy team</comment>
+  </data>
+  <data name="settings_delete" xml:space="preserve">
+    <value>Usuń profil</value>
+    <comment>Button's text for deleting profile</comment>
+  </data>
+  <data name="settings_setActive" xml:space="preserve">
+    <value>Ustaw jako aktywny</value>
+    <comment>Button's text for setting profile as active</comment>
+  </data>
+  <data name="settings_downloadFromZero" xml:space="preserve">
+    <value>Pobierz od zera</value>
+    <comment>Button's text for downloading data from zero</comment>
   </data>
 </root>

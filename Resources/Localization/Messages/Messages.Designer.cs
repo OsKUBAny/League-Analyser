@@ -80,7 +80,7 @@ namespace League_Analyser {
         
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików.
-        ///\nCzy na pewno chcesz teraz zamknąć aplikację?.
+        ///Czy na pewno chcesz teraz zamknąć aplikację?.
         /// </summary>
         public static string mainWindow_closing_message {
             get {
@@ -181,9 +181,9 @@ namespace League_Analyser {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zdobywca.
         /// </summary>
-        public static string match_statisticBar_achiver {
+        public static string match_statisticBar_achiever {
             get {
-                return ResourceManager.GetString("match_statisticBar_achiver", resourceCulture);
+                return ResourceManager.GetString("match_statisticBar_achiever", resourceCulture);
             }
         }
         
@@ -530,7 +530,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wydane złoto.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Stosunek złota (wydane/zdobyte).
         /// </summary>
         public static string matchHistory_statistic_gold_ratio {
             get {
@@ -539,7 +539,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Stosunek złota (wydane/zdobyte).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wydane złoto.
         /// </summary>
         public static string matchHistory_statistic_gold_spend {
             get {
@@ -836,6 +836,15 @@ namespace League_Analyser {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usuń profil.
+        /// </summary>
+        public static string settings_delete {
+            get {
+                return ResourceManager.GetString("settings_delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czy na pewno chcesz usunąć ten profil?.
         /// </summary>
         public static string settings_deleteProfile_message {
@@ -850,6 +859,15 @@ namespace League_Analyser {
         public static string settings_deleteProfile_title {
             get {
                 return ResourceManager.GetString("settings_deleteProfile_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobierz od zera.
+        /// </summary>
+        public static string settings_downloadFromZero {
+            get {
+                return ResourceManager.GetString("settings_downloadFromZero", resourceCulture);
             }
         }
         
@@ -976,6 +994,15 @@ namespace League_Analyser {
         public static string settings_selectProfile {
             get {
                 return ResourceManager.GetString("settings_selectProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ustaw jako aktywny.
+        /// </summary>
+        public static string settings_setActive {
+            get {
+                return ResourceManager.GetString("settings_setActive", resourceCulture);
             }
         }
         
@@ -1430,7 +1457,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu True:.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu True.
         /// </summary>
         public static string timeline_popup_damageTrue {
             get {
