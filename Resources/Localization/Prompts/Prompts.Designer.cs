@@ -169,6 +169,141 @@ namespace League_Analyser {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć pobranych danych szczątkowych pliku DataDragon.
+        /// </summary>
+        internal static string dd_deleteUpdateFilesError {
+            get {
+                return ResourceManager.GetString("dd_deleteUpdateFilesError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa pobieranie pliku DataDragon....
+        /// </summary>
+        internal static string dd_downloading {
+            get {
+                return ResourceManager.GetString("dd_downloading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna aktualizacja danych DataDragon.
+        /// </summary>
+        internal static string dd_hasUpdate {
+            get {
+                return ResourceManager.GetString("dd_hasUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie odnaleziono folderu &quot;data&quot;.
+        /// </summary>
+        internal static string dd_noFolder {
+            get {
+                return ResourceManager.GetString("dd_noFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak odniesienia do wersji plików DataDragon.
+        /// </summary>
+        internal static string dd_noReference {
+            get {
+                return ResourceManager.GetString("dd_noReference", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie znaleziono pliku DataDragon.
+        /// </summary>
+        internal static string dd_notExist {
+            get {
+                return ResourceManager.GetString("dd_notExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać wartości najnowszej wersji.
+        /// </summary>
+        internal static string dd_noVersionReference {
+            get {
+                return ResourceManager.GetString("dd_noVersionReference", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przejdź do ustawień i wykonaj aktualizację danych zasobów.
+        /// </summary>
+        internal static string dd_update {
+            get {
+                return ResourceManager.GetString("dd_update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania aktualizacji danych źródłowych.
+        /// </summary>
+        internal static string dd_updateError {
+            get {
+                return ResourceManager.GetString("dd_updateError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Aktualna wersja to {0}.
+        /// </summary>
+        internal static string dd_updateFinished_msg {
+            get {
+                return ResourceManager.GetString("dd_updateFinished_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie ukończono aktualizację danych źródłowych.
+        /// </summary>
+        internal static string dd_updateFinished_title {
+            get {
+                return ResourceManager.GetString("dd_updateFinished_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby aktualizacji danych źródłowych. Wycofano zmiany.
+        /// </summary>
+        internal static string dd_updateRevert {
+            get {
+                return ResourceManager.GetString("dd_updateRevert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania danych.
+        /// </summary>
+        internal static string load_downloadingError {
+            get {
+                return ResourceManager.GetString("load_downloadingError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa ładowanie....
+        /// </summary>
+        internal static string load_loading {
+            get {
+                return ResourceManager.GetString("load_loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas ładowania danych.
+        /// </summary>
+        internal static string load_loadingError {
+            get {
+                return ResourceManager.GetString("load_loadingError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd deserializacji danych.
         /// </summary>
         internal static string loadResources_deserialyze {
@@ -210,6 +345,339 @@ namespace League_Analyser {
         internal static string loadResources_serialyze {
             get {
                 return ResourceManager.GetString("loadResources_serialyze", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dla {0} rozgrywek nie udało się w pełni załadować danych.
+        /// </summary>
+        internal static string match_dataAllNotLoaded {
+            get {
+                return ResourceManager.GetString("match_dataAllNotLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dane są aktualne.
+        /// </summary>
+        internal static string match_dataUpToDate {
+            get {
+                return ResourceManager.GetString("match_dataUpToDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać szczegółów rozgrywki dla tej gry.
+        /// </summary>
+        internal static string match_detailsNotLoaded {
+            get {
+                return ResourceManager.GetString("match_detailsNotLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie meczu {0} z {1}....
+        /// </summary>
+        internal static string match_download {
+            get {
+                return ResourceManager.GetString("match_download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać żadnej rozgrywki.
+        /// </summary>
+        internal static string match_downloadFailed {
+            get {
+                return ResourceManager.GetString("match_downloadFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Proces pobierania danych od zera nie zakończył się pomyślnie.
+        /// </summary>
+        internal static string match_downloadFromZeroFailed {
+            get {
+                return ResourceManager.GetString("match_downloadFromZeroFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie listy rozgrywek....
+        /// </summary>
+        internal static string match_downloadingList {
+            get {
+                return ResourceManager.GetString("match_downloadingList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać listy rozgrywek.
+        /// </summary>
+        internal static string match_downloadListFailed {
+            get {
+                return ResourceManager.GetString("match_downloadListFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zwrócono pusty obiekt danych dotyczących wydarzenia.
+        /// </summary>
+        internal static string match_emptyTimeline {
+            get {
+                return ResourceManager.GetString("match_emptyTimeline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dla {0} graczy nie udało się w pełni załadować grafiki.
+        /// </summary>
+        internal static string match_graphicAllNotLoaded {
+            get {
+                return ResourceManager.GetString("match_graphicAllNotLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odnaleźć pliku.
+        /// </summary>
+        internal static string match_graphicError_msg {
+            get {
+                return ResourceManager.GetString("match_graphicError_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas ładowania grafiki.
+        /// </summary>
+        internal static string match_graphicError_title {
+            get {
+                return ResourceManager.GetString("match_graphicError_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać wszystkich meczy z serwera.
+        /// </summary>
+        internal static string match_notAllDownloaded {
+            get {
+                return ResourceManager.GetString("match_notAllDownloaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie znaleziono danych dla tego meczu.
+        /// </summary>
+        internal static string match_notFound {
+            get {
+                return ResourceManager.GetString("match_notFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dla {0} graczy nie udało się załadować statystyk.
+        /// </summary>
+        internal static string match_statAllNotLoaded {
+            get {
+                return ResourceManager.GetString("match_statAllNotLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobrano {0} nowych rozgrywek.
+        /// </summary>
+        internal static string match_updatedSucessfully_msg {
+            get {
+                return ResourceManager.GetString("match_updatedSucessfully_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyslnie zaktualizowano listę gier.
+        /// </summary>
+        internal static string match_updatedSucessfully_title {
+            get {
+                return ResourceManager.GetString("match_updatedSucessfully_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie dodano nowy profil.
+        /// </summary>
+        internal static string profile_added {
+            get {
+                return ResourceManager.GetString("profile_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie usunięto profil.
+        /// </summary>
+        internal static string profile_deleted {
+            get {
+                return ResourceManager.GetString("profile_deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć profilu.
+        /// </summary>
+        internal static string profile_deleteError {
+            get {
+                return ResourceManager.GetString("profile_deleteError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać danych gracza.
+        /// </summary>
+        internal static string profile_downloadError {
+            get {
+                return ResourceManager.GetString("profile_downloadError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania listy profili.
+        /// </summary>
+        internal static string profile_listError {
+            get {
+                return ResourceManager.GetString("profile_listError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie danych gracza....
+        /// </summary>
+        internal static string profile_load {
+            get {
+                return ResourceManager.GetString("profile_load", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Witaj, {0}!.
+        /// </summary>
+        internal static string profile_loadedSucessfully_msg {
+            get {
+                return ResourceManager.GetString("profile_loadedSucessfully_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie załadowano profil gracza.
+        /// </summary>
+        internal static string profile_loadedSucessfully_title {
+            get {
+                return ResourceManager.GetString("profile_loadedSucessfully_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać danych gracza.
+        /// </summary>
+        internal static string profile_loadError {
+            get {
+                return ResourceManager.GetString("profile_loadError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ładowanie danych z profilu gracza....
+        /// </summary>
+        internal static string profile_loadingData {
+            get {
+                return ResourceManager.GetString("profile_loadingData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak danych odnośnie nazwy użytkownika.
+        /// </summary>
+        internal static string profile_noReference {
+            get {
+                return ResourceManager.GetString("profile_noReference", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się dodać nowego profilu.
+        /// </summary>
+        internal static string profile_notAdded {
+            get {
+                return ResourceManager.GetString("profile_notAdded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać danych gracza.
+        /// </summary>
+        internal static string profile_notLoaded_msg {
+            get {
+                return ResourceManager.GetString("profile_notLoaded_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas odczytywannia danych.
+        /// </summary>
+        internal static string profile_notLoaded_title {
+            get {
+                return ResourceManager.GetString("profile_notLoaded_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ścieżka {0} nie istnieje.
+        /// </summary>
+        internal static string profile_pathNotExist {
+            get {
+                return ResourceManager.GetString("profile_pathNotExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd odczytu pliku profilu.
+        /// </summary>
+        internal static string profile_readError {
+            get {
+                return ResourceManager.GetString("profile_readError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisywanie profilu....
+        /// </summary>
+        internal static string profile_save {
+            get {
+                return ResourceManager.GetString("profile_save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas zapisywania profilu.
+        /// </summary>
+        internal static string profile_saveError {
+            get {
+                return ResourceManager.GetString("profile_saveError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Można teraz załadować profil.
+        /// </summary>
+        internal static string profile_updatedSucessfully_msg {
+            get {
+                return ResourceManager.GetString("profile_updatedSucessfully_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie zaktualizowano profil gracza.
+        /// </summary>
+        internal static string profile_updatedSucessfully_title {
+            get {
+                return ResourceManager.GetString("profile_updatedSucessfully_title", resourceCulture);
             }
         }
         
@@ -286,119 +754,11 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie dodano nowy profil.
-        /// </summary>
-        internal static string settings_profileAdded {
-            get {
-                return ResourceManager.GetString("settings_profileAdded", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie usunięto profil.
-        /// </summary>
-        internal static string settings_profileDeleted {
-            get {
-                return ResourceManager.GetString("settings_profileDeleted", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć profilu.
-        /// </summary>
-        internal static string settings_profileDeleteError {
-            get {
-                return ResourceManager.GetString("settings_profileDeleteError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Witaj, {0}!.
-        /// </summary>
-        internal static string settings_profileLoadedSucessfully_msg {
-            get {
-                return ResourceManager.GetString("settings_profileLoadedSucessfully_msg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie załadowano profil gracza.
-        /// </summary>
-        internal static string settings_profileLoadedSucessfully_title {
-            get {
-                return ResourceManager.GetString("settings_profileLoadedSucessfully_title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak danych odnośnie nazwy użytkownika.
-        /// </summary>
-        internal static string settings_profileNoReference {
-            get {
-                return ResourceManager.GetString("settings_profileNoReference", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się dodać nowego profilu.
-        /// </summary>
-        internal static string settings_profileNotAdded {
-            get {
-                return ResourceManager.GetString("settings_profileNotAdded", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać danych gracza.
-        /// </summary>
-        internal static string settings_profileNotLoaded_msg {
-            get {
-                return ResourceManager.GetString("settings_profileNotLoaded_msg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas odczytywannia danych.
-        /// </summary>
-        internal static string settings_profileNotLoaded_title {
-            get {
-                return ResourceManager.GetString("settings_profileNotLoaded_title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ścieżka {0} nie istnieje.
-        /// </summary>
-        internal static string settings_profilePathNotExist {
-            get {
-                return ResourceManager.GetString("settings_profilePathNotExist", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania listy profili.
-        /// </summary>
-        internal static string settings_profilesListError {
-            get {
-                return ResourceManager.GetString("settings_profilesListError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa odczytwanie danych....
         /// </summary>
         internal static string settings_reading {
             get {
                 return ResourceManager.GetString("settings_reading", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd odczytu pliku profilu.
-        /// </summary>
-        internal static string settings_readProfileError {
-            get {
-                return ResourceManager.GetString("settings_readProfileError", resourceCulture);
             }
         }
         
@@ -426,6 +786,177 @@ namespace League_Analyser {
         internal static string settings_saveError_title {
             get {
                 return ResourceManager.GetString("settings_saveError_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się sprawdzić dostępności nowej wersji aplikacji.
+        /// </summary>
+        internal static string update_checkFailed {
+            get {
+                return ResourceManager.GetString("update_checkFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć pobraych danych szczątkowych pliku aktualizacji.
+        /// </summary>
+        internal static string update_deleteUpdateFilesError {
+            get {
+                return ResourceManager.GetString("update_deleteUpdateFilesError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania aktualizacji aplikacji.
+        /// </summary>
+        internal static string update_downloadFailed {
+            get {
+                return ResourceManager.GetString("update_downloadFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie plików aktualizacji....
+        /// </summary>
+        internal static string update_downloading {
+            get {
+                return ResourceManager.GetString("update_downloading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobrano {0}% ({1:0.0} z {2:0.0} MB).
+        /// </summary>
+        internal static string update_downloadProgressKb {
+            get {
+                return ResourceManager.GetString("update_downloadProgressKb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobrano {0}% ({1:0.0} z {2:0.0} kB).
+        /// </summary>
+        internal static string update_downloadProgressMb {
+            get {
+                return ResourceManager.GetString("update_downloadProgressMb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Kończenie aktualizacji....
+        /// </summary>
+        internal static string update_finishing {
+            get {
+                return ResourceManager.GetString("update_finishing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inicjalizacja pobierania....
+        /// </summary>
+        internal static string update_init {
+            get {
+                return ResourceManager.GetString("update_init", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się utworzyć pliku instalacyjnego.
+        /// </summary>
+        internal static string update_installerError_msg {
+            get {
+                return ResourceManager.GetString("update_installerError_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby aktualizacji aplikacji.
+        /// </summary>
+        internal static string update_installerError_title {
+            get {
+                return ResourceManager.GetString("update_installerError_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przejdź do ustawień aby dokonać aktualizacji.
+        /// </summary>
+        internal static string update_isUpdate_msg {
+            get {
+                return ResourceManager.GetString("update_isUpdate_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna jest nowa wersja aplikacji.
+        /// </summary>
+        internal static string update_isUpdate_title {
+            get {
+                return ResourceManager.GetString("update_isUpdate_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Za chwilę nastąpi zamknięcie aplikacji i uruchomienie instalatora.
+        /// </summary>
+        internal static string update_rebootInfo {
+            get {
+                return ResourceManager.GetString("update_rebootInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie ukończono procesu aktualizacji.
+        /// </summary>
+        internal static string update_saveError_msg {
+            get {
+                return ResourceManager.GetString("update_saveError_msg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas zapisu danych.
+        /// </summary>
+        internal static string update_saveError_title {
+            get {
+                return ResourceManager.GetString("update_saveError_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby rozpakowywania pliku aktualizacji.
+        /// </summary>
+        internal static string update_unzipFailed {
+            get {
+                return ResourceManager.GetString("update_unzipFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Rozpakowywanie pliku (obliczanie rozmiaru)....
+        /// </summary>
+        internal static string update_unzipInit {
+            get {
+                return ResourceManager.GetString("update_unzipInit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Rozpakowano {0}% ({1:0.0} z {2:0.0} MB).
+        /// </summary>
+        internal static string update_unzipMb {
+            get {
+                return ResourceManager.GetString("update_unzipMb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa aktualizacja aplikacji....
+        /// </summary>
+        internal static string update_updateProcess {
+            get {
+                return ResourceManager.GetString("update_updateProcess", resourceCulture);
             }
         }
     }
