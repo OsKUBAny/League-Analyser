@@ -49,7 +49,7 @@ namespace League_Analyser.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("pl_PL")]
+        [global::System.Configuration.DefaultSettingValueAttribute("en_US")]
         public string ResourcesLanguage {
             get {
                 return ((string)(this["ResourcesLanguage"]));

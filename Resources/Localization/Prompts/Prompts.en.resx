@@ -277,10 +277,10 @@
     <value>Unable to check newest version of Data Dragon files</value>
   </data>
   <data name="update_downloadProgressMb" xml:space="preserve">
-    <value>Downloaded {0}% ({1:0.0} from {2:0.0} kB)</value>
+    <value>Downloaded {0}% ({1:0.0} from {2:0.0} MB)</value>
   </data>
   <data name="update_downloadProgressKb" xml:space="preserve">
-    <value>Downloaded {0}% ({1:0.0} from {2:0.0} MB)</value>
+    <value>Downloaded {0}% ({1:0.0} from {2:0.0} kB)</value>
   </data>
   <data name="dd_deleteUpdateFilesError" xml:space="preserve">
     <value>Failed to remove downloaded Data Dragon files</value>

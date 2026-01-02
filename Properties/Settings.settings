@@ -9,7 +9,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ResourcesLanguage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">pl_PL</Value>
+      <Value Profile="(Default)">en_US</Value>
     </Setting>
   </Settings>
 </SettingsFile>
