@@ -826,7 +826,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0}% ({1:0.0} from {2:0.0} MB).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0}% ({1:0.0} from {2:0.0} kB).
         /// </summary>
         internal static string update_downloadProgressKb {
             get {
@@ -835,7 +835,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0}% ({1:0.0} from {2:0.0} kB).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0}% ({1:0.0} from {2:0.0} MB).
         /// </summary>
         internal static string update_downloadProgressMb {
             get {

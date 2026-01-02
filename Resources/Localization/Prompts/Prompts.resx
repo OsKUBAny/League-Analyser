@@ -330,12 +330,12 @@
     <comment>Unable to check newest version of Data Dragon files</comment>
   </data>
   <data name="update_downloadProgressMb" xml:space="preserve">
-    <value>Downloaded {0}% ({1:0.0} from {2:0.0} kB)</value>
-    <comment>Downloading progress {0}%, {1:0.0} of {2:0.0} kB</comment>
-  </data>
-  <data name="update_downloadProgressKb" xml:space="preserve">
     <value>Downloaded {0}% ({1:0.0} from {2:0.0} MB)</value>
     <comment>Downloading progress {0}%, {1:0.0} of {2:0.0} MB</comment>
+  </data>
+  <data name="update_downloadProgressKb" xml:space="preserve">
+    <value>Downloaded {0}% ({1:0.0} from {2:0.0} kB)</value>
+    <comment>Downloading progress {0}%, {1:0.0} of {2:0.0} kB</comment>
   </data>
   <data name="dd_deleteUpdateFilesError" xml:space="preserve">
     <value>Failed to remove downloaded Data Dragon files</value>

@@ -277,10 +277,10 @@
     <value>Nie udało się pobrać wartości najnowszej wersji</value>
   </data>
   <data name="update_downloadProgressMb" xml:space="preserve">
-    <value>Pobrano {0}% ({1:0.0} z {2:0.0} kB)</value>
+    <value>Pobrano {0}% ({1:0.0} z {2:0.0} MB)</value>
   </data>
   <data name="update_downloadProgressKb" xml:space="preserve">
-    <value>Pobrano {0}% ({1:0.0} z {2:0.0} MB)</value>
+    <value>Pobrano {0}% ({1:0.0} z {2:0.0} kB)</value>
   </data>
   <data name="dd_deleteUpdateFilesError" xml:space="preserve">
     <value>Nie udało się usunąć pobranych danych szczątkowych pliku DataDragon</value>

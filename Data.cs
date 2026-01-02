@@ -16,7 +16,7 @@ namespace League_Analyser
             apiData = mainWindow.apiData;
         }
 
-        public string applicationVersion = "1.6";
+        public string applicationVersion = "1.7";
         public string dataStructVersion = "1.0";
         public string gameVersion = "0.0";
         public string savedPlayerDataPath = "data/player/{0}.json";
