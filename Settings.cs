@@ -35,11 +35,6 @@ namespace League_Analyser
         private string gitAccesToken;
         private int downloadMatchQuantity = 50;
 
-        private class ProgramSettings
-        {
-            public string defaulProfile { get; set; }
-        }
-
         public class UpdateData
         {
             public bool isUpdateNeeded { get; set; }
@@ -75,7 +70,7 @@ namespace League_Analyser
             };
         }
 
-        public static List<string> serversList = new List<string>
+        public static readonly List<string> serversList = new List<string>
         {
             "EUN1",
             "EUW1",
@@ -91,6 +86,12 @@ namespace League_Analyser
             "SG2",
             "TW2",
             "VN2"
+        };
+
+        public static readonly Dictionary<string, string> languagesList = new Dictionary<string, string>
+        {
+            { "pl", "Polski"},
+            { "en", "English"}
         };
 
         public void InitializeSettings()
@@ -164,7 +165,7 @@ namespace League_Analyser
         {
             if (string.IsNullOrEmpty(profileName) == true) return;
 
-            string dataVersion = "(unknown)";
+            string dataVersion = Messages.settings_profileUnknown;
             int matchCount = 0;
             string lastMatchDate = "-";
             bool validDataVersion = false;
@@ -200,7 +201,7 @@ namespace League_Analyser
         {
             MessageBoxResult result = MessageBox.Show
             (
-                "Czy na pewno chcesz usunąć ten profil?", string.Format("Usuwanie profiu {0}", profileName),
+                Messages.settings_deleteProfile_message, string.Format("{0} {1}",Messages.settings_deleteProfile_title, profileName),
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Exclamation
             );
@@ -263,7 +264,9 @@ namespace League_Analyser
             data.historyGameIds = playerData.historyGameIds;
             data.matches = playerData.matches;
 
-            mainWindow.activeProfileName.Text = string.Format("{0} #{1} [{2}]", data.player.account.gameName, data.player.account.tagLine, data.player.server);
+            mainWindow.activeProfileName.Text = string.Format("{0} #{1} [{2}]", 
+                data.player.account.gameName, data.player.account.tagLine, data.player.server);
+
             mainWindow.activeProfileName.Visibility = Visibility.Visible;
             mainWindow.button_update.Visibility = Visibility.Visible;
             mainWindow.menuButtons.button_matchHistory.Visibility = Visibility.Visible;
@@ -293,8 +296,10 @@ namespace League_Analyser
             }
 
             info.UpdatePrompt(Info.Messages.process_settings_downloadProfileApiReference);
-            DataType.AccountDto account = await apiData.ApiGetData(typeof(DataType.AccountDto), profileReference.server, ApiData.EndPoint.getAccountByRiotId,
+            DataType.AccountDto account = await apiData.ApiGetData(typeof(DataType.AccountDto), 
+                profileReference.server, ApiData.EndPoint.getAccountByRiotId,
                 profileReference.account.gameName, profileReference.account.tagLine);
+
             if (account == null)
             {
                 info.CreateNewPrompt(Info.Messages.error_settings_downloadProfileApiReferenceError);
@@ -303,8 +308,9 @@ namespace League_Analyser
             profileReference.account.puuid = account.puuid;
 
             info.UpdatePrompt(Info.Messages.process_settings_downloadMatchList);
-            List<string> matchList = await apiData.ApiGetData(typeof(List<string>), profileReference.server, ApiData.EndPoint.getListOfMatchIds,
-                profileReference.account.puuid, 0, downloadMatchQuantity);
+            List<string> matchList = await apiData.ApiGetData(typeof(List<string>), 
+                profileReference.server, ApiData.EndPoint.getListOfMatchIds, profileReference.account.puuid, 0, downloadMatchQuantity);
+
             if (matchList == null)
             {
                 info.CreateNewPrompt(Info.Messages.error_settings_downloadProfileApiReferenceError);
@@ -362,8 +368,10 @@ namespace League_Analyser
 
             if (playerRef.account.puuid == null || playerRef.account.puuid == "")
             {
-                DataType.AccountDto foo_account = await apiData.ApiGetData(typeof(DataType.AccountDto), playerRef.server, ApiData.EndPoint.getAccountByRiotId,
+                DataType.AccountDto foo_account = await apiData.ApiGetData(typeof(DataType.AccountDto), 
+                    playerRef.server, ApiData.EndPoint.getAccountByRiotId,
                     playerRef.account.gameName, playerRef.account.tagLine);
+
                 if (foo_account == null)
                 {
                     info.CreateNewPrompt(Info.Messages.error_settings_downloadProfileApiReferenceError);
@@ -373,8 +381,9 @@ namespace League_Analyser
             }
 
             List<string> oldList = data.historyGameIds;
-            List<string> newList = await apiData.ApiGetData(typeof(List<string>), playerRef.server, ApiData.EndPoint.getListOfMatchIds,
-                playerRef.account.puuid, 0, downloadMatchQuantity);
+            List<string> newList = await apiData.ApiGetData(typeof(List<string>), 
+                playerRef.server, ApiData.EndPoint.getListOfMatchIds, playerRef.account.puuid, 0, downloadMatchQuantity);
+
             if (newList == null)
             {
                 info.CreateNewPrompt(Info.Messages.error_settings_downloadMatchListError);
@@ -438,23 +447,8 @@ namespace League_Analyser
 
         public async void LoadSettingsFile()
         {
-            ProgramSettings settingsData = new ProgramSettings();
-            string rawFile = await loadResources.ReadTextFile(settingsPath);
-            if (rawFile == null)
-            {
-                info.CreateNewPrompt(Info.Messages.error_settings_loadSettingsError);
-                mainWindow.menuButtons.button_settings.Visibility = Visibility.Visible;
-                return;
-            }
-            settingsData = await loadResources.Deserialize(rawFile, typeof(ProgramSettings));
-            if (settingsData.defaulProfile == null)
-            {
-                info.CreateNewPrompt(Info.Messages.error_loadResources_deserializeError);
-                mainWindow.menuButtons.button_settings.Visibility = Visibility.Visible;
-                return;
-            }
-            if (settingsData.defaulProfile != "") await LoadProfileData(settingsData.defaulProfile, false);
-
+            string defaultProfile = Properties.Settings.Default.DefaultProfile;
+            if (defaultProfile != "") await LoadProfileData(defaultProfile, false);
 
             string onlineDDversion = (await apiData.ApiGetData(typeof(List<string>), "DD", ApiData.EndPoint.DDgetVersions))[0];
             string localDDversion = "";
@@ -465,7 +459,7 @@ namespace League_Analyser
                 {
                     var foo_folderNames = Directory.GetDirectories("data/").Select(Path.GetFileName).Where(p => p.StartsWith("dragontail-"));
                     var foo_folderName = foo_folderNames.FirstOrDefault();
-                    if (foo_folderName == null) throw new Exception("Nie odnaleziono referencji do folderu DataDragon");
+                    if (foo_folderName == null) throw new Exception(Messages.settings_noDDreference);
 
                     localDDversion = Regex.Match(foo_folderName, @"\d+(\.\d+)*$").ToString();
                     data.gameVersion = localDDversion;
@@ -484,7 +478,7 @@ namespace League_Analyser
             }
             else
             {
-                loadResources.LoadAllAssets();
+                await loadResources.LoadAllAssets();
                 if (localDDversion != onlineDDversion)
                 {
                     info.CreateNewPrompt(Info.Messages.info_settings_DDhasUpdate);
@@ -528,7 +522,7 @@ namespace League_Analyser
                     if (updateData.version != data.applicationVersion)
                     {
                         if (string.IsNullOrEmpty(updateData.url))
-                            throw new Exception("Nie udało się pobrać odnośnika do pobrania nowej wersji");
+                            throw new Exception(Messages.settings_noUpdateLink);
 
                         info.CreateNewPrompt(Info.Messages.info_settings_appHasUpdate);
                         updateData.isUpdateNeeded = true;
@@ -541,30 +535,28 @@ namespace League_Analyser
                 }
             }
 
-            mainWindow.appVersion.Text = string.Format("Wersja aplikacji:        {0}", data.applicationVersion);
-            mainWindow.dataVersion.Text = string.Format("Wersja danych:         {0}", data.dataStructVersion);
-            mainWindow.patchVersion.Text = string.Format("Patch (DataDragon): {0}", data.gameVersion);
+            mainWindow.appVersion.Text = data.applicationVersion;
+            mainWindow.dataVersion.Text = data.dataStructVersion;
+            mainWindow.patchVersion.Text = data.gameVersion;
 
             mainWindow.menuButtons.button_settings.Visibility = Visibility.Visible;
         }
 
-        public async void SaveSettingsFile()
+        public void SaveSettingsFile()
         {
-            ProgramSettings settingsData = new ProgramSettings
-            {
-                defaulProfile = data.player.account.gameName
-            };
+            Properties.Settings.Default.DefaultProfile = data.player.account.gameName;
+            Properties.Settings.Default.Save();
+            info.CreateNewPrompt(Info.Messages.info_settings_settingsSaved);
+        }
 
-            string rawData = await loadResources.Serialize(settingsData);
-            if (string.IsNullOrEmpty(rawData))
-            {
-                info.CreateNewPrompt(Info.Messages.error_loadResources_serializeError);
-                return;
-            }
+        public async void SaveSettingsLanguage(string lang, string resourcesLang)
+        {
+            Properties.Settings.Default.Language = lang;
+            if(resourcesLang != null) Properties.Settings.Default.ResourcesLanguage = resourcesLang;
+            Properties.Settings.Default.Save();
 
-            if (await loadResources.SaveTextToFile(rawData, settingsPath) == false)
-                info.CreateNewPrompt(Info.Messages.error_settings_saveSettingsError);
-            else info.CreateNewPrompt(Info.Messages.info_settings_settingsSaved);
+            if (resourcesLang != null) await loadResources.LoadAllAssets();
+            info.CreateNewPrompt(Info.Messages.info_settings_LanguageSettingsSaved);
         }
 
         public async Task UpdateDataDragon()
@@ -781,24 +773,25 @@ namespace League_Analyser
                     set UPDATE_DIR={0}
                     set TEMP_DIR={0}
                     
-                    echo Przygotowywanie do instalacji...
+                    echo {1}
                     timeout /t 5 >nul
                     
-                    echo Zamykanie aplikacji...
+                    echo {2}
                     taskkill /F /IM %APP_NAME% >nul 2>&1
                     timeout /t 2 >nul
 
-                    echo Podmienianie plików...
+                    echo {3}
                     xcopy /E /Y ""%UPDATE_DIR%\*"" "".\"" >nul 2>&1
 
-                    echo Usuwanie plików aktualizacji...
+                    echo {4}
                     rmdir /s /q ""%TEMP_DIR%""
 
-                    echo Uruchamianie nowej wersji aplikacji...
+                    echo {5}
                     start """" ""%APP_NAME%""
 
                     exit",
-                    tempFileDir);
+                    tempFileDir, Messages.settings_updateBat_preparing, Messages.settings_updateBat_closing, 
+                    Messages.settings_updateBat_swapping, Messages.settings_updateBat_deleting, Messages.settings_updateBat_starting);
 
 
             if (File.Exists("updateProcess.bat")) File.Delete("updateProcess.bat");

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             xmlns:global="clr-namespace:League_Analyser"
              mc:Ignorable="d" 
              Height="778" Width="980" Background="#7F000000">
 
@@ -29,14 +30,14 @@
                     HorizontalAlignment="Left" Margin="10,5,0,0"/>
         <TextBlock Name="date" Foreground="White" FontSize="20" FontWeight="Bold" Text="88.88.8888, 88:88"
                    HorizontalAlignment="Right" Margin="0,5,10,0"/>
-        <TextBlock Name="gameDuration" Foreground="White" FontSize="18" FontWeight="Normal" Text="Czas trwania: 88:88 min"
+        <TextBlock Name="gameDuration" Foreground="White" FontSize="18" FontWeight="Normal" Text="Duration time: 88:88 min"
                    HorizontalAlignment="Left" Margin="10,30,0,0"/>
-        <TextBlock Name="result" Foreground="White" FontSize="25" FontWeight="Bold" Text="ZWYCIĘSTWO"
+        <TextBlock Name="result" Foreground="White" FontSize="25" FontWeight="Bold" Text="Game result"
                    HorizontalAlignment="Center" Margin="-660,60,0,0"/>
         <StackPanel Name="surrender" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" 
                     Height="50" Width="300" Margin="0,30,0,0" FlowDirection="RightToLeft">
-            <TextBlock  Foreground="White" FontSize="15" FontWeight="Normal" Text="Mecz został poddany" Margin="10,0,0,0"/>
-            <Image Source="/Resources/surrenderIcon.png" Height="20" Width="20" VerticalAlignment="Top" Margin="2,2,0,0" />
+            <TextBlock  Foreground="White" FontSize="15" FontWeight="Normal" Text="{x:Static global:Messages.match_gameSurrendered}" Margin="10,0,0,0"/>
+            <Image Source="/Resources/Generic/surrenderIcon.png" Height="20" Width="20" VerticalAlignment="Top" Margin="2,2,0,0" />
         </StackPanel>
         <local:MatchSummary x:Name="matchSummary" VerticalAlignment="Top" Margin="0,30,0,0" d:IsHidden="False" Visibility="Collapsed" />
 
@@ -46,7 +47,7 @@
         <TextBlock Name="downloadTimelineText" Text="Timeline" FontSize="15" Foreground="White" HorizontalAlignment="Right" 
                    VerticalAlignment="Top" Margin="0,65,22,0" MouseLeftButtonUp="SwitchTimelineMode"/>
         <Image Name="downloadTimelineIcon" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,65,90,0" 
-               Source="/Resources/info_icon_info.png" MouseLeftButtonUp="SwitchTimelineMode"/>
+               Source="/Resources/Generic/info_icon_info.png" MouseLeftButtonUp="SwitchTimelineMode"/>
 
         <Rectangle Width="320" Height="665" Fill="#3F000000" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0"/>
 
@@ -61,7 +62,7 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <TextBlock Text="Twoja drużyna:" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="15,100,30,30"/>
+        <TextBlock Text="{x:Static global:Messages.match_allayTeam}" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="15,100,30,30"/>
 
         <StackPanel Name="allayTeam" Width="320" Height="300" Orientation="Vertical" 
                     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
@@ -76,7 +77,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock Text="Przeciwna drużyna:" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="15,435,0,0"/>
+        <TextBlock Text="{x:Static global:Messages.match_enemyTeam}" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="15,435,0,0"/>
         <StackPanel Name="enemyTeam" Width="320" Height="300" Orientation="Vertical" 
                     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,465,0,0"/>
     </Grid>

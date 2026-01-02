@@ -30,422 +30,428 @@ namespace League_Analyser
 
         public static class Messages
         {
-            public static readonly Message error_updatePrompt_listEmpty = new Message
+            public static readonly Message error_prompt_listEmpty = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd poczas próby akualizacji powiadomienia",
-                "Lista powiadomień jest pusta"
+                Prompts.prompt_listEmpty_title,
+                Prompts.prompt_listEmpty_msg
             );
             public static readonly Message error_prompt_argsInvalid = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd poczas tworzenia powiadomienia",
-                "Przekazane argumenty nie pasują do formatu komunikatu \"{0}\""
+                Prompts.prompt_argsInvalid_title,
+                Prompts.prompt_argsInvalid_msg
             );
 
             public static readonly Message error_api_timeout = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd połączenia z API",
-                "Czas połączenia przekroczył żądany limit"
+                Prompts.api_timeout_title,
+                Prompts.api_timeout_msg
             );
             public static readonly Message warning_api_tooManyRequests = new Message
             (
                 InfoType.warning,
-                "Nastąpiło przeciążenie serwera z powodu zbyt dużej liczby zapytań",
-                "Program oczekuje na ponowną możliwość połączenia"
+                Prompts.api_tooManyRequests_title,
+                Prompts.api_tooManyRequests_msg
             );
             public static readonly Message process_api_awaiting = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Oczekiwanie na ponowne połączenie"
+                Prompts.api_waiting_title,
+                Prompts.api_waiting_msg
             );
             public static readonly Message process_api_reconnecting = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Próba ponownego połączenia"
+                Prompts.api_reconnecting_title,
+                Prompts.api_reconnecting_msg
             );
             public static readonly Message error_api_euneOnFire = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd połączenia z API",
-                "Trwa wspólne posiedzenie przy ognisku w serwerowni, kiełbaski zapewnione przez Riot Games"
+                Prompts.api_euneOnFire_title,
+                Prompts.api_euneOnFire_msg
             );
             public static readonly Message error_api_apiError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd połączenia z API",
+                Prompts.api_error,
                 "{0}"
             );
             public static readonly Message error_api_unexpectedError = new Message
             (
                 InfoType.error,
-                "Wystąpił nieoczekiwany błąd przy próbie łączenia z serwerem",
+                Prompts.api_unexpectedError,
                 "{0}"
             );
 
             public static readonly Message error_loadResources_deserializeError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd deserializacji danych",
+                Prompts.loadResources_deserialyze,
                 "{0}"
             );
             public static readonly Message error_loadResources_serializeError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas serializacji danych",
+                Prompts.loadResources_serialyze,
                 "{0}"
             );
             public static readonly Message error_loadResources_loadFileError = new Message
             (
                 InfoType.error,
-                "Nie udało się załadować danych obiektu",
+                Prompts.loadResources_loadFile,
                 "{0}"
             );
             public static readonly Message error_loadResources_saveFileError = new Message
             (
                 InfoType.error,
-                "Nie udało się zapisać danych do pliku",
+                Prompts.loadResources_saveFile,
                 "{0}"
             );
             public static readonly Message error_loadResources_loadImageError = new Message
             (
                 InfoType.error,
-                "Nie udało się odczytać grafiki",
+                Prompts.loadResources_loadImage,
                 "{0}"
             );
 
             public static readonly Message process_settings_loading = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.settings_downloading,
                 ""
             );
             public static readonly Message warning_settings_profileNotAdded = new Message
             (
                 InfoType.warning,
-                "Nie udało się dodać nowego profilu",
+                Prompts.profile_notAdded,
                 ""
             );
             public static readonly Message ok_settings_profileAdded = new Message
             (
                 InfoType.ok,
-                "Pomyślnie dodano nowy profil",
+                Prompts.profile_added,
                 ""
             );
             public static readonly Message error_settings_noReferenceToProfile = new Message
             (
                 InfoType.error,
-                "Nie udało się zapisać danych do pliku",
-                "Brak danych odnośnie nazwy użytkownika"
+                Prompts.loadResources_saveFile,
+                Prompts.profile_noReference
             );
             public static readonly Message error_settings_loadProfileListError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania listy profili",
+                Prompts.profile_listError,
                 "{0}"
             );
             public static readonly Message error_settings_loadProfileDetailsError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd odczytu pliku profilu",
+                Prompts.profile_readError,
                 "{0}"
             );
             public static readonly Message error_settings_deleteProfilePathError = new Message
             (
                 InfoType.error,
-                "Nie udało się usunąć profilu",
-                "Ścieżka {0} nie istnieje"
+                Prompts.profile_deleteError,
+                Prompts.profile_pathNotExist
             );
             public static readonly Message error_settings_deleteProfileError = new Message
             (
                 InfoType.error,
-                "Nie udało się usunąć profilu",
+                Prompts.profile_deleteError,
                 "{0}"
             );
             public static readonly Message ok_settings_profileDeleted = new Message
             (
                 InfoType.ok,
-                "Pomyślnie usunięto profil",
+                Prompts.profile_deleted,
                 ""
             );
             public static readonly Message process_settings_loadProfile = new Message
             (
                 InfoType.process,
-                "Trwa odczytywanie danych...",
+                Prompts.settings_reading,
                 ""
             );
             public static readonly Message error_settings_loadProfileError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas odczytywannia danych",
-                "Nie udało się odczytać danych gracza"
+                Prompts.profile_notLoaded_title,
+                Prompts.profile_notLoaded_msg
             );
             public static readonly Message ok_settings_profileLoaded = new Message
             (
                 InfoType.ok,
-                "Pomyślnie załadowano profil gracza",
-                "Witaj, {0}!"
+                Prompts.profile_loadedSucessfully_title,
+                Prompts.profile_loadedSucessfully_msg
             );
             public static readonly Message error_settings_saveSettingsError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby zapisania ustawiń",
-                "Nie udało się zapisać pliku"
+                Prompts.settings_saveError_title,
+                Prompts.settings_saveError_msg
             );
             public static readonly Message info_settings_settingsSaved = new Message
             (
                 InfoType.info,
-                "Zapisano ustawienia",
+                Prompts.settings_saved,
                 ""
+            );
+            public static readonly Message info_settings_LanguageSettingsSaved = new Message
+            (
+                InfoType.info,
+                Prompts.settings_saved,
+                Prompts.settings_languageSaved
             );
             public static readonly Message error_settings_loadSettingsError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby załadowania ustawień",
-                "Nie udało się odczytać pliku"
+                Prompts.settings_loadFailed_title,
+                Prompts.settings_loadFailed_msg
             );
             public static readonly Message error_settings_noDDreference = new Message
             (
                 InfoType.error,
-                "Brak odniesienia do wersji plików DataDragon",
+                Prompts.dd_noReference,
                 "{0}"
             );
             public static readonly Message error_settings_noDataFolder = new Message
             (
                 InfoType.error,
-                "Brak odniesienia do wersji plików DataDragon",
-                "Nie odnaleziono folderu \"data\""
+                Prompts.dd_noReference,
+                Prompts.dd_noFolder
             );
             public static readonly Message warning_settings_DDnotExist = new Message
             (
                 InfoType.warning,
-                "Nie znaleziono pliku DataDragon",
-                "Przejdź do ustawień i wykonaj aktualizację danych zasobów"
+                Prompts.dd_notExist,
+                Prompts.dd_update
             );
             public static readonly Message info_settings_DDhasUpdate = new Message
             (
                 InfoType.info,
-                "Dostępna aktualizacja danych DataDragon",
-                "Przejdź do ustawień i wykonaj aktualizację danych zasobów"
+                Prompts.dd_hasUpdate,
+                Prompts.dd_update
             );
             public static readonly Message error_settings_checkUpdatefailed = new Message
             (
                 InfoType.error,
-                "Nie udało się sprawdzić dostępności nowej wersji aplikacji",
+                Prompts.update_checkFailed,
                 "{0}"
             );
             public static readonly Message info_settings_appHasUpdate = new Message
             (
                 InfoType.info,
-                "Dostępna jest nowa wersja aplikacji",
-                "Przejdź do ustawień aby dokonać aktualizacji"
+                Prompts.update_isUpdate_title,
+                Prompts.update_isUpdate_msg
             );
             public static readonly Message process_settings_DdupdateStarting = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie pliku DataDragon...",
-                "Inicjalizacja pobierania..."
+                Prompts.dd_downloading,
+                Prompts.update_init
             );
             public static readonly Message error_settings_DdupdateFailedToGetVersion = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania aktualizacji danych źródłowych",
-                "Nie udało się pobrać wartości najnowszej wersji"
+                Prompts.dd_updateError,
+                Prompts.dd_noVersionReference
             );
             public static readonly Message process_settings_DdupdateDownloading = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie pliku DataDragon...",
-                "Pobrano {0}% ({1:0.0} z {2:0.0} MB)"
+                Prompts.dd_downloading,
+                Prompts.update_downloadProgressMb
             );
             public static readonly Message error_settings_DdupdateFailed = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania aktualizacji danych źródłowych",
+                Prompts.dd_updateError,
                 "{0}"
             );
             public static readonly Message error_settings_DdupdateBackupRemoveFailed = new Message
             (
                 InfoType.error,
-                "Nie udało się usunąć pobranych danych szczątkowych pliku DataDragon",
+                Prompts.dd_deleteUpdateFilesError,
                 "{0}"
             );
             public static readonly Message process_settings_DdupdateUnzipingStarted = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie pliku DataDragon...",
-                "Rozpakowywanie pliku (obliczanie rozmiaru)..."
+                Prompts.dd_downloading,
+                Prompts.update_unzipInit
             );
             public static readonly Message process_settings_DdupdateUnziping = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie pliku DataDragon...",
-                "Rozpakowano {0}% ({1:0.0} z {2:0.0} MB)"
+                Prompts.dd_downloading,
+                Prompts.update_unzipMb
             );
             public static readonly Message process_settings_DdupdateFinishing = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie pliku DataDragon...",
-                "Kończenie aktualizacji..."
+                Prompts.dd_downloading,
+                Prompts.update_finishing
             );
             public static readonly Message error_settings_DdupdateFinishingError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby aktualizacji danych źródłowych. Wycofano zmiany",
+                Prompts.dd_updateRevert,
                 "{0}"
             );
             public static readonly Message ok_settings_DdupdateFinished = new Message
             (
                 InfoType.ok,
-                "Pomyślnie ukończono aktualizację danych źródłowych",
-                "Aktualna wersja to {0}"
+                Prompts.dd_updateFinished_title,
+                Prompts.dd_updateFinished_msg
             );
             public static readonly Message process_settings_appUpdateStarting = new Message
             (
                 InfoType.process,
-                "Trwa aktualizacja aplikacji...",
-                "Pobieranie plików aktualizacji..."
+                Prompts.update_updateProcess,
+                Prompts.update_downloading
             );
             public static readonly Message process_settings_appUpdateDownloading = new Message
             (
                 InfoType.process,
-                "Trwa aktualizacja aplikacji...",
-                "Pobrano {0}% ({1:0.0} z {2:0.0} kB)"
+                Prompts.update_updateProcess,
+                Prompts.update_downloadProgressKb
             );
             public static readonly Message error_settings_appUpdateDownloadFail = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania aktualizacji aplikacji",
+                Prompts.update_downloadFailed,
                 "{0}"
             );
             public static readonly Message error_settings_appUpdateBackupFailed = new Message
             (
                 InfoType.error,
-                "Nie udało się usunąć pobraych danych szczątkowych pliku aktualizacji",
+                Prompts.update_deleteUpdateFilesError,
                 "{0}"
             );
             public static readonly Message process_settings_appUpdateUnziping = new Message
             (
                 InfoType.process,
-                "Trwa aktualizacja aplikacji...",
-                "Rozpakowywanie pliku..."
+                Prompts.update_updateProcess,
+                Prompts.update_unzipInit
             );
             public static readonly Message error_settings_appUpdateUnzipingFailed = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby rozpakowywania pliku aktualizacji",
+                Prompts.update_unzipFailed,
                 "{0}"
             );
             public static readonly Message error_settings_appUpdateInstallerError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas próby aktualizacji aplikacji",
-                "Nie udało się utworzyć pliku instalacyjnego"
+                Prompts.update_installerError_title,
+                Prompts.update_installerError_msg
             );
             public static readonly Message process_settings_appUpdateReboot = new Message
             (
                 InfoType.process,
-                "Trwa aktualizacja aplikacji...",
-                "Za chwilę nastąpi zamknięcie aplikacji i uruchomienie instalatora"
+                Prompts.update_updateProcess,
+                Prompts.update_rebootInfo
             );
             public static readonly Message process_settings_downloadLoadProfileData = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Ładowanie danych z profilu gracza..."
+                Prompts.settings_downloading,
+                Prompts.profile_loadingData
             );
             public static readonly Message error_settings_downloadLoadProfileDataError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania danych",
-                "Nie udało się odczytać danych gracza"
+                Prompts.load_loadingError,
+                Prompts.profile_loadError
             );
             public static readonly Message process_settings_downloadProfileApiReference = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Pobieranie danych gracza..."
+                Prompts.settings_downloading,
+                Prompts.profile_load
             );
             public static readonly Message error_settings_downloadProfileApiReferenceError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania danych",
-                "Nie udało się pobrać danych gracza"
+                Prompts.load_downloadingError,
+                Prompts.profile_downloadError
             );
             public static readonly Message process_settings_downloadMatchList = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Pobieranie listy rozgrywek..."
+                Prompts.settings_downloading,
+                Prompts.match_downloadingList
             );
             public static readonly Message process_settings_downloadMatches = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Pobieranie meczu {0} z {1}..."
+                Prompts.settings_downloading,
+                Prompts.match_download
             );
             public static readonly Message error_settings_downloadMatchListError = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania danych",
-                "Nie udało się pobrać listy rozgrywek"
+                Prompts.load_downloadingError,
+                Prompts.match_downloadListFailed
             );
             public static readonly Message warning_settings_downloadMatchesFailed = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas zapisywania profilu",
-                "Proces pobierania danych od zera nie zakończył się pomyślnie"
+                Prompts.profile_saveError,
+                Prompts.match_downloadFromZeroFailed
             );
             public static readonly Message warning_settings_updateMatchesFailed = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas zapisu danych",
-                "Nie ukończono procesu aktualizacji"
+                Prompts.update_saveError_title,
+                Prompts.update_saveError_msg
             );
             public static readonly Message warning_settings_downloadMatchesNone = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas pobierania danych",
-                "Nie udało się pobrać żadnej rozgrywki"
+                Prompts.load_downloadingError,
+                Prompts.match_downloadFailed
             );
             public static readonly Message process_settings_downloadSavingProfile = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
-                "Zapisywanie profilu..."
+                Prompts.settings_downloading,
+                Prompts.profile_save
             );
             public static readonly Message warning_settings_downloadMatchesNotAll = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd pobierania",
-                "Nie udało się pobrać wszystkich meczy z serwera"
+                Prompts.load_downloadingError,
+                Prompts.match_notAllDownloaded
             );
             public static readonly Message ok_settings_downloadMatchesFinished = new Message
             (
                 InfoType.ok,
-                "Pomyślnie zaktualizowano profil gracza",
-                "Można teraz załadować profil"
+                Prompts.profile_updatedSucessfully_title,
+                Prompts.profile_updatedSucessfully_msg
             );
             public static readonly Message info_settings_downloadMatchesUpToDate = new Message
             (
                 InfoType.info,
-                "Dane są aktualne",
+                Prompts.match_dataUpToDate,
                 ""
             );
             public static readonly Message ok_settings_updateMatchesCompleted = new Message
             (
                 InfoType.ok,
-                "Pomyslnie zaktualizowano listę gier",
-                "Pobrano {0} nowych rozgrywek"
+                Prompts.match_updatedSucessfully_title,
+                Prompts.match_updatedSucessfully_msg
             );
 
             public static readonly Message process_matchHistory_loading = new Message
             (
                 InfoType.process,
-                "Trwa ładowanie...",
+                Prompts.load_loading,
                 ""
             );
             public static readonly Message process_terminateProcess = new Message
@@ -457,52 +463,51 @@ namespace League_Analyser
             public static readonly Message warning_matchHistory_sourcesNotLoaded = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas ładowania danych",
-                "Dla {0} rozgrywek nie udało się w pełni załadować danych"
+                Prompts.load_loadingError,
+                Prompts.match_dataAllNotLoaded
             );
             public static readonly Message warning_matchHistory_playerSourcesNotLoaded = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas ładowania danych",
-                "Dla {0} graczy nie udało się w pełni załadować grafiki"
+                Prompts.load_loadingError,
+                Prompts.match_graphicAllNotLoaded
             );
             public static readonly Message warning_matchHistory_passedMatchIsNotFound = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas ładowania rozgrywki",
-                "Nie znaleziono danych dla tego meczu"
+                Prompts.load_loadingError,
+                Prompts.match_notFound
             );
             public static readonly Message warning_matchHistory_playerStatsNotLoaded = new Message
             (
                 InfoType.warning,
-                "Wystąpił błąd podczas ładowania danych",
-                "Dla {0} graczy nie udało się załadować statystyk"
+                Prompts.load_loadingError,
+                Prompts.match_statAllNotLoaded
             );
             public static readonly Message process_timeline_downloading = new Message
             (
                 InfoType.process,
-                "Trwa pobieranie danych...",
+                Prompts.load_loading,
                 ""
             );
             public static readonly Message error_timeline_downloadFailed = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas pobierania danych Timeline",
-                "Nie udało się pobrać szczegółów rozgrywki dla tej gry"
+                Prompts.load_loadingError,
+                Prompts.match_detailsNotLoaded
             );
             public static readonly Message error_timeline_imageNotFound = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas ładowania grafiki",
-                "Nie udało się odnaleźć pliku"
+                Prompts.match_graphicError_title,
+                Prompts.match_graphicError_msg
             );
             public static readonly Message error_timeline_eventDataEmpty = new Message
             (
                 InfoType.error,
-                "Wystąpił błąd podczas ładowania danych",
-                "Zwrócono pusty obiekt danych dotyczących wydarzenia"
+                Prompts.load_loadingError,
+                Prompts.match_emptyTimeline
             );
-
             public class Message
             {
                 public InfoType type { get; }
@@ -703,7 +708,7 @@ namespace League_Analyser
                     catch (Exception) { CreateNewPrompt(Messages.error_prompt_argsInvalid, promptData.title); return; }
                 }
             }
-            else CreateNewPrompt(Messages.error_updatePrompt_listEmpty);
+            else CreateNewPrompt(Messages.error_prompt_listEmpty);
         }
     }
 }

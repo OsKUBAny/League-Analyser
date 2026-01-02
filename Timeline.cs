@@ -94,12 +94,12 @@ namespace League_Analyser
                         if (eventData.buildingType == "TOWER_BUILDING")
                         {
                             resourceImg = "turret_";
-                            objName = "Zniszczona wieża";
+                            objName = Messages.timeline_eventName_turretDestroyed;
                         }
                         else
                         {
                             resourceImg = "inhibitor_";
-                            objName = "Zniszczony inhibitor";
+                            objName = Messages.timeline_eventName_inhibitorDestroyed;
                         }
                         // Reversed icons for myTeamId <==> enemy/allay
                         if (eventData.teamId == match.gameInfo.myTeamId) resourceImg += "enemy.png";
@@ -127,20 +127,20 @@ namespace League_Analyser
                                     resourceImg = "dragon_";
                                     switch ((string)eventData.monsterSubType)
                                     {
-                                        case "AIR_DRAGON": resourceImg += "cloud.png"; objName = "Zabicie Smoka Powietrznego"; break;
-                                        case "EARTH_DRAGON": resourceImg += "mountain.png"; objName = "Zabicie Smoka Górskiego"; break;
-                                        case "FIRE_DRAGON": resourceImg += "infernal.png"; objName = "Zabicie Smoka Piekielnego"; break;
-                                        case "WATER_DRAGON": resourceImg += "ocean.png"; objName = "Zabicie Smoka Oceanicznego"; break;
-                                        case "HEXTECH_DRAGON": resourceImg += "hextech.png"; objName = "Zabicie Smoka Hextechowego"; break;
-                                        case "CHEMTECH_DRAGON": resourceImg += "chemtech.png"; objName = "Zabicie Smoka Chemtechowego"; break;
-                                        case "ELDER_DRAGON": resourceImg += "elder.png"; objName = "Zabicie Starszego Smoka"; break;
+                                        case "AIR_DRAGON": resourceImg += "cloud.png"; objName = Messages.timeline_eventName_dragonCloudKilled; break;
+                                        case "EARTH_DRAGON": resourceImg += "mountain.png"; objName = Messages.timeline_eventName_dragonMountainKilled; break;
+                                        case "FIRE_DRAGON": resourceImg += "infernal.png"; objName = Messages.timeline_eventName_dragonInfernalKilled; break;
+                                        case "WATER_DRAGON": resourceImg += "ocean.png"; objName = Messages.timeline_eventName_dragonOceanKilled; break;
+                                        case "HEXTECH_DRAGON": resourceImg += "hextech.png"; objName = Messages.timeline_eventName_dragonHextechKilled; break;
+                                        case "CHEMTECH_DRAGON": resourceImg += "chemtech.png"; objName = Messages.timeline_eventName_dragonChemtechKilled; break;
+                                        case "ELDER_DRAGON": resourceImg += "elder.png"; objName = Messages.timeline_eventName_dragonElderKilled; break;
                                     }
                                     break;
                                 }
-                            case "RIFTHERALD": resourceImg = "herald.png"; objName = "Zabicie Heralda"; break;
-                            case "BARON_NASHOR": resourceImg = "baron.png"; objName = "Zabicie Barona Nashora"; break;
-                            case "HORDE": resourceImg = "voidgrub.png"; objName = "Zabicie Voidgrubs'a"; break;
-                            case "ATAKHAN": resourceImg = "atakhan.png"; objName = "Zabicie Atakhan'a"; break;
+                            case "RIFTHERALD": resourceImg = "herald.png"; objName = Messages.timeline_eventName_heraldKilled; break;
+                            case "BARON_NASHOR": resourceImg = "baron.png"; objName = Messages.timeline_eventName_baronKilled; break;
+                            case "HORDE": resourceImg = "voidgrub.png"; objName = Messages.timeline_eventName_voidgrubKilled; break;
+                            case "ATAKHAN": resourceImg = "atakhan.png"; objName = Messages.timeline_eventName_atakhanKilled; break;
                         }
                         break;
                     }
@@ -157,19 +157,19 @@ namespace League_Analyser
                             if (playerTeamId == match.gameInfo.myTeamId)
                             {
                                 resourceImg += "allay.png";
-                                objName = "Zabicie Przeciwnika";
+                                objName = Messages.timeline_eventName_enemyKill;
                             }
                             else
                             {
                                 resourceImg += "enemy.png";
-                                objName = "Zabicie Sojusznika";
+                                objName = Messages.timeline_eventName_allayKill;
                             }
                         }
                         catch (Exception)
                         {
                             if (eventData.killerId == 0 && eventData.victimId != 0)
                             {
-                                objName = "Samobójstwo Gracza";
+                                objName = Messages.timeline_eventName_suicideKill;
 
                                 string playerPuuid = timelineDto.info.participants.Find(p => p.participantId == eventData.victimId).puuid;
                                 int playerTeamId = match.participants.Find(p => p.accountDto.puuid == playerPuuid).teamId;
@@ -180,7 +180,7 @@ namespace League_Analyser
                             else
                             {
                                 resourceImg = "allay.png";
-                                objName = "Zabójstwo Gracza";
+                                objName = Messages.timeline_eventName_playerKill;
                             }
                         }
                         break;
@@ -218,7 +218,6 @@ namespace League_Analyser
             }
             if (eventsList.Any(p => p.type == typeMonsterKilled) == false) return false;
             else return true;
-
         }
         public DamageStats CalculateDamage(List<DataType.DamageDealt> eventsList)
         {
@@ -299,8 +298,12 @@ namespace League_Analyser
 
             switch (spellType)
             {
-                case -3: { spellData.spellType = null; spellData.spellImageName = "other.png"; spellData.spellName = "Inne"; spellData.spellDescription = null; break; }
-                case -2: { spellData.spellType = null; spellData.spellImageName = "autoattack.png"; spellData.spellName = "Atak"; spellData.spellDescription = null; break; }
+                case -3: { spellData.spellType = null; spellData.spellImageName = "other.png"; 
+                        spellData.spellName = Messages.timeline_attack_other; spellData.spellDescription = null; break; }
+
+                case -2: { spellData.spellType = null; spellData.spellImageName = "autoattack.png"; 
+                        spellData.spellName = Messages.timeline_attack_autoattack; spellData.spellDescription = null; break; }
+
                 case -1: { spellData.spellType = "P"; spellData.spellImageName = GetSpellImageName(playerId, spellType); break; }
                 case 0: { spellData.spellType = "Q"; spellData.spellImageName = GetSpellImageName(playerId, spellType); break; }
                 case 1: { spellData.spellType = "W"; spellData.spellImageName = GetSpellImageName(playerId, spellType); break; }
@@ -356,10 +359,17 @@ namespace League_Analyser
 
                 switch (spellType)
                 {
-                    case 10: { spellData.spellType = null; spellData.spellImageName = "other.png"; spellData.spellName = "Inne"; spellData.spellDescription = null; break; }
-                    case 11: { spellData.spellType = null; spellData.spellImageName = "minion.png"; spellData.spellName = "Miniony"; spellData.spellDescription = null; break; }
-                    case 12: { spellData.spellType = null; spellData.spellImageName = "tower.png"; spellData.spellName = "Wieża"; spellData.spellDescription = null; break; }
-                    case 13: { spellData.spellType = null; spellData.spellImageName = "monster.png"; spellData.spellName = "Potwory"; spellData.spellDescription = null; break; }
+                    case 10: { spellData.spellType = null; spellData.spellImageName = "other.png"; 
+                            spellData.spellName = Messages.timeline_attack_other; spellData.spellDescription = null; break; }
+
+                    case 11: { spellData.spellType = null; spellData.spellImageName = "minion.png"; 
+                            spellData.spellName = Messages.timeline_attack_minion; spellData.spellDescription = null; break; }
+
+                    case 12: { spellData.spellType = null; spellData.spellImageName = "tower.png"; 
+                            spellData.spellName = Messages.timeline_attack_turret; spellData.spellDescription = null; break; }
+
+                    case 13: { spellData.spellType = null; spellData.spellImageName = "monster.png"; 
+                            spellData.spellName = Messages.timeline_attack_monster; spellData.spellDescription = null; break; }
                 }
 
                 imgPath = LoadResources.ImagePath_t.gC_timeline_misc;

@@ -44,7 +44,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
-            <Image Name="infoIcon" Width="50" Height="50" Source="/Resources/info_icon_info.png" 
+            <Image Name="infoIcon" Width="50" Height="50" Source="/Resources/Generic/info_icon_info.png" 
                    HorizontalAlignment="Left" Margin="10,0,0,0"/>
         </Grid>
 
@@ -55,12 +55,12 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <TextBlock x:Name="textBlock_title" Text="Tytuł powiadomienia" Foreground="White" 
+                <TextBlock x:Name="textBlock_title" Text="Title" Foreground="White" 
                            Margin="10,5,0,0" FontWeight="Bold" FontSize="18"/>
             </Grid>
 
             <Grid Grid.Row="1">
-                <TextBlock x:Name="textBlock_message" Text="Wiadomość" Foreground="White" FontSize="15" 
+                <TextBlock x:Name="textBlock_message" Text="message" Foreground="White" FontSize="15" 
                            Margin="10,2,0,0" FontWeight="Regular" VerticalAlignment="Top"/>
             </Grid>
 
@@ -73,7 +73,7 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <Image Name="buttonClose" Width="50" Height="50" Margin="0,3,0,0" Source="/Resources/info_closeButton.png" 
+                <Image Name="buttonClose" Width="50" Height="50" Margin="0,3,0,0" Source="/Resources/Generic/info_closeButton.png" 
                        MouseDown="ClosePrompt"/>
             </Grid>
 

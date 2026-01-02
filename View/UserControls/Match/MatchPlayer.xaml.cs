@@ -47,7 +47,7 @@ namespace League_Analyser.View.UserControls
             if (loadedImage.result == false)
             {
                 isError = true;
-                errorMessage = "Nie udało się załadować grafiki";
+                errorMessage = Messages.match_unableToLoadImg;
             }
 
             return brush;
@@ -58,7 +58,7 @@ namespace League_Analyser.View.UserControls
             try
             {
                 var foo_champion = data.championDataDto.data.FirstOrDefault(p => p.Value.key == championId.ToString());
-                if (foo_champion.Value == null) throw new Exception("Zwrócono pusty obiekt championDataDto");
+                if (foo_champion.Value == null) throw new Exception(Messages.match_emptyChampionData);
                 championImg.Source = GetImageFromFile(LoadResources.ImagePath_t.DD_champion, foo_champion.Value.image.full).ImageSource;
                 championName.Text = foo_champion.Value.name;
             }
@@ -67,7 +67,7 @@ namespace League_Analyser.View.UserControls
                 isError = true;
                 errorMessage = ex.Message;
                 championImg.Source = GetImageFromFile((LoadResources.ImagePath_t)(-1), null).ImageSource;
-                championName.Text = "(nieznana postać)";
+                championName.Text = Messages.match_unknownChampion;
             }
         }
 

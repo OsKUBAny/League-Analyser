@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,94 +27,94 @@ namespace League_Analyser
 
             public enum CategoryType_t
             {
-                [Description("Statystyki ogólne")]
+                [Display(Name = nameof(Messages.matchHistory_category_general), ResourceType = typeof(Messages))]
                 generalStats = 0,
 
-                [Description("Złoto")]
+                [Display(Name = nameof(Messages.matchHistory_category_gold), ResourceType = typeof(Messages))]
                 gold,
 
-                [Description("Zadane obrażenie")]
+                [Display(Name = nameof(Messages.matchHistory_category_damageDealt), ResourceType = typeof(Messages))]
                 damageDealt,
 
-                [Description("Otrzymane obrażenia")]
+                [Display(Name = nameof(Messages.matchHistory_category_damageRecived), ResourceType = typeof(Messages))]
                 damageTaken,
 
-                [Description("Czas gry")]
+                [Display(Name = nameof(Messages.matchHistory_category_gameTime), ResourceType = typeof(Messages))]
                 gameTime,
 
-                [Description("Cele i osiągnięcia")]
+                [Display(Name = nameof(Messages.matchHistory_category_achievements), ResourceType = typeof(Messages))]
                 gameTargets,
 
-                [Description("Statystyki postaci")]
+                [Display(Name = nameof(Messages.matchHistory_category_playerStats), ResourceType = typeof(Messages))]
                 championStats,
 
-                [Description("Użyte umiejętności")]
+                [Display(Name = nameof(Messages.matchHistory_category_skills), ResourceType = typeof(Messages))]
                 abilities
             };
 
             public static readonly List<Statistics> Items = new List<Statistics>()
             {
                 //Fist stat is default statistic and it has to be CategoryType_t 0!
-                new Statistics("Zabójstwa", CategoryType_t.generalStats, p => p.kills, DisplayType_t.valueAndBar),
-                new Statistics("Asysty", CategoryType_t.generalStats, p => p.assists, DisplayType_t.valueAndBar),
-                new Statistics("Zgony", CategoryType_t.generalStats, p => p.deaths, DisplayType_t.valueAndBar),
-                new Statistics("Zabite miniony", CategoryType_t.generalStats, p => p.minions, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_general_kills, CategoryType_t.generalStats, p => p.kills, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_general_assists, CategoryType_t.generalStats, p => p.assists, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_general_deaths, CategoryType_t.generalStats, p => p.deaths, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_general_minions, CategoryType_t.generalStats, p => p.minions, DisplayType_t.valueAndBar),
 
-                new Statistics("Zdobyte złoto", CategoryType_t.gold, p => p.goldEarned, DisplayType_t.valueAndBar),
-                new Statistics("Wydane złoto", CategoryType_t.gold, p => p.goldSpent, DisplayType_t.valueAndBar),
-                new Statistics("Stosunek złota (wydane/zdobyte)", CategoryType_t.gold, p => p.goldEarned, p=>p.goldSpent, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_gold_gained, CategoryType_t.gold, p => p.goldEarned, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_gold_spend, CategoryType_t.gold, p => p.goldSpent, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_gold_ratio, CategoryType_t.gold, p => p.goldEarned, p=>p.goldSpent, DisplayType_t.twoValuesAndBar),
 
-                new Statistics("Fizyczne", CategoryType_t.damageDealt, p => p.damageDealt.physical, DisplayType_t.valueAndBar),
-                new Statistics("Magiczne", CategoryType_t.damageDealt, p => p.damageDealt.magic, DisplayType_t.valueAndBar),
-                new Statistics("True damage", CategoryType_t.damageDealt, p => p.damageDealt.trueDamage, DisplayType_t.valueAndBar),
-                new Statistics("Całkowite", CategoryType_t.damageDealt, p => p.damageDealt.total, DisplayType_t.valueAndBar),
-                new Statistics("Obiektom", CategoryType_t.damageDealt, p => p.damageDealtToBuildings, DisplayType_t.valueAndBar),
-                new Statistics("% fizycznych", CategoryType_t.damageDealt,p => p.damageDealt.total, p => p.damageDealt.physical, DisplayType_t.twoValuesAndBar),
-                new Statistics("% magicznych", CategoryType_t.damageDealt,p => p.damageDealt.total, p => p.damageDealt.magic, DisplayType_t.twoValuesAndBar),
-                new Statistics("% true damage", CategoryType_t.damageDealt,p => p.damageDealt.total, p => p.damageDealt.trueDamage, DisplayType_t.twoValuesAndBar),
-                new Statistics("% całej drużyny", CategoryType_t.damageDealt, p => p.totalTeamDamage, p => p.damageDealt.total, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_physical, CategoryType_t.damageDealt, p => p.damageDealt.physical, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_magic, CategoryType_t.damageDealt, p => p.damageDealt.magic, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_true, CategoryType_t.damageDealt, p => p.damageDealt.trueDamage, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_total, CategoryType_t.damageDealt, p => p.damageDealt.total, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_objectives, CategoryType_t.damageDealt, p => p.damageDealtToBuildings, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_physicalPercent, CategoryType_t.damageDealt,p => p.damageDealt.total, p => p.damageDealt.physical, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_magicPercent, CategoryType_t.damageDealt,p => p.damageDealt.total, p => p.damageDealt.magic, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_truePercent, CategoryType_t.damageDealt,p => p.damageDealt.total, p => p.damageDealt.trueDamage, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_teamPercent, CategoryType_t.damageDealt, p => p.totalTeamDamage, p => p.damageDealt.total, DisplayType_t.twoValuesAndBar),
 
-                new Statistics("Fizyczne", CategoryType_t.damageTaken, p => p.damageTaken.physical, DisplayType_t.valueAndBar),
-                new Statistics("Magiczne", CategoryType_t.damageTaken, p => p.damageTaken.magic, DisplayType_t.valueAndBar),
-                new Statistics("True damage", CategoryType_t.damageTaken, p => p.damageTaken.trueDamage, DisplayType_t.valueAndBar),
-                new Statistics("Całkowite", CategoryType_t.damageTaken, p => p.damageTaken.total, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_physical, CategoryType_t.damageTaken, p => p.damageTaken.physical, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_magic, CategoryType_t.damageTaken, p => p.damageTaken.magic, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_true, CategoryType_t.damageTaken, p => p.damageTaken.trueDamage, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_damage_total, CategoryType_t.damageTaken, p => p.damageTaken.total, DisplayType_t.valueAndBar),
 
-                new Statistics("% czasu będąc żywym", CategoryType_t.gameTime, p => p.timePlayed, p => p.timeSpentAlive, DisplayType_t.twoValuesAndBar),
-                new Statistics("Najdłuższy czas bycia żywym", CategoryType_t.gameTime, p => p.timeSpentAliveMax, DisplayType_t.valueAndBar),
-                new Statistics("Czas zadanych efektów CC", CategoryType_t.gameTime, p => p.timeCCdealt, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_time_alive, CategoryType_t.gameTime, p => p.timePlayed, p => p.timeSpentAlive, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_time_aliveMax, CategoryType_t.gameTime, p => p.timeSpentAliveMax, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_time_cc, CategoryType_t.gameTime, p => p.timeCCdealt, DisplayType_t.valueAndBar),
 
-                new Statistics("Double kills", CategoryType_t.gameTargets, p => p.doubleKills, DisplayType_t.valueAndBar),
-                new Statistics("Tripple kills", CategoryType_t.gameTargets, p => p.tripleKills, DisplayType_t.valueAndBar),
-                new Statistics("Quadra kills", CategoryType_t.gameTargets, p => p.quadraKills, DisplayType_t.valueAndBar),
-                new Statistics("Penta kills", CategoryType_t.gameTargets, p => p.pentaKills, DisplayType_t.valueAndBar),
-                new Statistics("Największa seria zabójstw", CategoryType_t.gameTargets, p => p.largestKillingSpree, DisplayType_t.valueAndBar),
-                new Statistics("Udział w zniszczeniu wież", CategoryType_t.gameTargets, p => p.turretsTakedowns, DisplayType_t.valueAndBar),
-                new Statistics("Udział w zniszczeniu inhibiorów", CategoryType_t.gameTargets, p => p.inhibitorsTakedowns, DisplayType_t.valueAndBar),
-                new Statistics("Pierwsza krew", CategoryType_t.gameTargets, p => p.firstBlood, DisplayType_t.boolOnly),
-                new Statistics("Pierwsza wieża", CategoryType_t.gameTargets, p => p.firstTurret, DisplayType_t.boolOnly),
-                new Statistics("Ukradzione cele", CategoryType_t.gameTargets, p => p.objectivesStolen, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_double, CategoryType_t.gameTargets, p => p.doubleKills, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_tripple, CategoryType_t.gameTargets, p => p.tripleKills, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_quadra, CategoryType_t.gameTargets, p => p.quadraKills, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_penta, CategoryType_t.gameTargets, p => p.pentaKills, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_seriesMax, CategoryType_t.gameTargets, p => p.largestKillingSpree, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_turretParticipant, CategoryType_t.gameTargets, p => p.turretsTakedowns, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_inhibitorParticipant, CategoryType_t.gameTargets, p => p.inhibitorsTakedowns, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_achivements_firstBlood, CategoryType_t.gameTargets, p => p.firstBlood, DisplayType_t.boolOnly),
+                new Statistics(Messages.matchHistory_statistic_achivements_firstTurret, CategoryType_t.gameTargets, p => p.firstTurret, DisplayType_t.boolOnly),
+                new Statistics(Messages.matchHistory_statistic_achivements_steals, CategoryType_t.gameTargets, p => p.objectivesStolen, DisplayType_t.valueAndBar),
 
-                new Statistics("Największe trafienie krytyczne", CategoryType_t.championStats, p => p.largestCrit, DisplayType_t.valueAndBar),
-                new Statistics("Przywrócone zdrowie", CategoryType_t.championStats, p => p.totalHeal, DisplayType_t.valueAndBar),
-                new Statistics("Obrażenia zmniejszone przez pancerz/odporność", CategoryType_t.championStats, p => p.totalDamageMitigated, DisplayType_t.valueAndBar),
-                new Statistics("Uleczenie sojuszników", CategoryType_t.championStats, p => p.totalHealsOnTeammates, DisplayType_t.valueAndBar),
-                new Statistics("Obrażenia zablokowane przez rzucone tarcze", CategoryType_t.championStats, p => p.totalDamageShieldedOnTeammates, DisplayType_t.valueAndBar),
-                new Statistics("Punkty wizji", CategoryType_t.championStats, p => p.visionScore, DisplayType_t.valueAndBar),
-                new Statistics("Postawione totemy", CategoryType_t.championStats, p => p.wardsPlaced, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_critMax, CategoryType_t.championStats, p => p.largestCrit, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_healthRestored, CategoryType_t.championStats, p => p.totalHeal, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_damageMitigated, CategoryType_t.championStats, p => p.totalDamageMitigated, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_teammatesHealed, CategoryType_t.championStats, p => p.totalHealsOnTeammates, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_damageShielded, CategoryType_t.championStats, p => p.totalDamageShieldedOnTeammates, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_visionScore, CategoryType_t.championStats, p => p.visionScore, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_player_wardsPlaced, CategoryType_t.championStats, p => p.wardsPlaced, DisplayType_t.valueAndBar),
 
-                new Statistics("Użycia Q", CategoryType_t.abilities, p => p.spellCastQ, DisplayType_t.valueAndBar),
-                new Statistics("Użycia W", CategoryType_t.abilities, p => p.spellCastW, DisplayType_t.valueAndBar),
-                new Statistics("Użycia E", CategoryType_t.abilities, p => p.spellCastE, DisplayType_t.valueAndBar),
-                new Statistics("Użycia R", CategoryType_t.abilities, p => p.spellCastR, DisplayType_t.valueAndBar),
-                new Statistics("Łącznie [Q, W, E, R]", CategoryType_t.abilities, p => p.spellCastTotal, DisplayType_t.valueAndBar),
-                new Statistics("% użycia Q", CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastQ, DisplayType_t.twoValuesAndBar),
-                new Statistics("% użycia W", CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastW, DisplayType_t.twoValuesAndBar),
-                new Statistics("% użycia E", CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastE, DisplayType_t.twoValuesAndBar),
-                new Statistics("% użycia R", CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastR, DisplayType_t.twoValuesAndBar),
-                new Statistics("Użycia D", CategoryType_t.abilities, p => p.spellCastD, DisplayType_t.valueAndBar),
-                new Statistics("Użycia F", CategoryType_t.abilities, p => p.spellCastF, DisplayType_t.valueAndBar),
-                new Statistics("% użycia D / % użycia F", CategoryType_t.abilities, p => p.spellCastD, p => p.spellCastF, DisplayType_t.twoValuesAndBar), // Warning: sick variable, handled manually
-                new Statistics("\"F for Flash\" czyli gracz jest ułomny", CategoryType_t.abilities, p => p.hasFlashOnF, DisplayType_t.boolOnly)
+                new Statistics(Messages.matchHistory_statistic_skills_q, CategoryType_t.abilities, p => p.spellCastQ, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_w, CategoryType_t.abilities, p => p.spellCastW, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_e, CategoryType_t.abilities, p => p.spellCastE, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_r, CategoryType_t.abilities, p => p.spellCastR, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_qwerTotal, CategoryType_t.abilities, p => p.spellCastTotal, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_qPercent, CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastQ, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_wPercent, CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastW, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_ePercent, CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastE, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_rPercent, CategoryType_t.abilities, p => p.spellCastTotal, p => p.spellCastR, DisplayType_t.twoValuesAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_d, CategoryType_t.abilities, p => p.spellCastD, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_f, CategoryType_t.abilities, p => p.spellCastF, DisplayType_t.valueAndBar),
+                new Statistics(Messages.matchHistory_statistic_skills_dfRatio, CategoryType_t.abilities, (p => p.spellCastD + p.spellCastF), p => p.spellCastD, DisplayType_t.twoValuesAndBar), // Warning: sick variable, handled manually
+                new Statistics(Messages.matchHistory_statistic_skills_fForFlash, CategoryType_t.abilities, p => p.hasFlashOnF, DisplayType_t.boolOnly)
             };
         }
 

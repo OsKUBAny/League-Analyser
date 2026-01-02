@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         xmlns:local="clr-namespace:League_Analyser.View.UserControls"
-        xmlns:league="clr-namespace:League_Analyser"
+        xmlns:global="clr-namespace:League_Analyser"
         HorizontalAlignment="Center" 
         VerticalAlignment="Center"
         Name="menu"  Height="75">
@@ -57,9 +57,14 @@
 
     <Grid>
         <StackPanel Name="menuStackPanel" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Name="button_stats" Style="{StaticResource buttonMenu}" Content="Statystyki" Click="Button_Click"/>
-            <Button Name="button_matchHistory" Style="{StaticResource buttonMenu}" Content="Historia meczy" Click="Button_Click"/>
-            <Button Name="button_settings" Style="{StaticResource buttonMenu}" Content="Ustawienia" Click="Button_Click"/>
+            <Button Name="button_stats" Style="{StaticResource buttonMenu}" 
+                    Content="{x:Static global:Messages.menu_statistics}" Click="Button_Click"/>
+            
+            <Button Name="button_matchHistory" Style="{StaticResource buttonMenu}" 
+                    Content="{x:Static global:Messages.menu_matchHistory}" Click="Button_Click"/>
+            
+            <Button Name="button_settings" Style="{StaticResource buttonMenu}" 
+                    Content="{x:Static global:Messages.menu_settings}" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </UserControl>

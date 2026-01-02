@@ -12,7 +12,7 @@
         <Border BorderThickness="1" BorderBrush="White" Height="20" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Left">
             <TextBlock Name="playerListButton" VerticalAlignment="Center" Height="20" Width="200" HorizontalAlignment="Center" 
                    Foreground="LightGray" TextAlignment="Center"
-                   FontSize="13" Text="Wybrano 0 z 0 graczy" MouseLeftButtonDown="playerListButton_clicked"/>
+                   FontSize="13" Text="Selected 0 from 0 players" MouseLeftButtonDown="playerListButton_clicked"/>
         </Border>
 
         <Border BorderThickness="1" BorderBrush="White" Height="20" Width="110" VerticalAlignment="Bottom" HorizontalAlignment="Left" 

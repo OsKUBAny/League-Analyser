@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="prompt_listEmpty_title" xml:space="preserve">
+    <value>Failed to update prompt</value>
+  </data>
+  <data name="prompt_listEmpty_msg" xml:space="preserve">
+    <value>Prompts list is empty</value>
+  </data>
+  <data name="prompt_argsInvalid_title" xml:space="preserve">
+    <value>Failed to add prompt</value>
+  </data>
+  <data name="prompt_argsInvalid_msg" xml:space="preserve">
+    <value>Passed arguments does not match prompt's syntax {0}</value>
+  </data>
+  <data name="api_timeout_title" xml:space="preserve">
+    <value>An error has occurred while connecting with API</value>
+  </data>
+  <data name="api_timeout_msg" xml:space="preserve">
+    <value>Connection has timeouted</value>
+  </data>
+  <data name="api_tooManyRequests_title" xml:space="preserve">
+    <value>The server was overloaded due to too many requests</value>
+  </data>
+  <data name="api_tooManyRequests_msg" xml:space="preserve">
+    <value>The program is awaiting for reconnection possibility</value>
+  </data>
+  <data name="api_waiting_title" xml:space="preserve">
+    <value>Downloading data...</value>
+  </data>
+  <data name="api_waiting_msg" xml:space="preserve">
+    <value>Waiting for recconect</value>
+  </data>
+  <data name="api_reconnecting_title" xml:space="preserve">
+    <value>Donwloading data...</value>
+  </data>
+  <data name="api_reconnecting_msg" xml:space="preserve">
+    <value>Attempting to reconnect</value>
+  </data>
+  <data name="api_euneOnFire_title" xml:space="preserve">
+    <value>An error has occurred while connecting with API</value>
+  </data>
+  <data name="api_euneOnFire_msg" xml:space="preserve">
+    <value>A communal meeting is taking place around a bonfire in the server room, sausages provided by Riot Games</value>
+  </data>
+  <data name="api_error" xml:space="preserve">
+    <value>An error has occurred while connecting with API</value>
+  </data>
+  <data name="api_unexpectedError" xml:space="preserve">
+    <value>An unexpected error has occurred with server connection</value>
+  </data>
+  <data name="loadResources_deserialyze" xml:space="preserve">
+    <value>Failed to deserialyze data</value>
+  </data>
+  <data name="loadResources_serialyze" xml:space="preserve">
+    <value>Failed to serialyze data</value>
+  </data>
+  <data name="loadResources_loadFile" xml:space="preserve">
+    <value>Failed to load object data</value>
+  </data>
+  <data name="loadResources_saveFile" xml:space="preserve">
+    <value>Failed to save data to file</value>
+  </data>
+  <data name="loadResources_loadImage" xml:space="preserve">
+    <value>Failed to load image</value>
+  </data>
+  <data name="settings_downloading" xml:space="preserve">
+    <value>Downloading data...</value>
+  </data>
+  <data name="profile_added" xml:space="preserve">
+    <value>Successfully added new profile</value>
+  </data>
+  <data name="profile_notAdded" xml:space="preserve">
+    <value>Failed to add new profile</value>
+  </data>
+  <data name="profile_noReference" xml:space="preserve">
+    <value>No reference to this user name</value>
+  </data>
+  <data name="profile_listError" xml:space="preserve">
+    <value>An error has occurred during downloading profiles list</value>
+  </data>
+  <data name="profile_readError" xml:space="preserve">
+    <value>An error has occurred during reading profile's data</value>
+  </data>
+  <data name="profile_deleteError" xml:space="preserve">
+    <value>Unable to delete profile</value>
+  </data>
+  <data name="profile_pathNotExist" xml:space="preserve">
+    <value>Path {0} does not exist</value>
+  </data>
+  <data name="profile_deleted" xml:space="preserve">
+    <value>Successfully deleted profile</value>
+  </data>
+  <data name="profile_notLoaded_title" xml:space="preserve">
+    <value>An error has occurred during reading player's data</value>
+  </data>
+  <data name="profile_notLoaded_msg" xml:space="preserve">
+    <value>Failed to read player's data</value>
+  </data>
+  <data name="settings_reading" xml:space="preserve">
+    <value>Reading data...</value>
+  </data>
+  <data name="profile_loadedSucessfully_msg" xml:space="preserve">
+    <value>Welcome {0}!</value>
+  </data>
+  <data name="profile_loadedSucessfully_title" xml:space="preserve">
+    <value>Successfully loaded player's profile</value>
+  </data>
+  <data name="settings_saveError_msg" xml:space="preserve">
+    <value>Failed to save settings</value>
+  </data>
+  <data name="settings_saveError_title" xml:space="preserve">
+    <value>An error has occurred during settings save process</value>
+  </data>
+  <data name="settings_saved" xml:space="preserve">
+    <value>Settings have been saved</value>
+  </data>
+  <data name="settings_languageSaved" xml:space="preserve">
+    <value>Language change will apear after reboot</value>
+  </data>
+  <data name="settings_loadFailed_msg" xml:space="preserve">
+    <value>Unable to read file</value>
+  </data>
+  <data name="settings_loadFailed_title" xml:space="preserve">
+    <value>Failed to load settings file</value>
+  </data>
+  <data name="dd_noReference" xml:space="preserve">
+    <value>Failed to check Data Dragon version</value>
+  </data>
+  <data name="dd_noFolder" xml:space="preserve">
+    <value>Unable to find "data" folder</value>
+  </data>
+  <data name="dd_notExist" xml:space="preserve">
+    <value>Data Dragon reference does not exist</value>
+  </data>
+  <data name="dd_hasUpdate" xml:space="preserve">
+    <value>DataDragon files update is avaibale</value>
+  </data>
+  <data name="dd_update" xml:space="preserve">
+    <value>Go to settings and perform DataDragon update</value>
+  </data>
+  <data name="dd_downloading" xml:space="preserve">
+    <value>Downloading DataDragon files...</value>
+  </data>
+  <data name="update_checkFailed" xml:space="preserve">
+    <value>Failed to check application update avability</value>
+  </data>
+  <data name="update_isUpdate_msg" xml:space="preserve">
+    <value>Go to settings and perform an update</value>
+  </data>
+  <data name="update_isUpdate_title" xml:space="preserve">
+    <value>An application update is avaiable</value>
+  </data>
+  <data name="update_init" xml:space="preserve">
+    <value>Initializing download...</value>
+  </data>
+  <data name="dd_updateError" xml:space="preserve">
+    <value>Failed to download DataDragon files</value>
+  </data>
+  <data name="dd_noVersionReference" xml:space="preserve">
+    <value>Unable to check newest version of Data Dragon files</value>
+  </data>
+  <data name="update_downloadProgressMb" xml:space="preserve">
+    <value>Downloaded {0}% ({1:0.0} from {2:0.0} kB)</value>
+  </data>
+  <data name="update_downloadProgressKb" xml:space="preserve">
+    <value>Downloaded {0}% ({1:0.0} from {2:0.0} MB)</value>
+  </data>
+  <data name="dd_deleteUpdateFilesError" xml:space="preserve">
+    <value>Failed to remove downloaded Data Dragon files</value>
+  </data>
+  <data name="update_unzipInit" xml:space="preserve">
+    <value>Unzipping files (calculating size)...</value>
+  </data>
+  <data name="update_updateProcess" xml:space="preserve">
+    <value>Updating application...</value>
+  </data>
+  <data name="update_finishing" xml:space="preserve">
+    <value>Finishing update process...</value>
+  </data>
+  <data name="update_unzipMb" xml:space="preserve">
+    <value>Unzipped {0}% ({1:0.0} from {2:0.0} MB)</value>
+  </data>
+  <data name="dd_updateRevert" xml:space="preserve">
+    <value>An error has occurred during DataDragon update process, reverting changes</value>
+  </data>
+  <data name="dd_updateFinished_title" xml:space="preserve">
+    <value>Successfully finished updating DataDragon process</value>
+  </data>
+  <data name="dd_updateFinished_msg" xml:space="preserve">
+    <value>Current version is {0}</value>
+  </data>
+  <data name="update_downloading" xml:space="preserve">
+    <value>Downloading update files...</value>
+  </data>
+  <data name="update_downloadFailed" xml:space="preserve">
+    <value>An error has occurred during downloading application update</value>
+  </data>
+  <data name="update_deleteUpdateFilesError" xml:space="preserve">
+    <value>Failed to remove downloaded update files</value>
+  </data>
+  <data name="update_unzipFailed" xml:space="preserve">
+    <value>An error has occurred during unzipping files process</value>
+  </data>
+  <data name="update_installerError_msg" xml:space="preserve">
+    <value>Unable to create installer file</value>
+  </data>
+  <data name="update_installerError_title" xml:space="preserve">
+    <value>Failed to update application</value>
+  </data>
+  <data name="update_rebootInfo" xml:space="preserve">
+    <value>The application will close in a moment and installation process will begin</value>
+  </data>
+  <data name="profile_loadingData" xml:space="preserve">
+    <value>Loading player's data...</value>
+  </data>
+  <data name="load_loadingError" xml:space="preserve">
+    <value>Failed to load data</value>
+  </data>
+  <data name="load_downloadingError" xml:space="preserve">
+    <value>Failed to download data</value>
+  </data>
+  <data name="load_loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="profile_loadError" xml:space="preserve">
+    <value>Unable to read player's data</value>
+  </data>
+  <data name="profile_load" xml:space="preserve">
+    <value>Downloading player's data...</value>
+  </data>
+  <data name="profile_downloadError" xml:space="preserve">
+    <value>Unable to download player's data</value>
+  </data>
+  <data name="profile_saveError" xml:space="preserve">
+    <value>Failed to save profile</value>
+  </data>
+  <data name="profile_save" xml:space="preserve">
+    <value>Saving profile...</value>
+  </data>
+  <data name="update_saveError_title" xml:space="preserve">
+    <value>An error has occurred during saving data</value>
+  </data>
+  <data name="update_saveError_msg" xml:space="preserve">
+    <value>Unable to finish update process</value>
+  </data>
+  <data name="profile_updatedSucessfully_title" xml:space="preserve">
+    <value>Successfully updated profile</value>
+  </data>
+  <data name="profile_updatedSucessfully_msg" xml:space="preserve">
+    <value>You may now load profile data</value>
+  </data>
+  <data name="match_downloadingList" xml:space="preserve">
+    <value>Downloading matches list</value>
+  </data>
+  <data name="match_download" xml:space="preserve">
+    <value>Downloading match {0} of {1}</value>
+  </data>
+  <data name="match_downloadListFailed" xml:space="preserve">
+    <value>Failed to download matches list</value>
+  </data>
+  <data name="match_downloadFromZeroFailed" xml:space="preserve">
+    <value>An error has occurred during downloading math data from zero</value>
+  </data>
+  <data name="match_downloadFailed" xml:space="preserve">
+    <value>Unable to download any game</value>
+  </data>
+  <data name="match_notAllDownloaded" xml:space="preserve">
+    <value>Unable to load all matches from server</value>
+  </data>
+  <data name="match_updatedSucessfully_msg" xml:space="preserve">
+    <value>Downloaded {0} new matches</value>
+  </data>
+  <data name="match_updatedSucessfully_title" xml:space="preserve">
+    <value>Successfully updated matches list</value>
+  </data>
+  <data name="match_dataUpToDate" xml:space="preserve">
+    <value>Data is up to date</value>
+  </data>
+  <data name="match_notFound" xml:space="preserve">
+    <value>Unable to find data for this match</value>
+  </data>
+  <data name="match_dataAllNotLoaded" xml:space="preserve">
+    <value>Failed to load whole data for {0} matches</value>
+  </data>
+  <data name="match_graphicAllNotLoaded" xml:space="preserve">
+    <value>Failed to load all graphics for {0} players</value>
+  </data>
+  <data name="match_statAllNotLoaded" xml:space="preserve">
+    <value>Failed to load all statistics for {0} players</value>
+  </data>
+  <data name="match_detailsNotLoaded" xml:space="preserve">
+    <value>Unable to load details for this game</value>
+  </data>
+  <data name="match_emptyTimeline" xml:space="preserve">
+    <value>Returned empty object for this game</value>
+  </data>
+  <data name="match_graphicError_title" xml:space="preserve">
+    <value>An error has occurred during loading image</value>
+  </data>
+  <data name="match_graphicError_msg" xml:space="preserve">
+    <value>Unable to locate file</value>
+  </data>
+</root>

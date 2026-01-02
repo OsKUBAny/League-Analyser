@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             xmlns:global="clr-namespace:League_Analyser"
              mc:Ignorable="d" 
              Height="135" Width="250" Background="#E5232D37" HorizontalAlignment="Left" VerticalAlignment="Top" 
              BorderBrush="#FFD1D1D1" BorderThickness="1,1,1,1">
@@ -17,7 +18,7 @@
     </UserControl.Resources>
 
     <Grid Name="localGrid">
-        <Image Name="image" Width="60" Height="60" Source="/Resources/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Name="image" Width="60" Height="60" Source="/Resources/Generic/empty.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Rectangle Width="60" Height="60" Stroke="White" StrokeThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         
         <TextBlock Name="skillTypeName" Text="Champion - Q" Foreground="White" FontSize="12" FontWeight="Bold"
@@ -28,17 +29,35 @@
         <TextBlock Name="skillDescription" Text="Description" Foreground="White" FontSize="8" FontWeight="Normal"
            Margin="65,30,0,0" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="WrapWithOverflow"/>
 
-        <TextBlock Text="Obrażenia:" Foreground="White" FontSize="12" FontWeight="Bold"
-           Margin="2,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Foreground="White" FontSize="12" FontWeight="Bold"
+           Margin="2,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Run Text="{x:Static global:Messages.timeline_popup_damage}"/>
+            <Run Text=":"/>
+        </TextBlock>
+
+        <TextBlock Foreground="LightGray" FontSize="10" FontWeight="Normal"
+           Margin="2,75,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Run Text="{x:Static global:Messages.timeline_popup_damageTotal}"/>
+            <Run Text=":"/>
+        </TextBlock>
         
-        <TextBlock Text="Całkowite:" Foreground="LightGray" FontSize="10" FontWeight="Normal"
-           Margin="2,75,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="Fizyczne:" Foreground="Red" FontSize="10" FontWeight="Normal"
-           Margin="2,92,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="Magiczne:" Foreground="LightBlue" FontSize="10" FontWeight="Normal"
-           Margin="2,104,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="True:" Foreground="White" FontSize="10" FontWeight="Normal"
-           Margin="2,116,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Foreground="Red" FontSize="10" FontWeight="Normal"
+           Margin="2,92,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Run Text="{x:Static global:Messages.timeline_popup_damagePhysical}"/>
+            <Run Text=":"/>
+        </TextBlock>
+        
+        <TextBlock Foreground="LightBlue" FontSize="10" FontWeight="Normal"
+           Margin="2,104,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Run Text="{x:Static global:Messages.timeline_popup_damageMagic}"/>
+            <Run Text=":"/>
+        </TextBlock>
+        
+        <TextBlock Foreground="White" FontSize="10" FontWeight="Normal"
+           Margin="2,116,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Run Text="{x:Static global:Messages.timeline_popup_damageTrue}"/>
+            <Run Text=":"/>
+        </TextBlock>
 
         <TextBlock Name="damageTotal" Text="88,888" Foreground="LightGray" FontSize="10" FontWeight="Normal"
    Margin="0,75,160,0" HorizontalAlignment="Right" VerticalAlignment="Top"/>

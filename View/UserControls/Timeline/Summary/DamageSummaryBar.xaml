@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:League_Analyser.View.UserControls"
+             xmlns:global="clr-namespace:League_Analyser"
              mc:Ignorable="d" 
              Height="55" Width="350" HorizontalAlignment="Right">
     <Grid>
@@ -51,8 +52,11 @@ HorizontalAlignment="Left" Margin="0,-5,0,0" FontWeight="Bold"/>
             HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,12"/>
             <Rectangle Name="damageFightFill" Fill="Gold" Stroke="Black" StrokeThickness="0" Width="150" Height="10" 
             HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,12"/>
-            <TextBlock Text="Udział gracza w walce:" FontSize="10" Foreground="LightGray" VerticalAlignment="Top" 
-            HorizontalAlignment="Left" Margin="0,18,0,0" FontWeight="Bold"/>
+            <TextBlock FontSize="10" Foreground="LightGray" VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Margin="0,18,0,0" FontWeight="Bold">
+            <Run Text="{x:Static global:Messages.timeline_damageSummary_playerParticipation}"/>
+            <Run Text=":"/>
+            </TextBlock>
 
         </Grid>
     </Grid>

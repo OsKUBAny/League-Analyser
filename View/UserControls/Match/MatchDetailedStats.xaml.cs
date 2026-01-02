@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,11 +32,19 @@ namespace League_Analyser.View.UserControls
             animation_slideOut = (Storyboard)this.Resources["SlideOut"];
 
             comboBox_category.ItemsSource = Enum.GetValues(typeof(MatchHistory.Statistics_t.CategoryType_t))
-                .Cast<MatchHistory.Statistics_t.CategoryType_t>().Select(p => new
+                .Cast<MatchHistory.Statistics_t.CategoryType_t>().Select(p =>
                 {
-                    key = p,
-                    value = ((DescriptionAttribute)Attribute.GetCustomAttribute(typeof(MatchHistory.Statistics_t.CategoryType_t)
-                    .GetField(p.ToString()), typeof(DescriptionAttribute))).Description
+                    var field = typeof(MatchHistory.Statistics_t.CategoryType_t)
+                        .GetField(p.ToString());
+
+                    var display = field
+                        ?.GetCustomAttribute<DisplayAttribute>();
+
+                    return new
+                    {
+                        key = p,
+                        value = display?.GetName() ?? p.ToString()
+                    };
                 }).ToList();
             comboBox_category.DisplayMemberPath = "value";
             comboBox_category.SelectedValuePath = "key";

@@ -66,19 +66,19 @@ namespace League_Analyser.View.UserControls
 
             eventList.Add(new Player
             {
-                name = "K - zabójstwa",
+                name = "K - " + Messages.timeline_axis_kills,
                 playerId = 1,
                 isSelected = true
             });
             eventList.Add(new Player
             {
-                name = "D - śmierci",
+                name = "D - " + Messages.timeline_axis_deaths,
                 playerId = 2,
                 isSelected = true
             });
             eventList.Add(new Player
             {
-                name = "A - asysty",
+                name = "A - " + Messages.timeline_axis_assists,
                 playerId = 3,
                 isSelected = true
             });
@@ -105,7 +105,7 @@ namespace League_Analyser.View.UserControls
             int selectedPlayerCount = playerList.Count(p => p.isSelected);
 
             if (selectedPlayerCount == 1) playerListButton.Text = playerList.First(p => p.isSelected == true).name;
-            else playerListButton.Text = string.Format("Wybrano {0} z {1} graczy", selectedPlayerCount, playerList.Count);
+            else playerListButton.Text = string.Format(Messages.timeline_axis_selectedPlayers, selectedPlayerCount, playerList.Count);
 
             List<int> playerIdList = new List<int>();
             foreach (Player player in playerList)
@@ -131,7 +131,7 @@ namespace League_Analyser.View.UserControls
                 if (isA) eventListInfo += "/A";
             }
             else if (isA) eventListInfo = "A";
-            else eventListInfo = "Brak";
+            else eventListInfo = Messages.timeline_axis_none;
 
             eventListButton.Text = eventListInfo;
 

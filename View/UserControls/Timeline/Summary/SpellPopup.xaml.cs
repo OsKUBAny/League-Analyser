@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Xml.Linq;
 
 namespace League_Analyser.View.UserControls
 {
@@ -38,13 +41,21 @@ namespace League_Analyser.View.UserControls
             image.Source = spellData.spellImage;
             skillName.Text = spellData.spellName;
 
+            string parsedDescription = spellData.spellDescription;
+            if (parsedDescription != null)
+            {
+                parsedDescription = Regex.Replace(spellData.spellDescription, @"<[^>]+>", "");
+                parsedDescription = parsedDescription.Replace("&nbsp;", " ");
+                parsedDescription = WebUtility.HtmlDecode(parsedDescription);
+            }
+
             if (spellData.spellType == null) skillTypeName.Text = spellData.championName;
             else skillTypeName.Text = string.Format("{0} - {1}", spellData.championName, spellData.spellType);
 
-            skillDescription.Text = spellData.spellDescription;
+            skillDescription.Text = parsedDescription;
 
             TextBlock toolTipDescription = new TextBlock();
-            toolTipDescription.Text = spellData.spellDescription;
+            toolTipDescription.Text = parsedDescription;
             toolTipDescription.Foreground = new SolidColorBrush(Colors.White);
             toolTipDescription.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#E5232D37"));
             toolTipDescription.TextWrapping = TextWrapping.WrapWithOverflow;

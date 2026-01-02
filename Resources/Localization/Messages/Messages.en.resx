@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mainWindow_closing_title" xml:space="preserve">
+    <value>Confirm closing</value>
+  </data>
+  <data name="mainWindow_closing_message" xml:space="preserve">
+    <value>Currently downloading process is running, closing app may cause files corruption.
+Do you really want to close app now?</value>
+  </data>
+  <data name="mainWindow_appVersion" xml:space="preserve">
+    <value>Application version:</value>
+  </data>
+  <data name="mainWindow_dataVersion" xml:space="preserve">
+    <value>Data version:</value>
+  </data>
+  <data name="mainWindow_patchVersion" xml:space="preserve">
+    <value>Patch (DataDragon):</value>
+  </data>
+  <data name="loadResources_unexpectedType" xml:space="preserve">
+    <value>Unexpected type:</value>
+  </data>
+  <data name="matchHistory_category_general" xml:space="preserve">
+    <value>General statistics</value>
+  </data>
+  <data name="matchHistory_category_gold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="matchHistory_category_damageDealt" xml:space="preserve">
+    <value>Damage dealt</value>
+  </data>
+  <data name="matchHistory_category_damageRecived" xml:space="preserve">
+    <value>Damage received</value>
+  </data>
+  <data name="matchHistory_category_gameTime" xml:space="preserve">
+    <value>Game time</value>
+  </data>
+  <data name="matchHistory_category_achievements" xml:space="preserve">
+    <value>Targets and achievements</value>
+  </data>
+  <data name="matchHistory_category_playerStats" xml:space="preserve">
+    <value>Champion statistics</value>
+  </data>
+  <data name="matchHistory_category_skills" xml:space="preserve">
+    <value>Used skills</value>
+  </data>
+  <data name="matchHistory_statistic_general_kills" xml:space="preserve">
+    <value>Kills</value>
+  </data>
+  <data name="matchHistory_statistic_general_assists" xml:space="preserve">
+    <value>Assists</value>
+  </data>
+  <data name="matchHistory_statistic_general_deaths" xml:space="preserve">
+    <value>Deaths</value>
+  </data>
+  <data name="matchHistory_statistic_general_minions" xml:space="preserve">
+    <value>Minions killed</value>
+  </data>
+  <data name="matchHistory_statistic_gold_gained" xml:space="preserve">
+    <value>Gold gained</value>
+  </data>
+  <data name="matchHistory_statistic_gold_ratio" xml:space="preserve">
+    <value>Gold ratio (spent/gained)</value>
+  </data>
+  <data name="matchHistory_statistic_gold_spend" xml:space="preserve">
+    <value>Gold spent</value>
+  </data>
+  <data name="matchHistory_statistic_damage_physical" xml:space="preserve">
+    <value>Physical</value>
+  </data>
+  <data name="matchHistory_statistic_damage_magic" xml:space="preserve">
+    <value>Magic</value>
+  </data>
+  <data name="matchHistory_statistic_damage_true" xml:space="preserve">
+    <value>True damage</value>
+  </data>
+  <data name="matchHistory_statistic_damage_total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="matchHistory_statistic_damage_objectives" xml:space="preserve">
+    <value>To objectives</value>
+  </data>
+  <data name="matchHistory_statistic_damage_physicalPercent" xml:space="preserve">
+    <value>% physical</value>
+  </data>
+  <data name="matchHistory_statistic_damage_magicPercent" xml:space="preserve">
+    <value>% magic</value>
+  </data>
+  <data name="matchHistory_statistic_damage_truePercent" xml:space="preserve">
+    <value>% true damage</value>
+  </data>
+  <data name="matchHistory_statistic_damage_teamPercent" xml:space="preserve">
+    <value>% team</value>
+  </data>
+  <data name="matchHistory_statistic_time_alive" xml:space="preserve">
+    <value>% time being alive</value>
+  </data>
+  <data name="matchHistory_statistic_time_aliveMax" xml:space="preserve">
+    <value>Longest time being alive</value>
+  </data>
+  <data name="matchHistory_statistic_time_cc" xml:space="preserve">
+    <value>Total time of dealt CC effects</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_double" xml:space="preserve">
+    <value>Double kills</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_tripple" xml:space="preserve">
+    <value>Tripple kills</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_quadra" xml:space="preserve">
+    <value>Quadra kills</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_penta" xml:space="preserve">
+    <value>Penta kills</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_seriesMax" xml:space="preserve">
+    <value>Largest killing spree</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_turretParticipant" xml:space="preserve">
+    <value>Participation in destroying turrers</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_inhibitorParticipant" xml:space="preserve">
+    <value>Participation in destroying inhibitors</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_firstTurret" xml:space="preserve">
+    <value>First turret</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_steals" xml:space="preserve">
+    <value>Targets stolen</value>
+  </data>
+  <data name="matchHistory_statistic_player_critMax" xml:space="preserve">
+    <value>Largest critical strike</value>
+  </data>
+  <data name="matchHistory_statistic_player_healthRestored" xml:space="preserve">
+    <value>Health restored</value>
+  </data>
+  <data name="matchHistory_statistic_player_damageMitigated" xml:space="preserve">
+    <value>Damage decreased by armor/magic resist</value>
+  </data>
+  <data name="matchHistory_statistic_player_teammatesHealed" xml:space="preserve">
+    <value>Allays healed</value>
+  </data>
+  <data name="matchHistory_statistic_player_damageShielded" xml:space="preserve">
+    <value>Damage decreased by shields</value>
+  </data>
+  <data name="matchHistory_statistic_player_visionScore" xml:space="preserve">
+    <value>Vision score</value>
+  </data>
+  <data name="matchHistory_statistic_player_wardsPlaced" xml:space="preserve">
+    <value>Wards placed</value>
+  </data>
+  <data name="matchHistory_statistic_skills_q" xml:space="preserve">
+    <value>Usage of Q</value>
+  </data>
+  <data name="matchHistory_statistic_skills_w" xml:space="preserve">
+    <value>Usage of W</value>
+  </data>
+  <data name="matchHistory_statistic_skills_e" xml:space="preserve">
+    <value>Usage of E</value>
+  </data>
+  <data name="matchHistory_statistic_skills_r" xml:space="preserve">
+    <value>Usage of R</value>
+  </data>
+  <data name="matchHistory_statistic_skills_qwerTotal" xml:space="preserve">
+    <value>Total [Q, W, E, R]</value>
+  </data>
+  <data name="matchHistory_statistic_skills_qPercent" xml:space="preserve">
+    <value>% usage of Q</value>
+  </data>
+  <data name="matchHistory_statistic_skills_wPercent" xml:space="preserve">
+    <value>% usage of W</value>
+  </data>
+  <data name="matchHistory_statistic_skills_ePercent" xml:space="preserve">
+    <value>% usage of E</value>
+  </data>
+  <data name="matchHistory_statistic_skills_rPercent" xml:space="preserve">
+    <value>% usage of R</value>
+  </data>
+  <data name="matchHistory_statistic_skills_d" xml:space="preserve">
+    <value>Usage of D</value>
+  </data>
+  <data name="matchHistory_statistic_skills_f" xml:space="preserve">
+    <value>Usage of F</value>
+  </data>
+  <data name="matchHistory_statistic_skills_dfRatio" xml:space="preserve">
+    <value>% usage of D / % usage of F</value>
+  </data>
+  <data name="matchHistory_statistic_skills_fForFlash" xml:space="preserve">
+    <value>"F for Flash" - player is retarded</value>
+  </data>
+  <data name="settings_profileUnknown" xml:space="preserve">
+    <value>(unknown)</value>
+  </data>
+  <data name="settings_deleteProfile_message" xml:space="preserve">
+    <value>Are you sure you want to delete this profile?</value>
+  </data>
+  <data name="settings_deleteProfile_title" xml:space="preserve">
+    <value>Delete profile</value>
+  </data>
+  <data name="settings_noDDreference" xml:space="preserve">
+    <value>Unable to get DataDragon folder reference</value>
+  </data>
+  <data name="settings_noUpdateLink" xml:space="preserve">
+    <value>Failed to get new version tag value</value>
+  </data>
+  <data name="settings_updateBat_preparing" xml:space="preserve">
+    <value>Preparing for installation...</value>
+  </data>
+  <data name="settings_updateBat_closing" xml:space="preserve">
+    <value>Closing application...</value>
+  </data>
+  <data name="settings_updateBat_swapping" xml:space="preserve">
+    <value>Copying files...</value>
+  </data>
+  <data name="settings_updateBat_deleting" xml:space="preserve">
+    <value>Deleting update files...</value>
+  </data>
+  <data name="settings_updateBat_starting" xml:space="preserve">
+    <value>Starting new application's version...</value>
+  </data>
+  <data name="timeline_eventName_turretDestroyed" xml:space="preserve">
+    <value>Turret Destroyed</value>
+  </data>
+  <data name="timeline_eventName_inhibitorDestroyed" xml:space="preserve">
+    <value>Inhibitor Destroyed</value>
+  </data>
+  <data name="timeline_eventName_dragonCloudKilled" xml:space="preserve">
+    <value>Cloud Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_dragonMountainKilled" xml:space="preserve">
+    <value>Mountain Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_dragonInfernalKilled" xml:space="preserve">
+    <value>Infernal Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_dragonOceanKilled" xml:space="preserve">
+    <value>Ocean Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_dragonHextechKilled" xml:space="preserve">
+    <value>Hextech Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_dragonChemtechKilled" xml:space="preserve">
+    <value>Chemtech Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_dragonElderKilled" xml:space="preserve">
+    <value>Elder Dragon Kill</value>
+  </data>
+  <data name="timeline_eventName_heraldKilled" xml:space="preserve">
+    <value>Herald Kill</value>
+  </data>
+  <data name="timeline_eventName_baronKilled" xml:space="preserve">
+    <value>Baron Nashor Kill</value>
+  </data>
+  <data name="timeline_eventName_voidgrubKilled" xml:space="preserve">
+    <value>Voidgrub Kill</value>
+  </data>
+  <data name="timeline_eventName_atakhanKilled" xml:space="preserve">
+    <value>Atakhan Kill</value>
+  </data>
+  <data name="timeline_eventName_enemyKill" xml:space="preserve">
+    <value>Enemy Kill</value>
+  </data>
+  <data name="timeline_eventName_allayKill" xml:space="preserve">
+    <value>Allay Kill</value>
+  </data>
+  <data name="timeline_eventName_suicideKill" xml:space="preserve">
+    <value>Player Suicide</value>
+  </data>
+  <data name="timeline_eventName_playerKill" xml:space="preserve">
+    <value>Player Kill</value>
+  </data>
+  <data name="timeline_attack_other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="timeline_attack_autoattack" xml:space="preserve">
+    <value>Atack</value>
+  </data>
+  <data name="timeline_attack_minion" xml:space="preserve">
+    <value>Minions</value>
+  </data>
+  <data name="timeline_attack_turret" xml:space="preserve">
+    <value>Turret</value>
+  </data>
+  <data name="timeline_attack_monster" xml:space="preserve">
+    <value>Monsters</value>
+  </data>
+  <data name="matchHistory_scroll_rangeText" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="settings_appLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="settings_resourcesLanguage" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="settings_selectProfile" xml:space="preserve">
+    <value>Select profile</value>
+  </data>
+  <data name="settings_addNewProfile" xml:space="preserve">
+    <value>Add new profile</value>
+  </data>
+  <data name="settings_buttonLanguageSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="settings_buttonProfileSelect" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="settings_buttonAddNewProfile" xml:space="preserve">
+    <value>Add profile</value>
+  </data>
+  <data name="settings_languageRebootInfo" xml:space="preserve">
+    <value>Language will change after application reboot</value>
+  </data>
+  <data name="settings_settingsText" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="matchHistory_statistic_achivements_firstBlood" xml:space="preserve">
+    <value>First blood</value>
+  </data>
+  <data name="settings_updateApp" xml:space="preserve">
+    <value>New application version is avaiable</value>
+  </data>
+  <data name="settings_updateDD" xml:space="preserve">
+    <value>New resource files (DataDragon) are avaiable</value>
+  </data>
+  <data name="settings_buttonUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="settings_versionApp" xml:space="preserve">
+    <value>version</value>
+  </data>
+  <data name="menu_statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="menu_matchHistory" xml:space="preserve">
+    <value>Match history</value>
+  </data>
+  <data name="menu_settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="match_popupSeconds" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="match_unknownChampion" xml:space="preserve">
+    <value>(unknown champion)</value>
+  </data>
+  <data name="match_emptyChampionData" xml:space="preserve">
+    <value>Returned empty championDataDto object</value>
+  </data>
+  <data name="match_unableToLoadImg" xml:space="preserve">
+    <value>Failed to load graphic</value>
+  </data>
+  <data name="match_unknownMap" xml:space="preserve">
+    <value>(unknown map)</value>
+  </data>
+  <data name="match_gameDuration" xml:space="preserve">
+    <value>Duration time</value>
+  </data>
+  <data name="match_victory" xml:space="preserve">
+    <value>Victory</value>
+  </data>
+  <data name="match_defeat" xml:space="preserve">
+    <value>Defeat</value>
+  </data>
+  <data name="match_allayTeam" xml:space="preserve">
+    <value>Your team:</value>
+  </data>
+  <data name="match_enemyTeam" xml:space="preserve">
+    <value>Enemy team:</value>
+  </data>
+  <data name="match_gameSurrendered" xml:space="preserve">
+    <value>Match has been surrendered</value>
+  </data>
+  <data name="match_statisticBar_achiever" xml:space="preserve">
+    <value>Achiever</value>
+  </data>
+  <data name="match_statisticBar_assist" xml:space="preserve">
+    <value>Assist</value>
+  </data>
+  <data name="settings_newPlayer_name" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="settings_newPlayer_tag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="settings_newPlayer_server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="settings_newPlayer_button_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="settings_newPlayer_button_add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="settings_profileDetails_dataVersion" xml:space="preserve">
+    <value>Data file version</value>
+  </data>
+  <data name="settings_profileDetails_numberOfGames" xml:space="preserve">
+    <value>Number of saved games</value>
+  </data>
+  <data name="settings_profileDetails_lastGame" xml:space="preserve">
+    <value>Last game</value>
+  </data>
+  <data name="timeline_axis_none" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="timeline_axis_selectedPlayers" xml:space="preserve">
+    <value>Selected {0} of {1} players</value>
+  </data>
+  <data name="timeline_axis_kills" xml:space="preserve">
+    <value>kills</value>
+  </data>
+  <data name="timeline_axis_assists" xml:space="preserve">
+    <value>assists</value>
+  </data>
+  <data name="timeline_axis_deaths" xml:space="preserve">
+    <value>deaths</value>
+  </data>
+  <data name="timeline_damageBar_participationInFight" xml:space="preserve">
+    <value>Participation in fight</value>
+  </data>
+  <data name="timeline_damagebar_participationSkill" xml:space="preserve">
+    <value>damage</value>
+  </data>
+  <data name="timeline_damagebar_participationPlayer" xml:space="preserve">
+    <value>player</value>
+  </data>
+  <data name="timeline_damageSummary_playerParticipation" xml:space="preserve">
+    <value>Player's participation</value>
+  </data>
+  <data name="timeline_popup_damage" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="timeline_popup_damageTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="timeline_popup_damagePhysical" xml:space="preserve">
+    <value>Physical</value>
+  </data>
+  <data name="timeline_popup_damageMagic" xml:space="preserve">
+    <value>Magic</value>
+  </data>
+  <data name="timeline_popup_damageTrue" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="timeline_unknownPlayer" xml:space="preserve">
+    <value>Unknown player</value>
+  </data>
+  <data name="timeline_other" xml:space="preserve">
+    <value>Other sources</value>
+  </data>
+  <data name="timeline_noEventTypeData" xml:space="preserve">
+    <value>No information about event</value>
+  </data>
+  <data name="timeline_byAllayTeam" xml:space="preserve">
+    <value>By your team</value>
+  </data>
+  <data name="timeline_byEnemyTeam" xml:space="preserve">
+    <value>By enemy team</value>
+  </data>
+  <data name="timeline_inAllayTeam" xml:space="preserve">
+    <value>In your team</value>
+  </data>
+  <data name="timeline_inEnemyTeam" xml:space="preserve">
+    <value>In enemy Team</value>
+  </data>
+  <data name="settings_delete" xml:space="preserve">
+    <value>Delete profile</value>
+  </data>
+  <data name="settings_setActive" xml:space="preserve">
+    <value>Set as active</value>
+  </data>
+  <data name="settings_downloadFromZero" xml:space="preserve">
+    <value>Download from zero</value>
+  </data>
+</root>

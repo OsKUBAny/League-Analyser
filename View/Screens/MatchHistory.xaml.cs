@@ -20,7 +20,8 @@ namespace League_Analyser.View.Screens
             int lastSeen = firstSeen + visibleMatchesOffset;
             if (lastSeen > matchList.Children.Count) lastSeen = matchList.Children.Count;
 
-            visibleMatchesCount.Text = string.Format("({0} - {1}) z {2}", firstSeen, lastSeen, matchList.Children.Count);
+            visibleMatchesCount.Text = string.Format("({0} - {1}) {2} {3}", 
+                firstSeen, lastSeen, Messages.matchHistory_scroll_rangeText ,matchList.Children.Count);
         }
     }
 }

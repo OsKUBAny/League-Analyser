@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
+using System.Threading;
 using System.Windows;
 
 namespace League_Analyser
@@ -13,13 +15,19 @@ namespace League_Analyser
         public MatchHistory matchHistory = new MatchHistory();
 
         public bool isProcessOngoing = false;
+        public string language;
 
         public MainWindow()
         {
+            language = Properties.Settings.Default.Language;
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+
+
             InitializeComponent();
+
             this.Closing += MainWindow_Closing;
             if (!Directory.Exists("data/player")) Directory.CreateDirectory("data/player");
-            if (!File.Exists("data/settings.dll")) File.WriteAllText("data/settings.dll", "{\"defaulProfile\": \"\"}");
 
             info.InfoInit();
             apiData.ApiDataInit();
@@ -38,11 +46,10 @@ namespace League_Analyser
             {
                 var result = MessageBox.Show
                 (
-                    "Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików." +
-                    "\nCzy na pewno chcesz teraz zamknąć aplikację?",
-                      "Potwierdzenie zamknięcia",
-                      MessageBoxButton.YesNo,
-                      MessageBoxImage.Warning
+                    Messages.mainWindow_closing_message,
+                    Messages.mainWindow_closing_title,
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning
                 );
 
                 if (result == MessageBoxResult.No)

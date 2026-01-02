@@ -29,6 +29,7 @@ namespace League_Analyser
         public DataType.ChampionDataDto championDataDto;
         public DataType.ItemClass.Items itemsDto;
         public DataType.SummonerSpell summonerDto;
+        public Dictionary<string, string> resourceLanguages;
 
         public class Player
         {
@@ -239,7 +240,7 @@ namespace League_Analyser
                 participantLao.spellF = participantDto.summoner2Id;
                 participantLao.spellCastF = participantDto.summoner2Casts;
 
-                if (spellF.name == "Flash") participantLao.hasFlashOnF = 1;
+                if (spellF.name == "Flash") participantLao.hasFlashOnF = 2;
                 else participantLao.hasFlashOnF = 0;
 
                 List<int> itemsLao = new List<int>();

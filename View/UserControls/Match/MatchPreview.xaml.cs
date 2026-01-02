@@ -42,7 +42,7 @@ namespace League_Analyser.View.UserControls
             try
             {
                 var foo_champion = data.championDataDto.data.FirstOrDefault(p => p.Value.key == match.championId.ToString());
-                if (foo_champion.Value == null) throw new Exception("Zwrócono pusty obiekt championDataDto");
+                if (foo_champion.Value == null) throw new Exception(Messages.match_emptyChampionData);
                 champion.Source = GetImageFromFile(LoadResources.ImagePath_t.DD_champion, foo_champion.Value.image.full).ImageSource;
             }
             catch (Exception ex)
@@ -81,7 +81,7 @@ namespace League_Analyser.View.UserControls
             }
 
             try { mapName.Text = data.mapsDto.Find(p => p.mapId == match.mapId).mapName; }
-            catch (Exception) { mapName.Text = "(nieznana mapa)"; }
+            catch (Exception) { mapName.Text = Messages.match_unknownMap; }
             gameType.Text = match.mode;
         }
 
@@ -117,7 +117,7 @@ namespace League_Analyser.View.UserControls
             if (loadedImage.result == false)
             {
                 isError = true;
-                errorMessage = "Nie udało się załadować grafiki";
+                errorMessage = Messages.match_unableToLoadImg;
             }
 
             return brush;

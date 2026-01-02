@@ -10,11 +10,8 @@
     <UserControl.Resources>
         <Style TargetType="ComboBox">
             <Setter Property="Background" Value="#80000000"/>
-            <!-- Półprzezroczyste czarne tło -->
             <Setter Property="Foreground" Value="White"/>
-            <!-- Białe napisy -->
             <Setter Property="BorderBrush" Value="Black"/>
-            <!-- Szary border -->
             <Setter Property="BorderThickness" Value="1"/>
         </Style>
 
