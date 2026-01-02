@@ -256,7 +256,7 @@
     <value>Przejdź do ustawień i wykonaj aktualizację danych zasobów</value>
   </data>
   <data name="dd_downloading" xml:space="preserve">
-    <value>Trwa pobieranie pliku DataDragon...</value>
+    <value>Trwa pobieranie plików DataDragon...</value>
   </data>
   <data name="update_checkFailed" xml:space="preserve">
     <value>Nie udało się sprawdzić dostępności nowej wersji aplikacji</value>

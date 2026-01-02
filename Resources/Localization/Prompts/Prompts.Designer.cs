@@ -61,7 +61,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd połączenia z API.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred while connecting with API.
         /// </summary>
         internal static string api_error {
             get {
@@ -70,7 +70,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa wspólne posiedzenie przy ognisku w serwerowni, kiełbaski zapewnione przez Riot Games.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu A communal meeting is taking place around a bonfire in the server room, sausages provided by Riot Games.
         /// </summary>
         internal static string api_euneOnFire_msg {
             get {
@@ -79,7 +79,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd połączenia z API.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred while connecting with API.
         /// </summary>
         internal static string api_euneOnFire_title {
             get {
@@ -88,7 +88,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Próba ponownego połączenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Attempting to reconnect.
         /// </summary>
         internal static string api_reconnecting_msg {
             get {
@@ -97,7 +97,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa pobieranie danych....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Donwloading data....
         /// </summary>
         internal static string api_reconnecting_title {
             get {
@@ -106,7 +106,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas połączenia przekroczył żądany limit.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Connection has timeouted.
         /// </summary>
         internal static string api_timeout_msg {
             get {
@@ -115,7 +115,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd połączenia z API.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred while connecting with API.
         /// </summary>
         internal static string api_timeout_title {
             get {
@@ -124,7 +124,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Program oczekuje na ponowną możliwość połączenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The program is awaiting for reconnection possibility.
         /// </summary>
         internal static string api_tooManyRequests_msg {
             get {
@@ -133,7 +133,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nastąpiło przeciążenie serwera z powodu zbyt dużej liczby zapytań.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The server was overloaded due to too many requests.
         /// </summary>
         internal static string api_tooManyRequests_title {
             get {
@@ -142,7 +142,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił nieoczekiwany błąd przy próbie łączenia z serwerem.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An unexpected error has occurred with server connection.
         /// </summary>
         internal static string api_unexpectedError {
             get {
@@ -151,7 +151,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Oczekiwanie na ponowne połączenie.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Waiting for recconect.
         /// </summary>
         internal static string api_waiting_msg {
             get {
@@ -160,7 +160,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa pobieranie danych....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading data....
         /// </summary>
         internal static string api_waiting_title {
             get {
@@ -169,7 +169,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć pobranych danych szczątkowych pliku DataDragon.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to remove downloaded Data Dragon files.
         /// </summary>
         internal static string dd_deleteUpdateFilesError {
             get {
@@ -178,7 +178,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa pobieranie pliku DataDragon....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading DataDragon files....
         /// </summary>
         internal static string dd_downloading {
             get {
@@ -187,7 +187,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna aktualizacja danych DataDragon.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu DataDragon files update is avaibale.
         /// </summary>
         internal static string dd_hasUpdate {
             get {
@@ -196,7 +196,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie odnaleziono folderu &quot;data&quot;.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to find &quot;data&quot; folder.
         /// </summary>
         internal static string dd_noFolder {
             get {
@@ -205,7 +205,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak odniesienia do wersji plików DataDragon.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to check Data Dragon version.
         /// </summary>
         internal static string dd_noReference {
             get {
@@ -214,7 +214,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie znaleziono pliku DataDragon.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Data Dragon reference does not exist.
         /// </summary>
         internal static string dd_notExist {
             get {
@@ -223,7 +223,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać wartości najnowszej wersji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to check newest version of Data Dragon files.
         /// </summary>
         internal static string dd_noVersionReference {
             get {
@@ -232,7 +232,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przejdź do ustawień i wykonaj aktualizację danych zasobów.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Go to settings and perform DataDragon update.
         /// </summary>
         internal static string dd_update {
             get {
@@ -241,7 +241,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania aktualizacji danych źródłowych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to download DataDragon files.
         /// </summary>
         internal static string dd_updateError {
             get {
@@ -250,7 +250,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Aktualna wersja to {0}.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Current version is {0}.
         /// </summary>
         internal static string dd_updateFinished_msg {
             get {
@@ -259,7 +259,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie ukończono aktualizację danych źródłowych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Successfully finished updating DataDragon process.
         /// </summary>
         internal static string dd_updateFinished_title {
             get {
@@ -268,7 +268,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby aktualizacji danych źródłowych. Wycofano zmiany.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during DataDragon update process, reverting changes.
         /// </summary>
         internal static string dd_updateRevert {
             get {
@@ -277,7 +277,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to download data.
         /// </summary>
         internal static string load_downloadingError {
             get {
@@ -286,7 +286,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa ładowanie....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Loading....
         /// </summary>
         internal static string load_loading {
             get {
@@ -295,7 +295,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas ładowania danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load data.
         /// </summary>
         internal static string load_loadingError {
             get {
@@ -304,7 +304,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd deserializacji danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to deserialyze data.
         /// </summary>
         internal static string loadResources_deserialyze {
             get {
@@ -313,7 +313,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się załadować danych obiektu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load object data.
         /// </summary>
         internal static string loadResources_loadFile {
             get {
@@ -322,7 +322,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać grafiki.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load image.
         /// </summary>
         internal static string loadResources_loadImage {
             get {
@@ -331,7 +331,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się zapisać danych do pliku.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to save data to file.
         /// </summary>
         internal static string loadResources_saveFile {
             get {
@@ -340,7 +340,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas serializacji danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to serialyze data.
         /// </summary>
         internal static string loadResources_serialyze {
             get {
@@ -349,7 +349,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dla {0} rozgrywek nie udało się w pełni załadować danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load whole data for {0} matches.
         /// </summary>
         internal static string match_dataAllNotLoaded {
             get {
@@ -358,7 +358,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dane są aktualne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Data is up to date.
         /// </summary>
         internal static string match_dataUpToDate {
             get {
@@ -367,7 +367,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać szczegółów rozgrywki dla tej gry.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to load details for this game.
         /// </summary>
         internal static string match_detailsNotLoaded {
             get {
@@ -376,7 +376,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie meczu {0} z {1}....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading match {0} of {1}.
         /// </summary>
         internal static string match_download {
             get {
@@ -385,7 +385,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać żadnej rozgrywki.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to download any game.
         /// </summary>
         internal static string match_downloadFailed {
             get {
@@ -394,7 +394,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Proces pobierania danych od zera nie zakończył się pomyślnie.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during downloading math data from zero.
         /// </summary>
         internal static string match_downloadFromZeroFailed {
             get {
@@ -403,7 +403,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie listy rozgrywek....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading matches list.
         /// </summary>
         internal static string match_downloadingList {
             get {
@@ -412,7 +412,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać listy rozgrywek.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to download matches list.
         /// </summary>
         internal static string match_downloadListFailed {
             get {
@@ -421,7 +421,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zwrócono pusty obiekt danych dotyczących wydarzenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Returned empty object for this game.
         /// </summary>
         internal static string match_emptyTimeline {
             get {
@@ -430,7 +430,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dla {0} graczy nie udało się w pełni załadować grafiki.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load all graphics for {0} players.
         /// </summary>
         internal static string match_graphicAllNotLoaded {
             get {
@@ -439,7 +439,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odnaleźć pliku.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to locate file.
         /// </summary>
         internal static string match_graphicError_msg {
             get {
@@ -448,7 +448,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas ładowania grafiki.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during loading image.
         /// </summary>
         internal static string match_graphicError_title {
             get {
@@ -457,7 +457,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać wszystkich meczy z serwera.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to load all matches from server.
         /// </summary>
         internal static string match_notAllDownloaded {
             get {
@@ -466,7 +466,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie znaleziono danych dla tego meczu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to find data for this match.
         /// </summary>
         internal static string match_notFound {
             get {
@@ -475,7 +475,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dla {0} graczy nie udało się załadować statystyk.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load all statistics for {0} players.
         /// </summary>
         internal static string match_statAllNotLoaded {
             get {
@@ -484,7 +484,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobrano {0} nowych rozgrywek.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0} new matches.
         /// </summary>
         internal static string match_updatedSucessfully_msg {
             get {
@@ -493,7 +493,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyslnie zaktualizowano listę gier.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Successfully updated matches list.
         /// </summary>
         internal static string match_updatedSucessfully_title {
             get {
@@ -502,7 +502,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie dodano nowy profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Successfully added new profile.
         /// </summary>
         internal static string profile_added {
             get {
@@ -511,7 +511,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie usunięto profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Successfully deleted profile.
         /// </summary>
         internal static string profile_deleted {
             get {
@@ -520,7 +520,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć profilu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to delete profile.
         /// </summary>
         internal static string profile_deleteError {
             get {
@@ -529,7 +529,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać danych gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to download player&apos;s data.
         /// </summary>
         internal static string profile_downloadError {
             get {
@@ -538,7 +538,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania listy profili.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during downloading profiles list.
         /// </summary>
         internal static string profile_listError {
             get {
@@ -547,7 +547,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie danych gracza....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading player&apos;s data....
         /// </summary>
         internal static string profile_load {
             get {
@@ -556,7 +556,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Witaj, {0}!.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Welcome {0}!.
         /// </summary>
         internal static string profile_loadedSucessfully_msg {
             get {
@@ -565,7 +565,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie załadowano profil gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Successfully loaded player&apos;s profile.
         /// </summary>
         internal static string profile_loadedSucessfully_title {
             get {
@@ -574,7 +574,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać danych gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to read player&apos;s data.
         /// </summary>
         internal static string profile_loadError {
             get {
@@ -583,7 +583,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ładowanie danych z profilu gracza....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Loading player&apos;s data....
         /// </summary>
         internal static string profile_loadingData {
             get {
@@ -592,7 +592,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak danych odnośnie nazwy użytkownika.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu No reference to this user name.
         /// </summary>
         internal static string profile_noReference {
             get {
@@ -601,7 +601,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się dodać nowego profilu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to add new profile.
         /// </summary>
         internal static string profile_notAdded {
             get {
@@ -610,7 +610,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać danych gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to read player&apos;s data.
         /// </summary>
         internal static string profile_notLoaded_msg {
             get {
@@ -619,7 +619,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas odczytywannia danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during reading player&apos;s data.
         /// </summary>
         internal static string profile_notLoaded_title {
             get {
@@ -628,7 +628,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ścieżka {0} nie istnieje.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Path {0} does not exist.
         /// </summary>
         internal static string profile_pathNotExist {
             get {
@@ -637,7 +637,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd odczytu pliku profilu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during reading profile&apos;s data.
         /// </summary>
         internal static string profile_readError {
             get {
@@ -646,7 +646,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisywanie profilu....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Saving profile....
         /// </summary>
         internal static string profile_save {
             get {
@@ -655,7 +655,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas zapisywania profilu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to save profile.
         /// </summary>
         internal static string profile_saveError {
             get {
@@ -664,7 +664,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Można teraz załadować profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu You may now load profile data.
         /// </summary>
         internal static string profile_updatedSucessfully_msg {
             get {
@@ -673,7 +673,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pomyślnie zaktualizowano profil gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Successfully updated profile.
         /// </summary>
         internal static string profile_updatedSucessfully_title {
             get {
@@ -682,7 +682,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przekazane argumenty nie pasują do formatu komunikatu &quot;{0}&quot;.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Passed arguments does not match prompt&apos;s syntax {0}.
         /// </summary>
         internal static string prompt_argsInvalid_msg {
             get {
@@ -691,7 +691,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd poczas tworzenia powiadomienia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to add prompt.
         /// </summary>
         internal static string prompt_argsInvalid_title {
             get {
@@ -700,7 +700,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Lista powiadomień jest pusta.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Prompts list is empty.
         /// </summary>
         internal static string prompt_listEmpty_msg {
             get {
@@ -709,7 +709,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd poczas próby akualizacji powiadomienia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to update prompt.
         /// </summary>
         internal static string prompt_listEmpty_title {
             get {
@@ -718,7 +718,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa pobieranie danych....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading data....
         /// </summary>
         internal static string settings_downloading {
             get {
@@ -727,7 +727,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zmiana wyświetlanego języka nastąpi po ponownym uruchomieniu aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Language change will apear after reboot.
         /// </summary>
         internal static string settings_languageSaved {
             get {
@@ -736,7 +736,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się odczytać pliku.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to read file.
         /// </summary>
         internal static string settings_loadFailed_msg {
             get {
@@ -745,7 +745,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby załadowania ustawień.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load settings file.
         /// </summary>
         internal static string settings_loadFailed_title {
             get {
@@ -754,7 +754,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa odczytwanie danych....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Reading data....
         /// </summary>
         internal static string settings_reading {
             get {
@@ -763,7 +763,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisano ustawienia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Settings have been saved.
         /// </summary>
         internal static string settings_saved {
             get {
@@ -772,7 +772,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się zapisać pliku.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to save settings.
         /// </summary>
         internal static string settings_saveError_msg {
             get {
@@ -781,7 +781,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby zapisania ustawiń.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during settings save process.
         /// </summary>
         internal static string settings_saveError_title {
             get {
@@ -790,7 +790,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się sprawdzić dostępności nowej wersji aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to check application update avability.
         /// </summary>
         internal static string update_checkFailed {
             get {
@@ -799,7 +799,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się usunąć pobraych danych szczątkowych pliku aktualizacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to remove downloaded update files.
         /// </summary>
         internal static string update_deleteUpdateFilesError {
             get {
@@ -808,7 +808,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas pobierania aktualizacji aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during downloading application update.
         /// </summary>
         internal static string update_downloadFailed {
             get {
@@ -817,7 +817,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobieranie plików aktualizacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloading update files....
         /// </summary>
         internal static string update_downloading {
             get {
@@ -826,7 +826,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobrano {0}% ({1:0.0} z {2:0.0} MB).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0}% ({1:0.0} from {2:0.0} MB).
         /// </summary>
         internal static string update_downloadProgressKb {
             get {
@@ -835,7 +835,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobrano {0}% ({1:0.0} z {2:0.0} kB).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Downloaded {0}% ({1:0.0} from {2:0.0} kB).
         /// </summary>
         internal static string update_downloadProgressMb {
             get {
@@ -844,7 +844,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Kończenie aktualizacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Finishing update process....
         /// </summary>
         internal static string update_finishing {
             get {
@@ -853,7 +853,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inicjalizacja pobierania....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Initializing download....
         /// </summary>
         internal static string update_init {
             get {
@@ -862,7 +862,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się utworzyć pliku instalacyjnego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to create installer file.
         /// </summary>
         internal static string update_installerError_msg {
             get {
@@ -871,7 +871,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby aktualizacji aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to update application.
         /// </summary>
         internal static string update_installerError_title {
             get {
@@ -880,7 +880,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przejdź do ustawień aby dokonać aktualizacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Go to settings and perform an update.
         /// </summary>
         internal static string update_isUpdate_msg {
             get {
@@ -889,7 +889,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna jest nowa wersja aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An application update is avaiable.
         /// </summary>
         internal static string update_isUpdate_title {
             get {
@@ -898,7 +898,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Za chwilę nastąpi zamknięcie aplikacji i uruchomienie instalatora.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The application will close in a moment and installation process will begin.
         /// </summary>
         internal static string update_rebootInfo {
             get {
@@ -907,7 +907,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie ukończono procesu aktualizacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to finish update process.
         /// </summary>
         internal static string update_saveError_msg {
             get {
@@ -916,7 +916,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas zapisu danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during saving data.
         /// </summary>
         internal static string update_saveError_title {
             get {
@@ -925,7 +925,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wystąpił błąd podczas próby rozpakowywania pliku aktualizacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu An error has occurred during unzipping files process.
         /// </summary>
         internal static string update_unzipFailed {
             get {
@@ -934,7 +934,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Rozpakowywanie pliku (obliczanie rozmiaru)....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unzipping files (calculating size)....
         /// </summary>
         internal static string update_unzipInit {
             get {
@@ -943,7 +943,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Rozpakowano {0}% ({1:0.0} z {2:0.0} MB).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unzipped {0}% ({1:0.0} from {2:0.0} MB).
         /// </summary>
         internal static string update_unzipMb {
             get {
@@ -952,7 +952,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trwa aktualizacja aplikacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Updating application....
         /// </summary>
         internal static string update_updateProcess {
             get {

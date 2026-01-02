@@ -61,7 +61,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nieoczekiwany typ: .
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unexpected type:.
         /// </summary>
         public static string loadResources_unexpectedType {
             get {
@@ -70,7 +70,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wersja aplikacji:.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Application version:.
         /// </summary>
         public static string mainWindow_appVersion {
             get {
@@ -79,8 +79,8 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obecnie trwa proces pobierania danych, zamknięcie aplikacji może spowodować uszkodzenie plików.
-        ///Czy na pewno chcesz teraz zamknąć aplikację?.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Currently downloading process is running, closing app may cause files corruption.
+        ///Do you really want to close app now?.
         /// </summary>
         public static string mainWindow_closing_message {
             get {
@@ -89,7 +89,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Potwierdzenie zamknięcia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Confirm closing.
         /// </summary>
         public static string mainWindow_closing_title {
             get {
@@ -98,7 +98,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wersja danych:.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Data version:.
         /// </summary>
         public static string mainWindow_dataVersion {
             get {
@@ -116,7 +116,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Twoja drużyna:.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Your team:.
         /// </summary>
         public static string match_allayTeam {
             get {
@@ -125,7 +125,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Porażka.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Defeat.
         /// </summary>
         public static string match_defeat {
             get {
@@ -134,7 +134,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zwrócono pusty obiekt championDataDto.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Returned empty championDataDto object.
         /// </summary>
         public static string match_emptyChampionData {
             get {
@@ -143,7 +143,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przeciwna drużyna:.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Enemy team:.
         /// </summary>
         public static string match_enemyTeam {
             get {
@@ -152,7 +152,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas trwania.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Duration time.
         /// </summary>
         public static string match_gameDuration {
             get {
@@ -161,7 +161,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Mecz został poddany.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Match has been surrendered.
         /// </summary>
         public static string match_gameSurrendered {
             get {
@@ -179,7 +179,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zdobywca.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Achiever.
         /// </summary>
         public static string match_statisticBar_achiever {
             get {
@@ -188,7 +188,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Asysta.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Assist.
         /// </summary>
         public static string match_statisticBar_assist {
             get {
@@ -197,7 +197,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się załadować grafiki.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to load graphic.
         /// </summary>
         public static string match_unableToLoadImg {
             get {
@@ -206,7 +206,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana postać).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (unknown champion).
         /// </summary>
         public static string match_unknownChampion {
             get {
@@ -215,7 +215,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana mapa).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (unknown map).
         /// </summary>
         public static string match_unknownMap {
             get {
@@ -224,7 +224,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zwycięstwo.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Victory.
         /// </summary>
         public static string match_victory {
             get {
@@ -233,7 +233,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cele i osiągnięcia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Targets and achievements.
         /// </summary>
         public static string matchHistory_category_achievements {
             get {
@@ -242,7 +242,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zadane obrażenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Damage dealt.
         /// </summary>
         public static string matchHistory_category_damageDealt {
             get {
@@ -251,7 +251,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Otrzymane obrażenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Damage received.
         /// </summary>
         public static string matchHistory_category_damageRecived {
             get {
@@ -260,7 +260,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas gry.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Game time.
         /// </summary>
         public static string matchHistory_category_gameTime {
             get {
@@ -269,7 +269,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statystyki ogólne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu General statistics.
         /// </summary>
         public static string matchHistory_category_general {
             get {
@@ -278,7 +278,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Złoto.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gold.
         /// </summary>
         public static string matchHistory_category_gold {
             get {
@@ -287,7 +287,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statystyki postaci.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Champion statistics.
         /// </summary>
         public static string matchHistory_category_playerStats {
             get {
@@ -296,7 +296,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użyte umiejętności.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Used skills.
         /// </summary>
         public static string matchHistory_category_skills {
             get {
@@ -305,7 +305,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu z.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu of.
         /// </summary>
         public static string matchHistory_scroll_rangeText {
             get {
@@ -323,7 +323,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pierwsza krew.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu First blood.
         /// </summary>
         public static string matchHistory_statistic_achivements_firstBlood {
             get {
@@ -332,7 +332,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pierwsza wieża.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu First turret.
         /// </summary>
         public static string matchHistory_statistic_achivements_firstTurret {
             get {
@@ -341,7 +341,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział w zniszczeniu inhibitorów.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Participation in destroying inhibitors.
         /// </summary>
         public static string matchHistory_statistic_achivements_inhibitorParticipant {
             get {
@@ -368,7 +368,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Największa seria zabójstw.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Largest killing spree.
         /// </summary>
         public static string matchHistory_statistic_achivements_seriesMax {
             get {
@@ -377,7 +377,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ukradzione cele.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Targets stolen.
         /// </summary>
         public static string matchHistory_statistic_achivements_steals {
             get {
@@ -395,7 +395,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział w zniszczeniu wież.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Participation in destroying turrers.
         /// </summary>
         public static string matchHistory_statistic_achivements_turretParticipant {
             get {
@@ -404,7 +404,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Magiczne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Magic.
         /// </summary>
         public static string matchHistory_statistic_damage_magic {
             get {
@@ -413,7 +413,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % magicznych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % magic.
         /// </summary>
         public static string matchHistory_statistic_damage_magicPercent {
             get {
@@ -422,7 +422,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obiektom.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu To objectives.
         /// </summary>
         public static string matchHistory_statistic_damage_objectives {
             get {
@@ -431,7 +431,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Fizyczne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Physical.
         /// </summary>
         public static string matchHistory_statistic_damage_physical {
             get {
@@ -440,7 +440,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % fizycznych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % physical.
         /// </summary>
         public static string matchHistory_statistic_damage_physicalPercent {
             get {
@@ -449,7 +449,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % całej drużyny.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % team.
         /// </summary>
         public static string matchHistory_statistic_damage_teamPercent {
             get {
@@ -458,7 +458,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Całkowite.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Total.
         /// </summary>
         public static string matchHistory_statistic_damage_total {
             get {
@@ -485,7 +485,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Asysty.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Assists.
         /// </summary>
         public static string matchHistory_statistic_general_assists {
             get {
@@ -494,7 +494,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zgony.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Deaths.
         /// </summary>
         public static string matchHistory_statistic_general_deaths {
             get {
@@ -503,7 +503,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabójstwa.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Kills.
         /// </summary>
         public static string matchHistory_statistic_general_kills {
             get {
@@ -512,7 +512,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabite miniony.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Minions killed.
         /// </summary>
         public static string matchHistory_statistic_general_minions {
             get {
@@ -521,7 +521,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zdobyte złoto.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gold gained.
         /// </summary>
         public static string matchHistory_statistic_gold_gained {
             get {
@@ -530,7 +530,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Stosunek złota (wydane/zdobyte).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gold ratio (spent/gained).
         /// </summary>
         public static string matchHistory_statistic_gold_ratio {
             get {
@@ -539,7 +539,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wydane złoto.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gold spent.
         /// </summary>
         public static string matchHistory_statistic_gold_spend {
             get {
@@ -548,7 +548,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Największe trafienie krytyczne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Largest critical strike.
         /// </summary>
         public static string matchHistory_statistic_player_critMax {
             get {
@@ -557,7 +557,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obrażenia zmniejszone przez pancerz/odporność.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Damage decreased by armor/magic resist.
         /// </summary>
         public static string matchHistory_statistic_player_damageMitigated {
             get {
@@ -566,7 +566,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obrażenia zablokowane przez rzucone tarcze.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Damage decreased by shields.
         /// </summary>
         public static string matchHistory_statistic_player_damageShielded {
             get {
@@ -575,7 +575,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przywrócone zdrowie.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Health restored.
         /// </summary>
         public static string matchHistory_statistic_player_healthRestored {
             get {
@@ -584,7 +584,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Uleczenie sojuszników.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Allays healed.
         /// </summary>
         public static string matchHistory_statistic_player_teammatesHealed {
             get {
@@ -593,7 +593,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Punkty wizji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Vision score.
         /// </summary>
         public static string matchHistory_statistic_player_visionScore {
             get {
@@ -602,7 +602,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Postawione totemy.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wards placed.
         /// </summary>
         public static string matchHistory_statistic_player_wardsPlaced {
             get {
@@ -611,7 +611,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia D.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usage of D.
         /// </summary>
         public static string matchHistory_statistic_skills_d {
             get {
@@ -620,7 +620,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia D / % użycia F.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % usage of D / % usage of F.
         /// </summary>
         public static string matchHistory_statistic_skills_dfRatio {
             get {
@@ -629,7 +629,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia E.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usage of E.
         /// </summary>
         public static string matchHistory_statistic_skills_e {
             get {
@@ -638,7 +638,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia E.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % usage of E.
         /// </summary>
         public static string matchHistory_statistic_skills_ePercent {
             get {
@@ -647,7 +647,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia F.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usage of F.
         /// </summary>
         public static string matchHistory_statistic_skills_f {
             get {
@@ -656,7 +656,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &quot;F for Flash&quot; czyli gracz jest ułomny.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &quot;F for Flash&quot; - player is retarded.
         /// </summary>
         public static string matchHistory_statistic_skills_fForFlash {
             get {
@@ -665,7 +665,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia Q.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usage of Q.
         /// </summary>
         public static string matchHistory_statistic_skills_q {
             get {
@@ -674,7 +674,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia Q.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % usage of Q.
         /// </summary>
         public static string matchHistory_statistic_skills_qPercent {
             get {
@@ -683,7 +683,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Łącznie [Q, W, E, R].
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Total [Q, W, E, R].
         /// </summary>
         public static string matchHistory_statistic_skills_qwerTotal {
             get {
@@ -692,7 +692,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia R.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usage of R.
         /// </summary>
         public static string matchHistory_statistic_skills_r {
             get {
@@ -701,7 +701,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia R.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % usage of R.
         /// </summary>
         public static string matchHistory_statistic_skills_rPercent {
             get {
@@ -710,7 +710,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Użycia W.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usage of W.
         /// </summary>
         public static string matchHistory_statistic_skills_w {
             get {
@@ -719,7 +719,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % użycia W.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % usage of W.
         /// </summary>
         public static string matchHistory_statistic_skills_wPercent {
             get {
@@ -728,7 +728,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % czasu będąc żywym.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu % time being alive.
         /// </summary>
         public static string matchHistory_statistic_time_alive {
             get {
@@ -737,7 +737,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Najdłuższy czas bycia żywym.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Longest time being alive.
         /// </summary>
         public static string matchHistory_statistic_time_aliveMax {
             get {
@@ -746,7 +746,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czas zadanych efektów CC.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Total time of dealt CC effects.
         /// </summary>
         public static string matchHistory_statistic_time_cc {
             get {
@@ -755,7 +755,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Historia meczy.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Match history.
         /// </summary>
         public static string menu_matchHistory {
             get {
@@ -764,7 +764,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ustawienia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Settings.
         /// </summary>
         public static string menu_settings {
             get {
@@ -773,7 +773,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statystyki.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statistics.
         /// </summary>
         public static string menu_statistics {
             get {
@@ -782,7 +782,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dodaj nowy profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add new profile.
         /// </summary>
         public static string settings_addNewProfile {
             get {
@@ -791,7 +791,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Język.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Language.
         /// </summary>
         public static string settings_appLanguage {
             get {
@@ -800,7 +800,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dodaj profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add profile.
         /// </summary>
         public static string settings_buttonAddNewProfile {
             get {
@@ -809,7 +809,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisz.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Save.
         /// </summary>
         public static string settings_buttonLanguageSave {
             get {
@@ -818,7 +818,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wybierz.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Select.
         /// </summary>
         public static string settings_buttonProfileSelect {
             get {
@@ -827,7 +827,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Aktualizuj.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Update.
         /// </summary>
         public static string settings_buttonUpdate {
             get {
@@ -836,7 +836,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usuń profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Delete profile.
         /// </summary>
         public static string settings_delete {
             get {
@@ -845,7 +845,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czy na pewno chcesz usunąć ten profil?.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Are you sure you want to delete this profile?.
         /// </summary>
         public static string settings_deleteProfile_message {
             get {
@@ -854,7 +854,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usuwanie profiu.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Delete profile.
         /// </summary>
         public static string settings_deleteProfile_title {
             get {
@@ -863,7 +863,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pobierz od zera.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Download from zero.
         /// </summary>
         public static string settings_downloadFromZero {
             get {
@@ -872,7 +872,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zmiana języka nastąpi po ponownym uruchomieniu aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Language will change after application reboot.
         /// </summary>
         public static string settings_languageRebootInfo {
             get {
@@ -881,7 +881,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dodaj.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add.
         /// </summary>
         public static string settings_newPlayer_button_add {
             get {
@@ -890,7 +890,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Anuluj.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cancel.
         /// </summary>
         public static string settings_newPlayer_button_cancel {
             get {
@@ -899,7 +899,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nazwa użytkownika.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Username.
         /// </summary>
         public static string settings_newPlayer_name {
             get {
@@ -908,7 +908,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Serwer.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Server.
         /// </summary>
         public static string settings_newPlayer_server {
             get {
@@ -926,7 +926,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie odnaleziono referencji do folderu DataDragon.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unable to get DataDragon folder reference.
         /// </summary>
         public static string settings_noDDreference {
             get {
@@ -935,7 +935,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się pobrać odnośnika do pobrania nowej wersji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Failed to get new version tag value.
         /// </summary>
         public static string settings_noUpdateLink {
             get {
@@ -944,7 +944,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wersja pliku danych.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Data file version.
         /// </summary>
         public static string settings_profileDetails_dataVersion {
             get {
@@ -953,7 +953,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ostatnia rozgrywka.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Last game.
         /// </summary>
         public static string settings_profileDetails_lastGame {
             get {
@@ -962,7 +962,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Liczba zapisanych rozgrywek.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Number of saved games.
         /// </summary>
         public static string settings_profileDetails_numberOfGames {
             get {
@@ -971,7 +971,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (nieznana).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu (unknown).
         /// </summary>
         public static string settings_profileUnknown {
             get {
@@ -980,7 +980,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zasoby.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Resources.
         /// </summary>
         public static string settings_resourcesLanguage {
             get {
@@ -989,7 +989,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wybierz profil.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Select profile.
         /// </summary>
         public static string settings_selectProfile {
             get {
@@ -998,7 +998,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ustaw jako aktywny.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Set as active.
         /// </summary>
         public static string settings_setActive {
             get {
@@ -1007,7 +1007,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ustawienia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Settings.
         /// </summary>
         public static string settings_settingsText {
             get {
@@ -1016,7 +1016,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna aktualizacja aplikacji.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu New application version is avaiable.
         /// </summary>
         public static string settings_updateApp {
             get {
@@ -1025,7 +1025,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zamykanie aplikacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Closing application....
         /// </summary>
         public static string settings_updateBat_closing {
             get {
@@ -1034,7 +1034,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Usuwanie plików aktualizacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Deleting update files....
         /// </summary>
         public static string settings_updateBat_deleting {
             get {
@@ -1043,7 +1043,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przygotowywanie do instalacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Preparing for installation....
         /// </summary>
         public static string settings_updateBat_preparing {
             get {
@@ -1052,7 +1052,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Uruchamianie nowej wersji aplikacji....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Starting new application&apos;s version....
         /// </summary>
         public static string settings_updateBat_starting {
             get {
@@ -1061,7 +1061,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Podmienianie plików....
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Copying files....
         /// </summary>
         public static string settings_updateBat_swapping {
             get {
@@ -1070,7 +1070,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Dostępna aktualizacja plików zasobów (DataDragon).
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu New resource files (DataDragon) are avaiable.
         /// </summary>
         public static string settings_updateDD {
             get {
@@ -1079,7 +1079,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu wersja.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu version.
         /// </summary>
         public static string settings_versionApp {
             get {
@@ -1088,7 +1088,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Atak.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Atack.
         /// </summary>
         public static string timeline_attack_autoattack {
             get {
@@ -1097,7 +1097,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Miniony.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Minions.
         /// </summary>
         public static string timeline_attack_minion {
             get {
@@ -1106,7 +1106,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Potwory.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Monsters.
         /// </summary>
         public static string timeline_attack_monster {
             get {
@@ -1115,7 +1115,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Other.
         /// </summary>
         public static string timeline_attack_other {
             get {
@@ -1124,7 +1124,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wieża.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Turret.
         /// </summary>
         public static string timeline_attack_turret {
             get {
@@ -1133,7 +1133,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu asysty.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu assists.
         /// </summary>
         public static string timeline_axis_assists {
             get {
@@ -1142,7 +1142,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu śmierci.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu deaths.
         /// </summary>
         public static string timeline_axis_deaths {
             get {
@@ -1151,7 +1151,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu zabójstwa.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu kills.
         /// </summary>
         public static string timeline_axis_kills {
             get {
@@ -1160,7 +1160,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu none.
         /// </summary>
         public static string timeline_axis_none {
             get {
@@ -1169,7 +1169,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wybrano {0} z {1} graczy.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Selected {0} of {1} players.
         /// </summary>
         public static string timeline_axis_selectedPlayers {
             get {
@@ -1178,7 +1178,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przez twoją drużynę.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu By your team.
         /// </summary>
         public static string timeline_byAllayTeam {
             get {
@@ -1187,7 +1187,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przez przeciwną drużynę.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu By enemy team.
         /// </summary>
         public static string timeline_byEnemyTeam {
             get {
@@ -1196,7 +1196,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział w walce.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Participation in fight.
         /// </summary>
         public static string timeline_damageBar_participationInFight {
             get {
@@ -1205,7 +1205,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu player.
         /// </summary>
         public static string timeline_damagebar_participationPlayer {
             get {
@@ -1214,7 +1214,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu obrażeń.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu damage.
         /// </summary>
         public static string timeline_damagebar_participationSkill {
             get {
@@ -1223,7 +1223,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Udział obrażeń gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Player&apos;s participation.
         /// </summary>
         public static string timeline_damageSummary_playerParticipation {
             get {
@@ -1232,7 +1232,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Sojusznika.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Allay Kill.
         /// </summary>
         public static string timeline_eventName_allayKill {
             get {
@@ -1241,7 +1241,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Atakhan&apos;a.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Atakhan Kill.
         /// </summary>
         public static string timeline_eventName_atakhanKilled {
             get {
@@ -1250,7 +1250,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Barona Nashora.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Baron Nashor Kill.
         /// </summary>
         public static string timeline_eventName_baronKilled {
             get {
@@ -1259,7 +1259,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Chemtechowego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Chemtech Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonChemtechKilled {
             get {
@@ -1268,7 +1268,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Powietrznego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cloud Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonCloudKilled {
             get {
@@ -1277,7 +1277,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Starszego Smoka.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Elder Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonElderKilled {
             get {
@@ -1286,7 +1286,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Hextechowego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Hextech Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonHextechKilled {
             get {
@@ -1295,7 +1295,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Piekielnego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Infernal Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonInfernalKilled {
             get {
@@ -1304,7 +1304,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Górskiego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Mountain Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonMountainKilled {
             get {
@@ -1313,7 +1313,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Smoka Oceanicznego.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ocean Dragon Kill.
         /// </summary>
         public static string timeline_eventName_dragonOceanKilled {
             get {
@@ -1322,7 +1322,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Przeciwnika.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Enemy Kill.
         /// </summary>
         public static string timeline_eventName_enemyKill {
             get {
@@ -1331,7 +1331,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Heralda.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Herald Kill.
         /// </summary>
         public static string timeline_eventName_heraldKilled {
             get {
@@ -1340,7 +1340,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zniszczony inhibitor.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inhibitor Destroyed.
         /// </summary>
         public static string timeline_eventName_inhibitorDestroyed {
             get {
@@ -1349,7 +1349,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabójstwo Gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Player Kill.
         /// </summary>
         public static string timeline_eventName_playerKill {
             get {
@@ -1358,7 +1358,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Samobójstwo Gracza.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Player Suicide.
         /// </summary>
         public static string timeline_eventName_suicideKill {
             get {
@@ -1367,7 +1367,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zniszczona wieża.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Turret Destroyed.
         /// </summary>
         public static string timeline_eventName_turretDestroyed {
             get {
@@ -1376,7 +1376,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zabicie Voidgrubs&apos;a.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Voidgrub Kill.
         /// </summary>
         public static string timeline_eventName_voidgrubKilled {
             get {
@@ -1385,7 +1385,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu W twojej drużynie.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu In your team.
         /// </summary>
         public static string timeline_inAllayTeam {
             get {
@@ -1394,7 +1394,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu W przeciwnej drużynie.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu In enemy Team.
         /// </summary>
         public static string timeline_inEnemyTeam {
             get {
@@ -1403,7 +1403,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Brak informacji odnośnie wydarzenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu No information about event.
         /// </summary>
         public static string timeline_noEventTypeData {
             get {
@@ -1412,7 +1412,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Inne źródła.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Other sources.
         /// </summary>
         public static string timeline_other {
             get {
@@ -1421,7 +1421,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obrażenia.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Damage.
         /// </summary>
         public static string timeline_popup_damage {
             get {
@@ -1430,7 +1430,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Magiczne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Magic.
         /// </summary>
         public static string timeline_popup_damageMagic {
             get {
@@ -1439,7 +1439,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Fizyczne.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Physical.
         /// </summary>
         public static string timeline_popup_damagePhysical {
             get {
@@ -1448,7 +1448,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Całkowite.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Total.
         /// </summary>
         public static string timeline_popup_damageTotal {
             get {
@@ -1466,7 +1466,7 @@ namespace League_Analyser {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nieznany gracz.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unknown player.
         /// </summary>
         public static string timeline_unknownPlayer {
             get {

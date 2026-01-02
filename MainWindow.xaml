@@ -61,7 +61,7 @@
                     <TextBlock Name="appVersion" Text="-" Foreground="Gray" HorizontalAlignment="Right" Margin="0,0,5,0"/>
                     <TextBlock Name="dataVersion" Text="-" Foreground="Gray" HorizontalAlignment="Right" Margin="0,0,5,0"/>
                     <TextBlock Name="patchVersion" Text="-" Foreground="Gray" HorizontalAlignment="Right" Margin="0,0,5,0"/>
-                    <TextBlock Text="©Mvcias 2025" Foreground="Gray" Margin="0,15,0,0" HorizontalAlignment="Left" FontWeight="SemiBold"/>
+                    <TextBlock Text="©Mvcias 2026" Foreground="Gray" Margin="0,15,0,0" HorizontalAlignment="Left" FontWeight="SemiBold"/>
                 </StackPanel>
             </Grid>
         </Grid>
